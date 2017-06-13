@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameConditionDefs>
+
+  <GameConditionDef>
+    <defName>HPLovecraft_BloodMoon</defName>
+    <conditionClass>HPLovecraft.GameCondition_BloodMoon</conditionClass>
+    <label>blood moon</label>
+    <description>One of the moons has taken on a mysterious hue, and a newly crimson sky drowns out the soothing colors of livelier days.</description>
+    <endMessage>The blood moon is passing.</endMessage>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+
+</GameConditionDefs>

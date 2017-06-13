@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+	<StorytellerDef Name="BaseStoryteller" Abstract="True">
+		<populationIntentFromTimeCurve>
+			<points>
+				<li>0, 0.15</li>
+				<li>3, 0.15</li>
+				<li>10, 1</li>
+			</points>
+		</populationIntentFromTimeCurve>
+	</StorytellerDef>
+
+	<StorytellerDef ParentName="BaseStoryteller">
+		<defName>Lovecraft</defName>
+    <label>H.P. Lovecraft</label>
+		<description>In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?</description>
+    <portraitLarge>Lovecraft1.1</portraitLarge>
+    <portraitTiny>Lovecraft1.2</portraitTiny>
+    <listOrder>50</listOrder>
+		<populationIntentFromPopCurve>
+			<points>
+				<li>0, 8</li>
+				<li>1, 4</li>
+				<li>5, 1</li>
+				<li>9, 0.5</li>
+				<li>13, 0</li>
+				<li>18, -1</li>
+			</points>
+		</populationIntentFromPopCurve>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>3.75</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>1.20</mtbDaysThreatBig>
+        <threatOffDays>1.0</threatOffDays>
+        <threatOnDays>3.6</threatOnDays>
+        <minDaysBetweenThreatBigs>0.5</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+				<minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+				<mtbDays>3.0</mtbDays>
+			</li>
+			<li Class="StorytellerCompProperties_CategoryMTB">
+				<allowedTargetTypes>World</allowedTargetTypes>
+				<minDaysPassed>15</minDaysPassed>
+				<category>Misc</category>
+				<mtbDays>8</mtbDays>
+			</li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>6</baseMtb>
+        <allowedTargetTypes>MapPlayerHome</allowedTargetTypes>
+      </li>
+      <li Class="StorytellerCompProperties_AllyAssistance">
+        <baseMtb>10</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>7</minDaysPassed>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>CaravanTarget</category>
+      </li>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+    </comps>
+  </StorytellerDef>
+
+</StorytellerDefs>
