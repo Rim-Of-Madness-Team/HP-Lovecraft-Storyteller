@@ -58,6 +58,7 @@
     <Compile Include="HPLovecraft\CthulhuUtility.cs" />
     <Compile Include="HPLovecraft\DelayedIncident.cs" />
     <Compile Include="HPLovecraft\GameCondition_BloodMoon.cs" />
+    <Compile Include="HPLovecraft\GameCondition_TheMist.cs" />
     <Compile Include="HPLovecraft\IncidentWorker_Cats.cs" />
     <Compile Include="HPLovecraft\IncidentWorker_Crows.cs" />
     <Compile Include="HPLovecraft\IncidentWorker_Mystery.cs" />

@@ -31,12 +31,12 @@
     <comps>
       <li Class="StorytellerCompProperties_ClassicIntro"/>
       <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
-        <minDaysPassed>5</minDaysPassed>
+				<minDaysPassed>5</minDaysPassed>
         <mtbDaysThreatSmall>3.75</mtbDaysThreatSmall>
         <mtbDaysThreatBig>1.20</mtbDaysThreatBig>
-        <threatOffDays>1.0</threatOffDays>
-        <threatOnDays>3.6</threatOnDays>
-        <minDaysBetweenThreatBigs>0.5</minDaysBetweenThreatBigs>
+        <threatOffDays>6.0</threatOffDays>
+        <threatOnDays>4.6</threatOnDays>
+        <minDaysBetweenThreatBigs>1.9</minDaysBetweenThreatBigs>
       </li>
       <li Class="StorytellerCompProperties_CategoryMTB">
 				<allowedTargetTypes>MapPlayerHome</allowedTargetTypes>

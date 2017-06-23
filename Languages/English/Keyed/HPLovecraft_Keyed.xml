@@ -11,11 +11,13 @@
   <ROM_OmenParanaoiaDesc1>A wave of paranoia has washed over the minds of your colonists.</ROM_OmenParanaoiaDesc1>
   <ROM_OmenParanaoiaDesc2>One of your colonists has become overwhelmed with uncertainty. {0} has become paranoid.</ROM_OmenParanaoiaDesc2>
   <ROM_OmenParanaoiaDesc2b>{0} sensed a wave of paranoia, but shrugged it off through sheer will.</ROM_OmenParanaoiaDesc2b>
-  <ROM_OmenParanaoiaDesc3>{0}} has seen a vision of terrible things to come.</ROM_OmenParanaoiaDesc3>
+  <ROM_OmenParanaoiaDesc3>{0} has seen a vision of terrible things to come.</ROM_OmenParanaoiaDesc3>
   <ROM_OmenParanaoiaDesc4>One of your colonists senses have been plagued. {0} has become disoriented.</ROM_OmenParanaoiaDesc4>
 
   <ROM_OmenCrowDesc1>A flock of ominous dark birds stand outside your colony. One of their kind lays dead among them.</ROM_OmenCrowDesc1>
   <ROM_OmenCrowDesc2>A flock of ominous dark birds stand outside your colony.</ROM_OmenCrowDesc2>
   <ROM_OmenCrowDesc3>A single crow watches your colonists.</ROM_OmenCrowDesc3>
+
+  <ROM_OmenStrangeFogDesc>An opressive fog has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces.</ROM_OmenStrangeFogDesc>
 
 </LanguageData>

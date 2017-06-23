@@ -41,9 +41,14 @@ namespace HPLovecraft
             var omenCycle = Find.Storyteller.storytellerComps.FirstOrDefault((comp) => comp.GetType() == typeof(StorytellerComp_OmenThreatCycle));
             if (omenCycle != null)
             {
-                Log.Message("Fire event: " + delayedIncident.incident.label);
-                delayedIncident.incident.Worker.TryExecute(delayedIncident.incidentParms);
-                delayedIncident.incidentParms.target.StoryState.Notify_IncidentFired(new FiringIncident(delayedIncident.incident, omenCycle, delayedIncident.incidentParms));
+                try
+                {
+
+                    Log.Message("Fire event: " + delayedIncident.incident.label);
+                    delayedIncident.incident.Worker.TryExecute(delayedIncident.incidentParms);
+                    delayedIncident.incidentParms.target.StoryState.Notify_IncidentFired(new FiringIncident(delayedIncident.incident, omenCycle, delayedIncident.incidentParms));
+                }
+                catch (Exception) { }
             }
             delayedIncident.didIt = true;
             Log.Message("Trigger Incident Complete");

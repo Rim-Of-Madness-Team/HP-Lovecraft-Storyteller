@@ -13,86 +13,113 @@ namespace HPLovecraft
         public override bool TryExecute(IncidentParms parms)
         {
             string flavorDesc = "";
-            Thing cat = null;
             float rand = Rand.Value;
             GlobalTargetInfo target = new GlobalTargetInfo();
+
             if (rand < 0.25f)
             {
-                Log.Message("Dead Cat");
-                //Dead cat
-                IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
-                Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
-                cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
-                ((Pawn)cat).Kill(null);
-                flavorDesc = "ROM_OmenCatDesc1".Translate();
-                target = new GlobalTargetInfo(loc, (Map)parms.target);
+                DeadCat(parms, out flavorDesc, out target);
             }
             else if (rand < 0.5f)
             {
-                /*
-                 * Wild Cats
-                 *
-                 * Multiple manhunter cats wander onto the colony's border.
-                 * 
-                 */
-                Log.Message("Wild Cats");
-                //Wild cats
-                IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
-                Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
-                cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
-                List<Thing> cats = new List<Thing>();
-                for (int i = 0; i < 2; i++)
+                //Non-hostile Period is the first three seasons of omens.
+                if (GenDate.DaysPassed > 45) WildCats(parms, out flavorDesc, out target);
+                else
                 {
-                    Pawn newCat = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
-                    cats.Add(GenSpawn.Spawn(newCat, loc, (Map)parms.target));
+                    StrayCat(parms, out flavorDesc, out target);
                 }
-                cats.Add(cat);
-                foreach (Pawn single in cats)
-                {
-                    single.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
-                }
-                flavorDesc = "ROM_OmenCatDesc2".Translate();
-                target = new RimWorld.Planet.GlobalTargetInfo(cat);
             }
             else if (rand < 0.75f)
             {
-                /*
-                 * Stray Cat
-                 *
-                 * A single cat wanders onto the colony's border.
-                 * 
-                 */
-                Log.Message("Stray Cat");
-                //Stray cat
-                IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
-                Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
-                cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
-                flavorDesc = "ROM_OmenCatDesc3".Translate();
-                target = new RimWorld.Planet.GlobalTargetInfo(cat);
+                StrayCat(parms, out flavorDesc, out target);
             }
             else
             {
-                /*
-                 * Affectionate Cat
-                 *
-                 * A single cat joins the colony.
-                 *
-                 */
-                Log.Message("Affectionate Cat");
-                //Affectionate cat
-                IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
-                Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
-                cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
-                InteractionWorker_RecruitAttempt.DoRecruit(cat.Map.mapPawns.FreeColonists.FirstOrDefault<Pawn>(), (Pawn)cat, 1f, true);
-                flavorDesc = "ROM_OmenCatDesc4".Translate();
-                target = new RimWorld.Planet.GlobalTargetInfo(cat);
+                AffectionateCat(parms, out flavorDesc, out target);
             }
             Find.LetterStack.ReceiveLetter(def.label.CapitalizeFirst(), flavorDesc, DefDatabase<LetterDef>.GetNamed("ROM_Omen"), target);
             return true;
+        }
+
+
+        /*
+         * Affectionate Cat
+         *
+         * A single cat joins the colony.
+         *
+         */
+        public void AffectionateCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
+        {
+            Log.Message("Affectionate Cat");
+            //Affectionate cat
+            IntVec3 loc;
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
+            Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
+            InteractionWorker_RecruitAttempt.DoRecruit(cat.Map.mapPawns.FreeColonists.FirstOrDefault<Pawn>(), (Pawn)cat, 1f, true);
+            flavorDesc = "ROM_OmenCatDesc4".Translate();
+            target = new RimWorld.Planet.GlobalTargetInfo(cat);
+        }
+
+        /*
+        * Stray Cat
+        *
+        * A single cat wanders onto the colony's border.
+        * 
+        */
+        public void StrayCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
+        {
+            Log.Message("Stray Cat");
+            //Stray cat
+            IntVec3 loc;
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
+            Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
+            flavorDesc = "ROM_OmenCatDesc3".Translate();
+            target = new RimWorld.Planet.GlobalTargetInfo(cat);
+        }
+
+        /*
+         * Wild Cats
+         *
+         * Multiple manhunter cats wander onto the colony's border.
+         * 
+         */
+        public void WildCats(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
+        {
+            Log.Message("Wild Cats");
+            //Wild cats
+            IntVec3 loc;
+            GlobalTargetInfo? newTarget = null;
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            var numberOfCats = (GenDate.YearsPassed > 0) ? GenDate.YearsPassed : 1;
+            List<Thing> cats = new List<Thing>();
+            for (int i = 0; i < numberOfCats; i++)
+            {
+                Pawn newCat = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
+                cats.Add(GenSpawn.Spawn(newCat, loc, (Map)parms.target));
+            }
+            foreach (Pawn single in cats)
+            {
+                single.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter);
+                if (newTarget == null) newTarget = new GlobalTargetInfo(single);
+            }
+            target = newTarget.Value;
+            flavorDesc = "ROM_OmenCatDesc2".Translate();
+
+        }
+
+        public void DeadCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
+        {
+            Log.Message("Dead Cat");
+            //Dead cat
+            IntVec3 loc;
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
+            Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
+            ((Pawn)cat).Kill(null);
+            flavorDesc = "ROM_OmenCatDesc1".Translate();
+            target = new GlobalTargetInfo(loc, (Map)parms.target);
         }
     }
 }

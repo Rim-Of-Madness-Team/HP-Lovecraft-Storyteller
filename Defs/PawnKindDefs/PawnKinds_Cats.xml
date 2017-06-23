@@ -124,7 +124,7 @@
       <defName>HPLovecraft_CatKind_Black</defName>
       <label>black cat</label>
       <race>HPLovecraft_CatRace</race>
-      <combatPower>40</combatPower>
+      <combatPower>80</combatPower>
       <wildSpawn_spawnWild>false</wildSpawn_spawnWild>
       <lifeStages>
         <li>

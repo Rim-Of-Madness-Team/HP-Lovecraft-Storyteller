@@ -93,4 +93,23 @@
       <max>1.25</max>
     </durationDays>
   </IncidentDef>
+
+
+	<IncidentDef>
+    <defName>HPLovecraft_TheMist</defName>
+    <label>mist from beyond</label>
+		<category>Misc</category>
+    <targetType>MapPlayerHome</targetType>
+    <WorkerClass>IncidentWorker_MakeGameCondition</WorkerClass>
+    <gameCondition>HPLovecraft_TheMist</gameCondition>
+    <letterLabel>Mist</letterLabel>
+    <letterText>An opressive fog has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces.</letterText>
+    <letterDef>BadNonUrgent</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <durationDays>
+      <min>1.75</min>
+      <max>3.25</max>
+    </durationDays>
+  </IncidentDef>
 </Defs>

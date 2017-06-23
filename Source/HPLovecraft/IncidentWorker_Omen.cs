@@ -58,7 +58,6 @@ namespace HPLovecraft
                     HPLDefOf.HPLovecraft_CrowsIncident.Worker.TryExecute(parms);
                     break;
                 case 4:
-                    //HPLDefOf.HPLovecraft_ParanoiaIncident.Worker.TryExecute(parms);
                     HPLDefOf.HPLovecraft_MysteryIncident.Worker.TryExecute(parms);
                     break;
                 default:
