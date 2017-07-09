@@ -32,6 +32,15 @@ namespace HPLovecraft
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.AllowedAreas, OpportunityType.Critical);
         }
 
+        public override void End()
+        {
+            if (base.Map?.mapPawns?.AllPawnsSpawned?.FindAll(x => x is PawnMistCreature) is List<Pawn> mistCreatures)
+            {
+                if (!mistCreatures.NullOrEmpty()) foreach (Pawn p in mistCreatures) p.Kill(null);
+            }
+            base.End();
+        }
+
         public override void GameConditionTick()
         {
             if (Find.TickManager.TicksGame % interval == 0)
@@ -39,22 +48,39 @@ namespace HPLovecraft
                 //Keep it fogged!
                 if (base.Map.weatherManager.curWeather != HPLDefOf.Fog) base.Map.weatherManager.TransitionTo(HPLDefOf.Fog);
 
-                List<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
-                for (int i = 0; i < allPawnsSpawned.Count; i++)
+                int maxMistCreatureCount = (int)((base.Map.mapPawns.ColonistCount * 4) * (((float)base.Map.Size.x) / 250f));
+                int curMistCreatureCount = base.Map.mapPawns.AllPawnsSpawned.FindAll(x => x is PawnMistCreature).Count;
+
+                int i = 100;
+                while ((curMistCreatureCount < maxMistCreatureCount) && i > 0)
                 {
-                    Pawn pawn = allPawnsSpawned[i];
-                    if (!pawn.Position.Roofed(base.Map) && pawn.def.race.IsFlesh)
+                    var intVec = default(IntVec3);
+                    if (!Cthulhu.Utility.TryFindSpawnCell(HPLDefOf.HPLovecraft_MistCreature, base.Map.Center, base.Map, 60, out intVec))
                     {
-                        float num = 0.1f;
-                        num *= pawn?.GetStatValue(StatDefOf.PsychicSensitivity, true) ?? 1;
-                        if (num != 0f)
-                        {
-                            float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
-                            num *= num2;
-                            Cthulhu.Utility.ApplySanityLoss(pawn, num, 1f);
-                        }
+                        continue;
                     }
+                    PawnKindDef randomKind = (Rand.Value > 0.3f) ? HPLDefOf.HPLovecraft_MistStalker : HPLDefOf.HPLovecraft_MistStalkerTwo;
+                    Pawn newThing = PawnGenerator.GeneratePawn(randomKind, null);
+                    Thing stalker = GenSpawn.Spawn(newThing, intVec, base.Map);
+                    i--;
                 }
+
+                //List<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
+                //for (int i = 0; i < allPawnsSpawned.Count; i++)
+                //{
+                //    Pawn pawn = allPawnsSpawned[i];
+                //    if (!pawn.Position.Roofed(base.Map) && pawn.def.race.IsFlesh)
+                //    {
+                //        float num = 0.1f;
+                //        num *= pawn?.GetStatValue(StatDefOf.PsychicSensitivity, true) ?? 1;
+                //        if (num != 0f)
+                //        {
+                //            float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
+                //            num *= num2;
+                //            Cthulhu.Utility.ApplySanityLoss(pawn, num, 1f);
+                //        }
+                //    }
+                //}
             }
         }
 

@@ -22,15 +22,23 @@ namespace HPLovecraft
 
         public static ThingDef HPLovecraft_CatRace;
         public static ThingDef HPLovecraft_CrowRace;
-       // public static ThingDef HPLovecraft_SpiderRace;
+        public static ThingDef HPLovecraft_MistCreature;
+        // public static ThingDef HPLovecraft_SpiderRace;
 
-       // public static ThingDef HPLovecraft_Web;
+        // public static ThingDef HPLovecraft_Web;
 
         public static PawnKindDef HPLovecraft_CatKind_Black;
         public static PawnKindDef HPLovecraft_CrowKind;
+        public static PawnKindDef HPLovecraft_MistStalker;
+        public static PawnKindDef HPLovecraft_MistStalkerTwo;
+
+        public static ThoughtDef HPLovecraft_SawBloodMoonSad;
+        public static ThoughtDef HPLovecraft_SawBloodMoonHappy;
 
         public static WeatherDef Fog;
-       // public static JobDef HPLovecraft_SpinWeb;
+
+        public static TraitDef PsychicSensitivity;
+        // public static JobDef HPLovecraft_SpinWeb;
 
     }
 }

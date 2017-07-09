@@ -70,6 +70,15 @@ namespace Cthulhu
             return result;
         }
 
+        public static List<IncidentDef> CosmicHorrorIncidents()
+        {
+            return new List<IncidentDef> {
+                IncidentDef.Named("ROM_RaidCosmicHorrors"),
+                IncidentDef.Named("ROM_StarVampireAttack"),
+                IncidentDef.Named("ROM_ChthonianPit")
+            };
+        }
+
         public static bool IsCosmicHorror(Pawn thing)
         {
             if (!IsCosmicHorrorsLoaded()) return false;
@@ -84,6 +93,8 @@ namespace Cthulhu
             }
             return false;
         }
+
+
 
         //public static float GetSanityLossRate(PawnKindDef kindDef)
         //{
@@ -594,7 +605,7 @@ namespace Cthulhu
                 //Log.Message("2");
 
                 string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
-                Log.Message(sanityLossDef);
+                //Log.Message(sanityLossDef);
 
                 var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamedSilentFail(sanityLossDef));
                 if (pawnSanityHediff != null)

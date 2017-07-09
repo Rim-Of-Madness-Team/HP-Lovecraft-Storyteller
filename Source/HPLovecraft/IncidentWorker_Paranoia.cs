@@ -11,11 +11,12 @@ namespace HPLovecraft
 {
     public class IncidentWorker_Paranoia : IncidentWorker
     {
+        public static readonly FloatRange SANITYLOSSRANGE = new FloatRange(0.2f, 0.4f);
+        public static readonly float DIFFICULTYMODIFIER = 0.02f;
+
         public override bool TryExecute(IncidentParms parms)
         {
-            string flavorDesc = "";
             float rand = Rand.Value;
-            GlobalTargetInfo target = new GlobalTargetInfo();
             if (rand < 0.25f)
             {
                 /*
@@ -26,32 +27,32 @@ namespace HPLovecraft
                  * 10% chance that two colonists will trigger a social fight.
                  *
                  */
-                Log.Message("Mass Paranoia");
+                //Log.Message("Mass Paranoia");
                 if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count<Pawn>() > 0)
                 {
-                    bool socialFightStarted = false;
-                    foreach (Pawn pawn in pawns)
-                    {
-                        if (pawn?.story?.traits?.GetTrait(TraitDefOf.Nerves) is Trait nerves && nerves.Degree > 0)
-                        {
-                            continue;
-                        }
-                        Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.3f, 0.7f), 1);
+                    var difficultyCalc = DIFFICULTYMODIFIER * Find.Storyteller.difficulty.difficulty;
+                    SanityLossReport.ApplySanityLossAndShowReport(new List<Pawn>(pawns), SANITYLOSSRANGE, difficultyCalc);
+                    //bool socialFightStarted = false;
+                    //foreach (Pawn pawn in pawns)
+                    //{
+                    //    if (pawn?.story?.traits?.GetTrait(TraitDefOf.Nerves) is Trait nerves && nerves.Degree > 0)
+                    //    {
+                    //        continue;
+                    //    }
+                    //    Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.3f, 0.7f), 1);
 
-                        if (!socialFightStarted && !pawn.IsPrisoner && Rand.Value > 0.9f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
-                        {
-                            socialFightStarted = true;
-                            var otherPawn = pawns.FirstOrDefault(x => x != pawn && !x.IsPrisoner);
-                            if (otherPawn != null && otherPawn?.mindState?.mentalStateHandler is MentalStateHandler otherMind)
-                            {
-                                mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "ROM_OmenParanaoiaResult".Translate(), false, false, otherPawn);
-                                otherMind.TryStartMentalState(MentalStateDefOf.SocialFighting, "ROM_OmenParanaoiaResult".Translate(), false, false, pawn);
-                            }
-                        }
-                    }
-                    target = new GlobalTargetInfo(pawns.RandomElement<Pawn>());
+                    //    if (!socialFightStarted && !pawn.IsPrisoner && Rand.Value > 0.9f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
+                    //    {
+                    //        socialFightStarted = true;
+                    //        var otherPawn = pawns.FirstOrDefault(x => x != pawn && !x.IsPrisoner);
+                    //        if (otherPawn != null && otherPawn?.mindState?.mentalStateHandler is MentalStateHandler otherMind)
+                    //        {
+                    //            mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "ROM_OmenParanaoiaResult".Translate(), false, false, otherPawn);
+                    //            otherMind.TryStartMentalState(MentalStateDefOf.SocialFighting, "ROM_OmenParanaoiaResult".Translate(), false, false, pawn);
+                    //        }
+                    //    }
+                    //}
                 }
-                flavorDesc = "ROM_OmenParanaoiaDesc1".Translate();
             }
             else if (rand < 0.5f)
             {
@@ -64,26 +65,27 @@ namespace HPLovecraft
                  *
                  */
 
-                Log.Message("Single paranoia");
+                //Log.Message("Single paranoia");
                 if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count<Pawn>() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn)
                 {
-                    if (pawn?.story?.traits?.GetTrait(TraitDefOf.Nerves) is Trait nerves && nerves.Degree > 0)
-                    {
-                        flavorDesc = "ROM_OmenParanaoiaDesc2b".Translate(pawn);
-                    }
-                    else
-                    {
-                        Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.7f, 0.9f), 1);
+                    var difficultyCalc = DIFFICULTYMODIFIER * Find.Storyteller.difficulty.difficulty;
+                    SanityLossReport.ApplySanityLossAndShowReport(new List<Pawn> { pawn }, SANITYLOSSRANGE, difficultyCalc);
+                    //if (pawn?.story?.traits?.GetTrait(TraitDefOf.Nerves) is Trait nerves && nerves.Degree > 0)
+                    //{
+                    //    flavorDesc = "ROM_OmenParanaoiaDesc2b".Translate(pawn);
+                    //}
+                    //else
+                    //{
+                    //    Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.7f, 0.9f), 1);
 
-                        if (Rand.Value > 0.2f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
-                        {
-                            if (pawn.IsPrisoner) mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "ROM_OmenParanaoiaResult".Translate());
-                            else mentalStateHandler.TryStartMentalState(MentalStateDefOf.WanderPsychotic, "ROM_OmenParanaoiaResult".Translate());
-                        }
-                        flavorDesc = "ROM_OmenParanaoiaDesc2".Translate(pawn);
-                    }
-                    target = new GlobalTargetInfo(pawn);
+                    //    if (Rand.Value > 0.2f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
+                    //    {
+                    //        if (pawn.IsPrisoner) mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "ROM_OmenParanaoiaResult".Translate());
+                    //        else mentalStateHandler.TryStartMentalState(MentalStateDefOf.WanderPsychotic, "ROM_OmenParanaoiaResult".Translate());
+                    //    }
+                    //    flavorDesc = "ROM_OmenParanaoiaDesc2".Translate(pawn);
+                    //}
                 }
             }
             else if (rand < 0.75f)
@@ -95,18 +97,16 @@ namespace HPLovecraft
                  * 90% chance of the character wandering in their own room.
                  *
                  */
-                Log.Message("Visions");
-                if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count<Pawn>() > 0 &&
+                //Log.Message("Visions");
+                if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn)
                 {
-                    Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.3f, 0.5f), 1);
-
-                    if (Rand.Value > 0.1f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
+                    var difficultyCalc = DIFFICULTYMODIFIER * Find.Storyteller.difficulty.difficulty;
+                    SanityLossReport.ApplySanityLossAndShowReport(new List<Pawn> { pawn }, SANITYLOSSRANGE, difficultyCalc, "HPLovecraft_Vision");
+                    if (Rand.Value > 0.1f && pawns.Count() > 3 && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
                     {
                         mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("WanderOwnRoom"), "ROM_OmenParanaoiaResult".Translate());
                     }
-                    target = new GlobalTargetInfo(pawn);
-                    flavorDesc = "ROM_OmenParanaoiaDesc3".Translate(pawn);
                 }
             }
             else
@@ -117,8 +117,8 @@ namespace HPLovecraft
                  * A single colonist's eye, ear, nose, or mouth becomes "disoriented."
                  *
                  */
-                Log.Message("Plagued senses");
-                if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is List<Pawn> pawns && pawns.Count > 0 &&
+                //Log.Message("Plagued senses");
+                if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn && pawn?.health?.hediffSet is HediffSet parts)
                 {
                     Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.3f, 0.5f), 1);
@@ -133,11 +133,10 @@ namespace HPLovecraft
                     disorientedHediff.Part = parts.GetNotMissingParts().FirstOrDefault(x => senseParts.InRandomOrder<BodyPartRecord>().Contains(x));
                     disorientedHediff.Severity = Rand.Range(0.7f, 0.9f);
                     parts.AddDirect(disorientedHediff, null);
-                    target = new GlobalTargetInfo(pawn);
-                    flavorDesc = "ROM_OmenParanaoiaDesc4".Translate(pawn);
+                    string flavorDesc = "ROM_OmenParanaoiaDesc4".Translate(pawn);
+                    Find.LetterStack.ReceiveLetter(def.label.CapitalizeFirst(), flavorDesc, DefDatabase<LetterDef>.GetNamed("ROM_Omen"), new GlobalTargetInfo(pawn));
                 }
             }
-            Find.LetterStack.ReceiveLetter(def.label.CapitalizeFirst(), flavorDesc, DefDatabase<LetterDef>.GetNamed("ROM_Omen"), target);
             return true;
         }
     }

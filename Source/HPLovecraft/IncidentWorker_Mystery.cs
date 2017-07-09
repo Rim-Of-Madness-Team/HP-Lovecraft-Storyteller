@@ -13,7 +13,7 @@ namespace HPLovecraft
         public override bool TryExecute(IncidentParms parms)
         {
             float rand = Rand.Value;
-            if (rand < 0.5f)
+            if (rand < 0.4f)
             {
                 BloodMoon(parms);
             }
@@ -31,7 +31,7 @@ namespace HPLovecraft
 
         public void StrangeFog(IncidentParms parms)
         {
-            HPLDefOf.HPLovecraft_BloodMoon.Worker.TryExecute(parms);
+            HPLDefOf.HPLovecraft_TheMist.Worker.TryExecute(parms);
         }
 
         public void SpiderRain(IncidentParms parms)

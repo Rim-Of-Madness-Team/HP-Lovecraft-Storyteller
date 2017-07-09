@@ -108,8 +108,8 @@
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <durationDays>
-      <min>1.75</min>
-      <max>3.25</max>
+      <min>0.75</min>
+      <max>1.25</max>
     </durationDays>
   </IncidentDef>
 </Defs>

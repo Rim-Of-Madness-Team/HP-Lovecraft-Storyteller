@@ -24,7 +24,7 @@ namespace HPLovecraft
                  * One dead crow appears.
                  * 
                  */
-                Log.Message("Dead Crow");
+                //Log.Message("Dead Crow");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -42,7 +42,7 @@ namespace HPLovecraft
                  * One crow is dead in the center.
                  * 
                  */
-                Log.Message("Murder of Crows");
+                //Log.Message("Murder of Crows");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
                 var newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -66,7 +66,7 @@ namespace HPLovecraft
                  * A group of crows spawn outside the colony.
                  * 
                  */
-                Log.Message("Flock of Crows");
+                //Log.Message("Flock of Crows");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -89,7 +89,7 @@ namespace HPLovecraft
                  * A single crow watches the colony.
                  *
                  */
-                Log.Message("Solitary Crow");
+                //Log.Message("Solitary Crow");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);

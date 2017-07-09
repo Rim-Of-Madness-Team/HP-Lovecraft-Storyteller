@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HPLovecraft\CthulhuUtility.cs" />
+    <Compile Include="HPLovecraft\DeathActionWorker_VanishMist.cs" />
     <Compile Include="HPLovecraft\DelayedIncident.cs" />
     <Compile Include="HPLovecraft\GameCondition_BloodMoon.cs" />
     <Compile Include="HPLovecraft\GameCondition_TheMist.cs" />
@@ -65,7 +66,12 @@
     <Compile Include="HPLovecraft\IncidentWorker_Omen.cs" />
     <Compile Include="HPLovecraft\IncidentWorker_Paranoia.cs" />
     <Compile Include="HPLovecraft\HPLDefOf.cs" />
+    <Compile Include="HPLovecraft\JobGiver_StalkCharacters.cs" />
+    <Compile Include="HPLovecraft\LovecraftHarmony.cs" />
     <Compile Include="HPLovecraft\MapComponent_OmenIncidentTracker.cs" />
+    <Compile Include="HPLovecraft\PawnMistCreature.cs" />
+    <Compile Include="HPLovecraft\SanityLossReport.cs" />
+    <Compile Include="HPLovecraft\StorytellerCompData_OmenThreatCycle.cs" />
     <Compile Include="HPLovecraft\StorytellerCompProperties_OmenThreatCycle.cs" />
     <Compile Include="HPLovecraft\StorytellerComp_OmenThreatCycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

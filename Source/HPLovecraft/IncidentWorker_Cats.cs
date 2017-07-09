@@ -50,7 +50,7 @@ namespace HPLovecraft
          */
         public void AffectionateCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            Log.Message("Affectionate Cat");
+            //Log.Message("Affectionate Cat");
             //Affectionate cat
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
@@ -69,7 +69,7 @@ namespace HPLovecraft
         */
         public void StrayCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            Log.Message("Stray Cat");
+            //Log.Message("Stray Cat");
             //Stray cat
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
@@ -87,7 +87,7 @@ namespace HPLovecraft
          */
         public void WildCats(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            Log.Message("Wild Cats");
+            //Log.Message("Wild Cats");
             //Wild cats
             IntVec3 loc;
             GlobalTargetInfo? newTarget = null;
@@ -111,7 +111,7 @@ namespace HPLovecraft
 
         public void DeadCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            Log.Message("Dead Cat");
+            //Log.Message("Dead Cat");
             //Dead cat
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);

@@ -14,7 +14,7 @@ namespace HPLovecraft
 
         public override bool TryExecute(IncidentParms parms)
         {
-            Log.Message("IncidentWorker_Omen Called");
+            //Log.Message("IncidentWorker_Omen Called");
             IncidentDef bigThreat;
             Map map = (Map)parms.target;
             var omenThreatCycle = Find.Storyteller.storytellerComps.FirstOrDefault((comp) => comp.GetType() == typeof(StorytellerComp_OmenThreatCycle));
@@ -24,11 +24,25 @@ namespace HPLovecraft
                 return false;
             }
 
-            if (!(from def in DefDatabase<IncidentDef>.AllDefs
-                       where def.category == IncidentCategory.ThreatBig && parms.points >= def.minThreatPoints && def.Worker.CanFireNow(parms.target) && def != HPLDefOf.HPLovecraft_OmenIncident
-                  select def).TryRandomElementByWeight(new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle)omenThreatCycle).OmenIncidentChanceFinal), out bigThreat))
+            if (!Lovecraft.Data.NeedCosmicHorrorEvent)
             {
-                return false;
+                if (!(from def in DefDatabase<IncidentDef>.AllDefs
+                      where def.category == IncidentCategory.ThreatBig && parms.points >= def.minThreatPoints && def.Worker.CanFireNow(parms.target) && def != HPLDefOf.HPLovecraft_OmenIncident
+                      select def).TryRandomElementByWeight(new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle)omenThreatCycle).OmenIncidentChanceFinal), out bigThreat))
+                {
+                    Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
+                    return false;
+                }
+            }
+            else
+            {
+                if (!(from def in Cthulhu.Utility.CosmicHorrorIncidents()
+                      where def.category == IncidentCategory.ThreatBig && parms.points >= def.minThreatPoints && def.Worker.CanFireNow(parms.target) && def != HPLDefOf.HPLovecraft_OmenIncident
+                      select def).TryRandomElementByWeight(new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle)omenThreatCycle).OmenIncidentChanceFinal), out bigThreat))
+                {
+                    Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
+                    return false;
+                }
             }
 
             var omenTracker = map.GetComponent<MapComponent_OmenIncidentTracker>();
@@ -36,34 +50,24 @@ namespace HPLovecraft
             {
                 if (omenTracker.DelayedIncidents.Count > 0)
                 {
-                    Log.Message("Tried to do multiple omens");
+                    Cthulhu.Utility.DebugReport("Tried to do multiple omens");
                     return false;
                 }
                 int newDelay = Find.TickManager.TicksGame + OMENDELAY.RandomInRange;
-                Log.Message("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame + " DelayTick:" + (newDelay));
+                Cthulhu.Utility.DebugReport("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame + " DelayTick:" + (newDelay));
                 omenTracker.AddDelayedIncident(new DelayedIncident(map, bigThreat, parms, newDelay));
             }
 
-
-            var randVal = Rand.Range(1, 4);
-            switch (randVal)
+            List<IncidentDef> omens = new List<IncidentDef>
             {
-                case 1:
-                    HPLDefOf.HPLovecraft_CatsIncident.Worker.TryExecute(parms);
-                    break;
-                case 2:
-                    HPLDefOf.HPLovecraft_ParanoiaIncident.Worker.TryExecute(parms);
-                    break;
-                case 3:
-                    HPLDefOf.HPLovecraft_CrowsIncident.Worker.TryExecute(parms);
-                    break;
-                case 4:
-                    HPLDefOf.HPLovecraft_MysteryIncident.Worker.TryExecute(parms);
-                    break;
-                default:
-                    break;
-            }
+                HPLDefOf.HPLovecraft_CatsIncident,
+                HPLDefOf.HPLovecraft_ParanoiaIncident,
+                HPLDefOf.HPLovecraft_CrowsIncident,
+                HPLDefOf.HPLovecraft_MysteryIncident
+            };
+            omens.RandomElement().Worker.TryExecute(parms);
 
+            Lovecraft.Data.RecordIncident(bigThreat);
             return true;
         }
 

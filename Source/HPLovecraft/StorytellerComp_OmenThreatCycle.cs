@@ -75,10 +75,11 @@ namespace HPLovecraft
             };
         }
 
-        private FiringIncident GenerateQueuedThreatBig(IIncidentTarget target)
+        private FiringIncident GenerateQueuedThreatBig(IIncidentTarget target, bool isCosmicHorrorEvent=false)
         {
             IncidentParms parms = this.GenerateParms(IncidentCategory.ThreatBig, target);
             IncidentDef omenIncident = IncidentDef.Named("HPLovecraft_OmenIncident");
+            if (isCosmicHorrorEvent) omenIncident = IncidentDef.Named("HPLovecraft_OmenIncidentCosmicHorror");
 
             //Vanilla code
             if (GenDate.DaysPassed < 20)
@@ -95,5 +96,6 @@ namespace HPLovecraft
                 parms = parms
             };
         }
+        
     }
 }

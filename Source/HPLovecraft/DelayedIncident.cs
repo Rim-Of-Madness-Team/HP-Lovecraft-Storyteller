@@ -43,7 +43,7 @@ namespace HPLovecraft
                 Find.TickManager.TicksGame > ticksUntilIncident &&
                 map.GetComponent<MapComponent_OmenIncidentTracker>() is MapComponent_OmenIncidentTracker tracker)
             {
-                    Log.Message("IncidentTriggered");
+                    //Log.Message("IncidentTriggered");
                     tracker.TriggerIncident(this);
             }
         }
