@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_CrowRace.label>crow</HPLovecraft_CrowRace.label>
+  <HPLovecraft_CrowRace.description>Le corbeau est considéré comme le plus intelligent de tout les oiseaux. Quand il essai d'ouvrir une noix, il ira la mettre sur l'autoroute en attendant qu'une voiture vienne l'ouvrir. Les corbeaux sont identifiables par leurs plumes noirs, leurs yeux noirs et le son particulier qu'ils émettent.</HPLovecraft_CrowRace.description>
+  <!-- Leather Amount: 0 -->
+  <HPLovecraft_CrowRace_Meat.label>viande de corbeau</HPLovecraft_CrowRace_Meat.label>
+  <HPLovecraft_CrowRace_Meat.description>viande de corbeau</HPLovecraft_CrowRace_Meat.description>
+  <HPLovecraft_CrowRace_Corpse.label>corps de corbeau</HPLovecraft_CrowRace_Corpse.label>
+  <HPLovecraft_CrowRace_Corpse.description>corps de corbeaux</HPLovecraft_CrowRace_Corpse.description>
+
+
+</LanguageData>

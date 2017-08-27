@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_SanityLossPrefix>{0} est à devenu fiévreux {1}.</HPLovecraft_SanityLossPrefix>
+  <HPLovecraft_SanityLossPrefixPlural>Certain colons sont devenus fiévreux {0}</HPLovecraft_SanityLossPrefixPlural>
+
+  <HPLovecraft_SanityLossReport>Sanity Loss</HPLovecraft_SanityLossReport>
+
+  <HPLovecraft_Vision>vision</HPLovecraft_Vision>
+  <HPLovecraft_Daydream>rêve</HPLovecraft_Daydream>
+  <HPLovecraft_Nightmare>cauchemar</HPLovecraft_Nightmare>
+  <HPLovecraft_AfflictedColonists>Afflicted Colonists</HPLovecraft_AfflictedColonists>
+  <HPLovecraft_DifficultyModifier>+{0}% difficulty modifier</HPLovecraft_DifficultyModifier>
+  <HPLovecraft_ExperiencedSanityLoss>{0} experienced +{1}% sanity loss.</HPLovecraft_ExperiencedSanityLoss>
+  <HPLovecraft_SanityLossResistedWithIronWill>{0} a résisté avec une volonté de fer.</HPLovecraft_SanityLossResistedWithIronWill>
+
+
+  <HPLovecraft_SanityLossFlavorText1>Dedans, ils ont eu des visions d'une créature obscur, dont la tête monstrueuse et cauchemardesque, brillait dans l'éclat du clair de lune cette tête cachait des centaines d'yeux luisants et térrifiants qui attendaient.</HPLovecraft_SanityLossFlavorText1>
+  <HPLovecraft_SanityLossFlavorText2>Dedans, ils virent des énormes démons ailés et monstrueux dont les larges bouches souriante et térrifiantes produisaient un son d'agonie, des sortes de danse macabres avaient lieu et une courbe spéctrale rouge se déssinait des mains des démons jusqu'à l'obscurité.</HPLovecraft_SanityLossFlavorText2>
+  <HPLovecraft_SanityLossFlavorText3>Dedans, ils y trouvèrent des choses sans-noms et inconnues qui à ce moment même pataugaient et hurlaient, proclamants des idoles antiques en pierre et gravant leurs propres formes sur du granit sous l'eau.</HPLovecraft_SanityLossFlavorText3>
+  <HPLovecraft_SanityLossFlavorText4>Dedans, ils y avait des choses agripés aux épaules d'humanoides ou quelque chose de semblable, après un court instant, ils dévorèrent sans bruit dans les tènebres les plus profonds leurs proies démunies.</HPLovecraft_SanityLossFlavorText4>
+  <HPLovecraft_SanityLossFlavorText5>Dedans, des gens innocents et souriant était sur des assiettes, soudain ils se transformèrent en humanoide vert et hideux aux yeux rouge de sang, à la tête déformée et les membres atrophiés. C'était un banquet royal et les corps verts des humains furent découpés et servis sur des plateau d'argent.</HPLovecraft_SanityLossFlavorText5>
+  <HPLovecraft_SanityLossFlavorText6>Dedans, vos colons découvrirentune longue capsule qui date de l'antiquité et décidèrent de l'examiner de plus près et à l'intérieur. En entrant, ils virent leurs propres noms gravés sur une pyramide portative aux matériaux légers. Quelque jours plus tard, un colon à disparu pendant une collecte de provision ainsi que son nom de la pyramide.</HPLovecraft_SanityLossFlavorText6>
+  <HPLovecraft_SanityLossFlavorText7>Dedans, ils y un survivant seul coincé dans un sous-marin dans les profondeur. Pendant que leur oxygène commençais à s'épuisé et diminuait avec le temps, ils entendirent un rire démoniaque et sadique ainsi, ils sont appelés à mettre les tenus de plongés pour une dernière fois avant d'ouvrir l'écoutille et de plongé dans les abyss...</HPLovecraft_SanityLossFlavorText7>
+  <HPLovecraft_SanityLossFlavorText8>Toute la terreur qui s'était emparée d'eux se fit ressentir encore plus avant de se précipité sur eux tels un ouragan. Une chose s'assit à côté d'eux. Ils savaient qu'il s'étaient mis à détesté et hair la créature antique et répugnante qui était au plus près d'eux. Elle s'était mise à chuchauté à présent, avec une intonation plus térrible encore qu'un hurlement, ils tremblèrent en entendant des choses qu'ils ne pourraient plus jamais oublier.</HPLovecraft_SanityLossFlavorText8>
+  <HPLovecraft_SanityLossFlavorText9>Des petites clochettes en bronze tintaient et s'approchaient d'une créature immense et phosporescente tels une bougie dans l'obscurité, elle nageait non loin, prit pied sur terre et s'assie sur un piédestral d'onyx , les clochettes étéient à présent des petites crétures autour du monstre et craignaient d'être choisis comme repas.</HPLovecraft_SanityLossFlavorText9>
+  <HPLovecraft_SanityLossFlavorText10>Ils obsérvaient à distance quand un étranger encapuchonné dans un tissu noir creusa dans une tombe pour récupérer une statuette en jade d'un gardien de caverne. Quand il revint à la surface, ils prirent l'artefact des mains de l'étranger et le poussèrent dans la tombe en préparant des pelles pour remplir la tombe à présent occupée....</HPLovecraft_SanityLossFlavorText10>
+
+</LanguageData>
