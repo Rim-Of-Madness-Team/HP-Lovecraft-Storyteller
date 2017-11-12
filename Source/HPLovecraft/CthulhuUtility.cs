@@ -502,36 +502,6 @@ namespace Cthulhu
             }
         }
 
-        public static bool TryGetUnreservedPewSpot(Thing pew, Pawn claimer, out IntVec3 loc)
-        {
-            loc = IntVec3.Invalid;
-
-            Map map = pew.Map;
-            Rot4 currentDirection = pew.Rotation;
-
-            IntVec3 CellNorth = pew.Position + GenAdj.CardinalDirections[Rot4.North.AsInt];
-            IntVec3 CellSouth = pew.Position + GenAdj.CardinalDirections[Rot4.South.AsInt];
-            IntVec3 CellEast = pew.Position + GenAdj.CardinalDirections[Rot4.East.AsInt];
-            IntVec3 CellWest = pew.Position + GenAdj.CardinalDirections[Rot4.West.AsInt];
-
-            if (!map.reservationManager.IsReserved(pew.Position, Faction.OfPlayer)) { loc = pew.Position; return true; }
-
-            if (currentDirection == Rot4.North ||
-                currentDirection == Rot4.South)
-            {
-                if (!map.reservationManager.IsReserved(CellWest, Faction.OfPlayer)) { loc = CellWest; return true; }
-                if (!map.reservationManager.IsReserved(CellEast, Faction.OfPlayer)) { loc = CellEast; return true; }
-            }
-            if (currentDirection == Rot4.East ||
-                currentDirection == Rot4.West)
-            {
-                if (!map.reservationManager.IsReserved(CellNorth, Faction.OfPlayer)) { loc = CellNorth; return true; }
-                if (!map.reservationManager.IsReserved(CellSouth, Faction.OfPlayer)) { loc = CellSouth; return true; }
-            }
-            //map.reservationManager.Reserve(claimer, pew);
-            return false;
-        }
-
 
         public static void ChangeResearchProgress(ResearchProjectDef projectDef, float progressValue, bool deselectCurrentResearch = false)
         {

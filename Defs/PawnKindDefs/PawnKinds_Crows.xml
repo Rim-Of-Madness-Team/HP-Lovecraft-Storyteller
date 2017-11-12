@@ -11,23 +11,27 @@
       <MarketValue>75</MarketValue>
       <LeatherAmount>0</LeatherAmount>
     </statBases>
-    <verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.65</defaultCooldownTime>
-        <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-        <meleeDamageDef>Bite</meleeDamageDef>
+	<tools>
+	  <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.65</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
       </li>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.65</defaultCooldownTime>
-        <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
-        <meleeDamageDef>Blunt</meleeDamageDef>
-        <commonality>0.01</commonality>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<commonality>0.05</commonality>
       </li>
-    </verbs>
+	</tools>
     <comps>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>EggChickenUnfertilized</eggUnfertilizedDef>
@@ -152,6 +156,7 @@
       <li>ITab_Pawn_Character</li>
       <li>ITab_Pawn_Training</li>
       <li>ITab_Pawn_Gear</li>
+	  <li>ITab_Pawn_Combat</li>
       <li>ITab_Pawn_Guest</li>
       <li>ITab_Pawn_Prisoner</li>
       <li>ITab_Pawn_Social</li>

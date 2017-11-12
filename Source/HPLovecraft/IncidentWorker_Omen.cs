@@ -12,7 +12,7 @@ namespace HPLovecraft
     {
         private static readonly IntRange OMENDELAY = new IntRange(19000, 40000);
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             //Log.Message("IncidentWorker_Omen Called");
             IncidentDef bigThreat;

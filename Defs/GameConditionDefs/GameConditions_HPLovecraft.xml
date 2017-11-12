@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<GameConditionDefs>
+<Defs>
 
     <GameConditionDef>
       <defName>HPLovecraft_BloodMoon</defName>
@@ -19,4 +19,4 @@
         <canBePermanent>true</canBePermanent>
       </GameConditionDef>
 
-</GameConditionDefs>
+</Defs>

@@ -10,7 +10,7 @@ namespace HPLovecraft
 {
     public class IncidentWorker_Crows : IncidentWorker
     {
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             string flavorDesc = "";
             Thing crow = null;

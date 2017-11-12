@@ -14,7 +14,7 @@ namespace HPLovecraft
         public static readonly FloatRange SANITYLOSSRANGE = new FloatRange(0.2f, 0.4f);
         public static readonly float DIFFICULTYMODIFIER = 0.02f;
 
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             float rand = Rand.Value;
             if (rand < 0.25f)

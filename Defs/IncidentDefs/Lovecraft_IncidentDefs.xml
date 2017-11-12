@@ -4,11 +4,13 @@
   <IncidentDef>
     <defName>HPLovecraft_OmenIncident</defName>
     <label>omen</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Omen</workerClass>
     <letterLabel>Omen</letterLabel>
     <letterText>Something bad is coming...</letterText>
-    <letterDef>BadUrgent</letterDef>
+    <letterDef>ThreatBig</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
@@ -19,11 +21,13 @@
   <IncidentDef>
     <defName>HPLovecraft_CatsIncident</defName>
     <label>feline presence</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Cats</workerClass>
     <letterLabel>feline presence</letterLabel>
     <letterText>Something stands indifferent to the turns and swells of the universe.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
@@ -34,11 +38,13 @@
   <IncidentDef>
     <defName>HPLovecraft_ParanoiaIncident</defName>
     <label>paranoia</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Paranoia</workerClass>
     <letterLabel>paranoia</letterLabel>
     <letterText>A wave of paranoia has brushed against the minds of your colonists.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
@@ -49,11 +55,13 @@
   <IncidentDef>
     <defName>HPLovecraft_CrowsIncident</defName>
     <label>crows</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Crows</workerClass>
     <letterLabel>crows</letterLabel>
     <letterText>Ominous crows have taken roost in the area.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
@@ -64,11 +72,13 @@
   <IncidentDef>
     <defName>HPLovecraft_MysteryIncident</defName>
     <label>omen</label>
-    <targetType>MapPlayerHome</targetType>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Mystery</workerClass>
     <letterLabel>mystery</letterLabel>
     <letterText>Something mysterious has occured nearby.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
@@ -80,12 +90,14 @@
     <defName>HPLovecraft_BloodMoon</defName>
     <label>blood moon</label>
 		<category>Misc</category>
-    <targetType>World</targetType>
-    <WorkerClass>IncidentWorker_MakeGameCondition</WorkerClass>
+    <targetTypes>
+	  <li>World</li>
+	</targetTypes>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
     <gameCondition>HPLovecraft_BloodMoon</gameCondition>
     <letterLabel>Blood Moon</letterLabel>
     <letterText>One of the moons of this planet has orbited in front of the sun. It is a blood moon.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <durationDays>
@@ -99,12 +111,14 @@
     <defName>HPLovecraft_TheMist</defName>
     <label>mist from beyond</label>
 		<category>Misc</category>
-    <targetType>MapPlayerHome</targetType>
-    <WorkerClass>IncidentWorker_MakeGameCondition</WorkerClass>
+    <targetTypes>
+	  <li>MapPlayerHome</li>
+	</targetTypes>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
     <gameCondition>HPLovecraft_TheMist</gameCondition>
     <letterLabel>Mist</letterLabel>
     <letterText>An opressive fog has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces.</letterText>
-    <letterDef>BadNonUrgent</letterDef>
+    <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
     <minRefireDays>0</minRefireDays>
     <durationDays>

@@ -83,7 +83,7 @@ namespace HPLovecraft
                         }
                     }
                 }
-                Find.LetterStack.ReceiveLetter("HPLovecraft_SanityLossReport".Translate(), s.ToString().TrimEndNewlines(), LetterDefOf.BadNonUrgent, target);
+                Find.LetterStack.ReceiveLetter("HPLovecraft_SanityLossReport".Translate(), s.ToString().TrimEndNewlines(), LetterDefOf.ThreatSmall, target);
             }
         }
     }

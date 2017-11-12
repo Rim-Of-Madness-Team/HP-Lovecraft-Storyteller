@@ -10,7 +10,7 @@ namespace HPLovecraft
 {
     public class IncidentWorker_Mystery : IncidentWorker
     {
-        public override bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             float rand = Rand.Value;
             if (rand < 0.4f)
