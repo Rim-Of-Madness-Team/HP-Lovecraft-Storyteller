@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ROM_ObservedMistCreaturePsychic.stages.0.label>a névoa está viva</ROM_ObservedMistCreaturePsychic.stages.0.label>
+  <ROM_ObservedMistCreaturePsychic.stages.0.description>Eu não posso estar aqui fora. Preciso de voltar para dentro. A névoa está viva. Posso sentir isso.</ROM_ObservedMistCreaturePsychic.stages.0.description>
+
+  <ROM_ObservedMistCreature.stages.0.label>algo no nevoeiro</ROM_ObservedMistCreature.stages.0.label>
+  <ROM_ObservedMistCreature.stages.0.description>Senti algo me observando na névoa. Foi real?</ROM_ObservedMistCreature.stages.0.description>
+
+
+  <!-- Misc Thought Defs -->
+
+  <HPLovecraft_SawBloodMoonSad.stages.0.label>vi a lua sangrenta</HPLovecraft_SawBloodMoonSad.stages.0.label>
+  <HPLovecraft_SawBloodMoonSad.stages.0.description>Ainda posso sentir a lua sangrenta olhar para mim. Isso não pode ser normal!</HPLovecraft_SawBloodMoonSad.stages.0.description>
+
+  <HPLovecraft_SawBloodMoonHappy.stages.0.label>lua sangrenta gloriosa</HPLovecraft_SawBloodMoonHappy.stages.0.label>
+  <HPLovecraft_SawBloodMoonHappy.stages.0.description>Esta lua é perfeita. Quem me dera que durasse para sempre!</HPLovecraft_SawBloodMoonHappy.stages.0.description>
+
+
+</LanguageData>

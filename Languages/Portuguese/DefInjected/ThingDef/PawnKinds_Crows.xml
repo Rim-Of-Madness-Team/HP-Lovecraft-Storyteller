@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_CrowRace.label>corvo</HPLovecraft_CrowRace.label>
+  <HPLovecraft_CrowRace.description>Acredita-se que o corvo é o mais inteligente de todos os pássaros. Ao tentar abrir nozes, colocarão-as propositadamente na estrada, de modo que os carros as esmaguem. Os corvos são identificados por suas penas negras, olhos negros e o som de caw-caw que eles fazem.</HPLovecraft_CrowRace.description>
+  <!-- Leather Amount: 0 -->
+  <HPLovecraft_CrowRace_Meat.label>carne de corvo</HPLovecraft_CrowRace_Meat.label>
+  <HPLovecraft_CrowRace_Meat.description>carne de corvo</HPLovecraft_CrowRace_Meat.description>
+  <HPLovecraft_CrowRace_Corpse.label>cadáver de corvo</HPLovecraft_CrowRace_Corpse.label>
+  <HPLovecraft_CrowRace_Corpse.description>cadáver de corvo</HPLovecraft_CrowRace_Corpse.description>
+
+
+</LanguageData>
