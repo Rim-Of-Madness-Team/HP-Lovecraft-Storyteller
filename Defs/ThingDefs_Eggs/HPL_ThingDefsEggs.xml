@@ -156,7 +156,7 @@
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>7</hatcherDaystoHatch>
-        <hatcherPawn>HPLovecraft_CrowKind</hatcherPawn>
+        <hatcherPawn>HPLovecraft_PenguinKind</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
