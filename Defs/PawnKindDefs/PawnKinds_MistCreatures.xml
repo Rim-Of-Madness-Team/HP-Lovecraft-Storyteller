@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <ThingDef ParentName="BaseFilth">
+    <defName>HPLovecraft_FilthMistStalker</defName>
+    <label>water</label>
+    <statBases>
+      <Beauty>0</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(220, 220, 220, 60)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>5</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+
   <ThingDef ParentName="AnimalThingBase">
     <defName>HPLovecraft_MistCreature</defName>
     <thingClass>HPLovecraft.PawnMistCreature</thingClass>
@@ -39,6 +57,7 @@
       <useLeatherFrom>Pig</useLeatherFrom>
       <deathActionWorkerClass>HPLovecraft.DeathActionWorker_VanishMist</deathActionWorkerClass>
       <body>Bird</body>
+	  <bloodDef>HPLovecraft_FilthMistStalker</bloodDef>
       <hasGenders>false</hasGenders>
       <baseHungerRate>0.0</baseHungerRate>
       <baseBodySize>1.0</baseBodySize>

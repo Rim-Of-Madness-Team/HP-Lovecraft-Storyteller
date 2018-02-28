@@ -130,7 +130,7 @@ namespace HPLovecraft
                     senseParts.Add(Cthulhu.Utility.GetEye(parts));
                     senseParts.Add(Cthulhu.Utility.GetNose(parts));
                     senseParts.Add(Cthulhu.Utility.GetMouth(parts));
-                    disorientedHediff.Part = parts.GetNotMissingParts().FirstOrDefault(x => senseParts.InRandomOrder<BodyPartRecord>().Contains(x));
+                    disorientedHediff.Part = parts.GetNotMissingParts().FirstOrDefault(x => senseParts.Contains(x));
                     disorientedHediff.Severity = Rand.Range(0.7f, 0.9f);
                     parts.AddDirect(disorientedHediff, null);
                     string flavorDesc = "ROM_OmenParanaoiaDesc4".Translate(pawn);

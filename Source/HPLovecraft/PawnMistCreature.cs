@@ -10,18 +10,24 @@ namespace HPLovecraft
 {
     public class PawnMistCreature : Pawn
     {
+        private bool DestroyInProgress;
+
         public override void TickRare()
         {
             base.TickRare();
-            ObservationEffect();
-            DissipateCheck();
+            if (Spawned && !Dead && !Destroyed)
+            {
+                ObservationEffect();
+                DissipateCheck();   
+            }
         }
 
         //During unfavorable weather conditions, destroy the mist creature.
         public void DissipateCheck()
         {
+            if (!DestroyInProgress)
             if ((Downed && !Dead) || this.MapHeld.weatherManager.curWeather != HPLDefOf.Fog || this.PositionHeld.Roofed(this.MapHeld)) {
-                this.Kill(null);
+                DestroyMe();
                 return;
             }
         }
@@ -31,8 +37,21 @@ namespace HPLovecraft
         {
             if (totalDamageDealt > 0f)
             {
-                if (!Dead) this.Kill(dinfo);
+                if (!DestroyInProgress)
+                {
+                    if (!Dead || !Destroyed)
+                    {
+                        DestroyMe();
+                    }   
+                }
             }
+        }
+
+        private void DestroyMe()
+        {
+            DestroyInProgress = true;
+            this.Destroy();
+            //LongEventHandler.QueueLongEvent(() => { this.Destroy(); }, "destroyMist", true, null);
         }
 
         public Predicate<Thing> Predicate => delegate (Thing t)

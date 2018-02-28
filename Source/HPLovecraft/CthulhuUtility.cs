@@ -421,7 +421,7 @@ namespace Cthulhu
             {
                 for (int i = 0; i < current.def.tags.Count; i++)
                 {
-                    if (current.def.tags[i] == "BloodPumpingSource")
+                    if (current.def.tags[i] == "SightSource")
                     {
                         return current;
                     }
