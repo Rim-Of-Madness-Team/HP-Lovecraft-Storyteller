@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<HPLovecraft_SanityLossPrefix>{0} испытал лихорадку {1}.</HPLovecraft_SanityLossPrefix>
+<HPLovecraft_SanityLossPrefixPlural>Некоторые колонисты испытали лихорадку {0}</HPLovecraft_SanityLossPrefixPlural>
+
+<HPLovecraft_SanityLossReport>Потеря здравомыслия</HPLovecraft_SanityLossReport>
+
+<HPLovecraft_Vision>видение</HPLovecraft_Vision>
+<HPLovecraft_Daydream>грезы</HPLovecraft_Daydream>
+<HPLovecraft_Nightmare>кошмар</HPLovecraft_Nightmare>
+<HPLovecraft_AfflictedColonists>Ошеломлённые колонисты</HPLovecraft_AfflictedColonists>
+<HPLovecraft_DifficultyModifier>+{0}% модификатор сложности</HPLovecraft_DifficultyModifier>
+<HPLovecraft_ExperiencedSanityLoss>{0} испытал +{1}% нарушения здравомыслия.</HPLovecraft_ExperiencedSanityLoss>
+<HPLovecraft_SanityLossResistedWithIronWill>{0} сопротивлялся с железной волей.</HPLovecraft_SanityLossResistedWithIronWill>
+
+<HPLovecraft_SanityLossFlavorText1>В нём виднелись очертания почерневшего существа, чей уродливый лоб сиял в лунном свете и чьи мерзкие копыта прошли сотни миль по адскому илу, коадясь милями под поверхностью, спрятавшись, наблюдая и ожидая.</HPLovecraft_SanityLossFlavorText1>
+<HPLovecraft_SanityLossFlavorText2>В нём были огромные крылатые демоны, вырезанные из базальта и оникса, озарённые лучами странного зелёного и оранжевого света, вырвавшегося из широких ухмыляющихся ртов. А также скрытые пневматические трубы мелькавшие в калейдоскопическом танце смерти и рядах кровавых могил, рука об руку, сплетённые в объёмных чёрных завесах.</HPLovecraft_SanityLossFlavorText2>
+<HPLovecraft_SanityLossFlavorText3>В нём были ужасные существа, которым и нет названия, ползающие и барахтающиеся. Которые поклоняются своим древним каменным идолам и вырезают свои собственные отвратительные подобия на подводных обелисках пропитанного водой гранита.</HPLovecraft_SanityLossFlavorText3>
+<HPLovecraft_SanityLossFlavorText4>В нём были щупальца, которые тянулись за плечами миниатюрных человекоподобных существ, и через короткое время они безболезненно пожирали бы свою добычу путем дезинтеграции.</HPLovecraft_SanityLossFlavorText4>
+<HPLovecraft_SanityLossFlavorText5>В нём любезные люди превращаются в неописуемо уродливые зелёные безмолвные тела с выпученными глазами, надутыми, дряблыми губами и любопытными ушами во время королевского пира. Ухмыляющиеся головы колонистов лежали свежесрезанными на серебряных подносах.</HPLovecraft_SanityLossFlavorText5>
+<HPLovecraft_SanityLossFlavorText6>В нём ваши колонисты обнаружили давно утраченную капсулу из античности и решили исследовать содержимое. Внутри они обнаружили список своих собственных имён, написанный на ручной пирамиде из кожистых материалов. Несколько дней спустя колонисты начали исчезать во время путешествия, а также исчезали их имена из древнего списка.</HPLovecraft_SanityLossFlavorText6>
+<HPLovecraft_SanityLossFlavorText7>В нём они одинокие выжившие на подводной лодке, затонувшей в глубине. По мере того, как запас кислорода подходит к концу, они слышат демонический смех, призывающий надеть свой акваланг в последний раз, прежде чем открыть люк, и кануть в бездну.</HPLovecraft_SanityLossFlavorText7>
+<HPLovecraft_SanityLossFlavorText8>Все ужасные видения, которые они лишь смутно ощущали, стремительно и яростно набросились на них. Некоторые твари рядом с ними. Они знали, что ненавистное древнее и отвратительное существо теерь так близко к ним, пышащее бесконечной злобой. Теперь это было шептание, ужаснее, чем крик, и они дрожали, слушая то, что они никогда не смогут забыть.
+</HPLovecraft_SanityLossFlavorText8>
+<HPLovecraft_SanityLossFlavorText9>Хриплыми колокольчиками безумного хохота разлилось приветствие голой светящейся твари, которая всплыла в поле зрения, выскользнула на берег и взобралась, присев на яростный пьедестал из оникса. Мелкие существа сжимались из-за страха быть избранным в качестве еды.</HPLovecraft_SanityLossFlavorText9>
+<HPLovecraft_SanityLossFlavorText10>Твари смотрели издалека, как незнакомец в капюшоне вырыл могилу, чтобы взять странный нефритовый предмет у его отбелённого пустоглазого владельца. Вернувшись на поверхность, они выхватили артефакт из рук незнакомца и быстро столкнули его в могилу, приготовленную его руками.</HPLovecraft_SanityLossFlavorText10>
+
+</LanguageData>
