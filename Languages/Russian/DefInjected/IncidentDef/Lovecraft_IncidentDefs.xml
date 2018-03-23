@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<HPLovecraft_OmenIncident.label>Предвестие</HPLovecraft_OmenIncident.label>
+<HPLovecraft_OmenIncident.letterText>Какая-то пагуба надвигается...</HPLovecraft_OmenIncident.letterText>
+<HPLovecraft_OmenIncident.letterLabel>Пророчество</HPLovecraft_OmenIncident.letterLabel>
+
+<HPLovecraft_CatsIncident.label>Присутствие кошачьих</HPLovecraft_CatsIncident.label>
+<HPLovecraft_CatsIncident.letterText>Нечто остаётся равнодушным к внешнему виду и величию Вселенной.</HPLovecraft_CatsIncident.letterText>
+<HPLovecraft_CatsIncident.letterLabel>присутствие кошачьих</HPLovecraft_CatsIncident.letterLabel>
+
+<HPLovecraft_ParanoiaIncident.label>Паранойя</HPLovecraft_ParanoiaIncident.label>
+<HPLovecraft_ParanoiaIncident.letterText>Возникает волна паранойи и погружает ваших поселенцев в безумие.</HPLovecraft_ParanoiaIncident.letterText>
+<HPLovecraft_ParanoiaIncident.letterLabel>паранойя</HPLovecraft_ParanoiaIncident.letterLabel>
+
+<HPLovecraft_CrowsIncident.label>Вороны</HPLovecraft_CrowsIncident.label>
+<HPLovecraft_CrowsIncident.letterText>Беспокойные вороны только что обосновались в этом районе.</HPLovecraft_CrowsIncident.letterText>
+<HPLovecraft_CrowsIncident.letterLabel>вороны</HPLovecraft_CrowsIncident.letterLabel>
+
+<HPLovecraft_MysteryIncident.label>Знамение</HPLovecraft_MysteryIncident.label>
+<HPLovecraft_MysteryIncident.letterText>Нечто таинственное только что прибыло неподалеку.</HPLovecraft_MysteryIncident.letterText>
+<HPLovecraft_MysteryIncident.letterLabel>таинственное знамение</HPLovecraft_MysteryIncident.letterLabel>
+
+<HPLovecraft_BloodMoon.label>Кровавая луна</HPLovecraft_BloodMoon.label>
+<HPLovecraft_BloodMoon.letterText>Одна из лун этой планеты только перешла на орбиту, обращённую к солнцу. Луна стала кровавой.</HPLovecraft_BloodMoon.letterText>
+<HPLovecraft_BloodMoon.letterLabel>кровавая луна</HPLovecraft_BloodMoon.letterLabel>
+
+<HPLovecraft_TheMist.label>Мистический туман</HPLovecraft_TheMist.label>
+<HPLovecraft_TheMist.letterText>Только что накатился густой туман. Зловещий, неизменный и таинственный. Несколько шагов внутри могут сбить с пути слабую душу, переместить в пространстве туда, где теперь возвышаются базальтовые колонны.</HPLovecraft_TheMist.letterText>
+<HPLovecraft_TheMist.letterLabel>мистический туман</HPLovecraft_TheMist.letterLabel>
+
+</LanguageData>
