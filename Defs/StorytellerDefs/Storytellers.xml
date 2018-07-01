@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<StorytellerDef Name="BaseStoryteller" Abstract="True">
-		<populationIntentFromTimeCurve>
-			<points>
-				<li>0, 0.15</li>
-				<li>3, 0.15</li>
-				<li>10, 1</li>
-			</points>
-		</populationIntentFromTimeCurve>
-	</StorytellerDef>
-
 	<StorytellerDef ParentName="BaseStoryteller" Name="LovecraftStoryteller">
 		<defName>Lovecraft</defName>
     <label>H.P. Lovecraft</label>
@@ -21,7 +11,7 @@
 		<populationIntentFromPopCurve>
 			<points>
 				<li>0, 8</li>
-				<li>1, 4</li>
+				<li>1, 2</li>
 				<li>5, 1</li>
 				<li>9, 0.5</li>
 				<li>13, 0</li>
@@ -40,36 +30,50 @@
       </li>
       <li Class="StorytellerCompProperties_CategoryMTB">
 		<allowedTargetTypes>
-		  <li>MapPlayerHome</li>
+		  <li>Map_PlayerHome</li>
 		</allowedTargetTypes>
 		<minDaysPassed>5</minDaysPassed>
         <category>Misc</category>
 		<mtbDays>3.0</mtbDays>
 	  </li>
 	  <li Class="StorytellerCompProperties_CategoryMTB">
-		<allowedTargetTypes>
-		  <li>World</li>
-		</allowedTargetTypes>
-		<minDaysPassed>15</minDaysPassed>
-		<category>Misc</category>
-		<mtbDays>8</mtbDays>
+        <category>WorldQuest</category>
+        <allowedTargetTypes>
+          <li>World</li>
+        </allowedTargetTypes>
+        <minDaysPassed>6</minDaysPassed>
+        <mtbDays>7</mtbDays>
+        <mtbDaysFactorByDaysPassedCurve>
+          <points>
+            <li>(6, 4)</li>
+            <li>(25, 1)</li>
+          </points>
+        </mtbDaysFactorByDaysPassedCurve>
 	  </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <category>Misc</category>
+        <allowedTargetTypes>
+          <li>World</li>
+        </allowedTargetTypes>
+        <minDaysPassed>15</minDaysPassed>
+        <mtbDays>15</mtbDays>
+      </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <allowedTargetTypes>
           <li>Caravan</li>
-          <li>MapTempIncident</li>
+          <li>Map_TempIncident</li>
         </allowedTargetTypes>
         <category>Misc</category>
       </li>
-	  <li Class="StorytellerCompProperties_AllyInteraction">
+      <li Class="StorytellerCompProperties_FactionInteraction">
         <minDaysPassed>5</minDaysPassed>
-        <baseMtb>6</baseMtb>
+        <baseMtbDays>6</baseMtbDays>
         <allowedTargetTypes>
-		  <li>MapPlayerHome</li>
-		</allowedTargetTypes>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTypes>
       </li>
       <li Class="StorytellerCompProperties_AllyAssistance">
-        <baseMtb>10</baseMtb>
+        <baseMtbDays>6</baseMtbDays>
       </li>
       <li Class="StorytellerCompProperties_SingleMTB">
         <incident>OrbitalTraderArrival</incident>
@@ -78,24 +82,42 @@
       <li Class="StorytellerCompProperties_ShipChunkDrop"/>
       <li Class="StorytellerCompProperties_Disease">
         <minDaysPassed>7</minDaysPassed>
+        <incidentCategory>DiseaseHuman</incidentCategory>
       </li>
-	  <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>7</minDaysPassed>
+        <incidentCategory>DiseaseAnimal</incidentCategory>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <category>ThreatSmall</category>
         <allowedTargetTypes>
           <li>Caravan</li>
-          <li>MapTempIncident</li>
+          <li>Map_TempIncident</li>
         </allowedTargetTypes>
-        <applyCaravanStealthFactor>true</applyCaravanStealthFactor>
+        <applyCaravanVisibility>true</applyCaravanVisibility>
       </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <category>ThreatBig</category>
         <allowedTargetTypes>
           <li>Caravan</li>
-          <li>MapTempIncident</li>
+          <li>Map_TempIncident</li>
         </allowedTargetTypes>
-        <applyCaravanStealthFactor>true</applyCaravanStealthFactor>
+        <applyCaravanVisibility>true</applyCaravanVisibility>
       </li>
-	  <li Class="StorytellerCompProperties_JourneyOffer"/>
+      <li Class="StorytellerCompProperties_JourneyOffer"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <allowedTargetTypes>
+          <li>Map_RaidBeacon</li>
+        </allowedTargetTypes>
+        <threatOffDays>0.8</threatOffDays>
+        <threatOnDays>0.6</threatOnDays>
+        <minDaysBetweenThreatBigs>0.05</minDaysBetweenThreatBigs>
+        <minDaysBeforeNonRaidThreatBig>0</minDaysBeforeNonRaidThreatBig>
+        <mtbDaysThreatSmall>1000000</mtbDaysThreatSmall>  <!-- effectively disabled -->
+        <mtbDaysThreatBig>0.3</mtbDaysThreatBig>
+        <threatSmallCategory>RaidBeacon</threatSmallCategory>
+        <threatBigCategory>RaidBeacon</threatBigCategory>
+      </li>
     </comps>
   </StorytellerDef>
 

@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -13,7 +14,7 @@ namespace HPLovecraft
 
         private bool firstTick = true;
 
-        public override float SkyTargetLerpFactor()
+        public override float SkyTargetLerpFactor(Map map)
         {
             return GameConditionUtility.LerpInOutValue((float)base.TicksPassed, (float)base.TicksLeft, 200f, 1f);
         }
@@ -24,7 +25,13 @@ namespace HPLovecraft
             base.GameConditionTick();
             if (firstTick)
             {
-                foreach (Pawn pawn in Map.mapPawns.FreeColonistsAndPrisoners)
+                var affectedPawns = new List<Pawn>();
+                foreach (var map in this.AffectedMaps)
+                {
+                    affectedPawns.AddRange(map.mapPawns.FreeColonistsAndPrisoners);
+                }
+                
+                foreach (Pawn pawn in affectedPawns)
                 {
                     if (ThoughtUtility.CanGetThought(pawn, HPLDefOf.HPLovecraft_SawBloodMoonSad))
                     {
@@ -39,7 +46,7 @@ namespace HPLovecraft
             }
         }
 
-        public override SkyTarget? SkyTarget()
+        public override SkyTarget? SkyTarget(Map map)
         {
             return new SkyTarget?(new SkyTarget(0f, this.BloodSkyColors, 1f, 0f));
         }

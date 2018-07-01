@@ -5,7 +5,7 @@
     <defName>HPLovecraft_OmenIncident</defName>
     <label>omen</label>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Omen</workerClass>
     <letterLabel>Omen</letterLabel>
@@ -22,7 +22,7 @@
     <defName>HPLovecraft_CatsIncident</defName>
     <label>feline presence</label>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Cats</workerClass>
     <letterLabel>feline presence</letterLabel>
@@ -39,7 +39,7 @@
     <defName>HPLovecraft_ParanoiaIncident</defName>
     <label>paranoia</label>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Paranoia</workerClass>
     <letterLabel>paranoia</letterLabel>
@@ -56,7 +56,7 @@
     <defName>HPLovecraft_CrowsIncident</defName>
     <label>crows</label>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Crows</workerClass>
     <letterLabel>crows</letterLabel>
@@ -73,7 +73,7 @@
     <defName>HPLovecraft_MysteryIncident</defName>
     <label>omen</label>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>HPLovecraft.IncidentWorker_Mystery</workerClass>
     <letterLabel>mystery</letterLabel>
@@ -112,7 +112,7 @@
     <label>mist from beyond</label>
 		<category>Misc</category>
     <targetTypes>
-	  <li>MapPlayerHome</li>
+	  <li>Map_PlayerHome</li>
 	</targetTypes>
     <workerClass>IncidentWorker_MakeGameCondition</workerClass>
     <gameCondition>HPLovecraft_TheMist</gameCondition>

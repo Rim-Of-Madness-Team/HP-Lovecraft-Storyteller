@@ -34,10 +34,13 @@ namespace HPLovecraft
 
         public override void End()
         {
-            if (base.Map?.mapPawns?.AllPawnsSpawned?.FindAll(x => x is PawnMistCreature) is List<Pawn> mistCreatures)
+            var mistCreatures = new HashSet<Pawn>();
+            foreach (var map in AffectedMaps)
             {
-                if (!mistCreatures.NullOrEmpty()) foreach (Pawn p in mistCreatures) p.Kill(null);
+                var pawnGroup = map?.mapPawns?.AllPawnsSpawned?.FindAll(x => x is PawnMistCreature);
+                if (pawnGroup?.Count > 0) mistCreatures.AddRange(pawnGroup);
             }
+            if (mistCreatures?.Count > 0) foreach (Pawn p in mistCreatures) p.Kill(null);
             base.End();
         }
 
@@ -46,76 +49,34 @@ namespace HPLovecraft
             if (Find.TickManager.TicksGame % interval == 0)
             {
                 //Keep it fogged!
-                if (base.Map.weatherManager.curWeather != HPLDefOf.Fog) base.Map.weatherManager.TransitionTo(HPLDefOf.Fog);
-
-                int maxMistCreatureCount = (int)((base.Map.mapPawns.ColonistCount * 4) * (((float)base.Map.Size.x) / 250f));
-                int curMistCreatureCount = base.Map.mapPawns.AllPawnsSpawned.FindAll(x => x is PawnMistCreature).Count;
-
-                int i = 100;
-                while ((curMistCreatureCount < maxMistCreatureCount) && i > 0)
+                foreach (var map in AffectedMaps)
                 {
-                    var intVec = default(IntVec3);
-                    if (!Cthulhu.Utility.TryFindSpawnCell(HPLDefOf.HPLovecraft_MistCreature, base.Map.Center, base.Map, 60, out intVec))
-                    {
-                        continue;
-                    }
-                    PawnKindDef randomKind = (Rand.Value > 0.3f) ? HPLDefOf.HPLovecraft_MistStalker : HPLDefOf.HPLovecraft_MistStalkerTwo;
-                    Pawn newThing = PawnGenerator.GeneratePawn(randomKind, null);
-                    Thing stalker = GenSpawn.Spawn(newThing, intVec, base.Map);
-                    i--;
-                }
+                   
+                    if (map.weatherManager.curWeather != HPLDefOf.Fog) map.weatherManager.TransitionTo(HPLDefOf.Fog);
 
-                //List<Pawn> allPawnsSpawned = base.Map.mapPawns.AllPawnsSpawned;
-                //for (int i = 0; i < allPawnsSpawned.Count; i++)
-                //{
-                //    Pawn pawn = allPawnsSpawned[i];
-                //    if (!pawn.Position.Roofed(base.Map) && pawn.def.race.IsFlesh)
-                //    {
-                //        float num = 0.1f;
-                //        num *= pawn?.GetStatValue(StatDefOf.PsychicSensitivity, true) ?? 1;
-                //        if (num != 0f)
-                //        {
-                //            float num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
-                //            num *= num2;
-                //            Cthulhu.Utility.ApplySanityLoss(pawn, num, 1f);
-                //        }
-                //    }
-                //}
+                    int maxMistCreatureCount = (int)((map.mapPawns.ColonistCount * 4) * (((float)map.Size.x) / 250f));
+                    int curMistCreatureCount = map.mapPawns.AllPawnsSpawned.FindAll(x => x is PawnMistCreature).Count;
+
+                    int i = 100;
+                    while ((curMistCreatureCount < maxMistCreatureCount) && i > 0)
+                    {
+                        var intVec = default(IntVec3);
+                        if (!Cthulhu.Utility.TryFindSpawnCell(HPLDefOf.HPLovecraft_MistCreature, map.Center, map, 60, out intVec))
+                        {
+                            continue;
+                        }
+                        PawnKindDef randomKind = (Rand.Value > 0.3f) ? HPLDefOf.HPLovecraft_MistStalker : HPLDefOf.HPLovecraft_MistStalkerTwo;
+                        Pawn newThing = PawnGenerator.GeneratePawn(randomKind, null);
+                        Thing stalker = GenSpawn.Spawn(newThing, intVec, map);
+                        i--;
+                    } 
+                }
             }
         }
 
-        public override void DoCellSteadyEffects(IntVec3 c)
+        public override void DoCellSteadyEffects(IntVec3 c, Map map)
         {
-            //if (!c.Roofed(base.Map))
-            //{
-            //    List<Thing> thingList = c.GetThingList(base.Map);
-            //    for (int i = 0; i < thingList.Count; i++)
-            //    {
-            //        Thing thing = thingList[i];
-            //        if (thing is Pawn pawn)
-            //        {
-            //            if (Rand.Value < 0.05f)
-            //            {
 
-            //            }
-            //        }
-            //        //if (thing is Plant)
-            //        //{
-            //        //    if (Rand.Value < 0.0065f)
-            //        //    {
-            //        //        thing.Kill(null);
-            //        //    }
-            //        //}
-            //        //else if (thing.def.category == ThingCategory.Item)
-            //        //{
-            //        //    CompRottable compRottable = thing.TryGetComp<CompRottable>();
-            //        //    if (compRottable != null && compRottable.Stage < RotStage.Dessicated)
-            //        //    {
-            //        //        compRottable.RotProgress += 3000f;
-            //        //    }
-            //        //}
-            //    }
-            //}
         }
 
         //public override void GameConditionDraw()
@@ -127,7 +88,7 @@ namespace HPLovecraft
         //    }
         //}
 
-        //public override float SkyTargetLerpFactor()
+        //public override float SkyTargetLerpFactorMap map()
         //{
         //    return GameConditionUtility.LerpInOutValue((float)base.TicksPassed, (float)base.TicksLeft, 5000f, 0.5f);
         //}
@@ -147,7 +108,7 @@ namespace HPLovecraft
         //    return 0f;
         //}
 
-        public override bool AllowEnjoyableOutsideNow()
+        public override bool AllowEnjoyableOutsideNow(Map map)
         {
             return false;
         }

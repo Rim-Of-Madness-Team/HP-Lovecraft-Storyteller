@@ -82,7 +82,7 @@ namespace HPLovecraft
                     //    if (Rand.Value > 0.2f && pawn?.mindState?.mentalStateHandler is MentalStateHandler mentalStateHandler)
                     //    {
                     //        if (pawn.IsPrisoner) mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "ROM_OmenParanaoiaResult".Translate());
-                    //        else mentalStateHandler.TryStartMentalState(MentalStateDefOf.WanderPsychotic, "ROM_OmenParanaoiaResult".Translate());
+                    //        else mentalStateHandler.TryStartMentalState(MentalStateDefOf.Wander_Psychotic, "ROM_OmenParanaoiaResult".Translate());
                     //    }
                     //    flavorDesc = "ROM_OmenParanaoiaDesc2".Translate(pawn);
                     //}

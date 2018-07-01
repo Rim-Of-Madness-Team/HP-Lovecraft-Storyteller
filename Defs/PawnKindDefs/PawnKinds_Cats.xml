@@ -86,7 +86,7 @@
       <useLeatherFrom>Cat</useLeatherFrom>
       <wildness>0.35</wildness>
       <petness>1</petness>
-      <trainableIntelligence>Advanced</trainableIntelligence>
+      <trainability>Advanced</trainability>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <gestationPeriodDays>20</gestationPeriodDays>
       <nameOnTameChance>1</nameOnTameChance>
@@ -132,7 +132,7 @@
       <label>black cat</label>
       <race>HPLovecraft_CatRace</race>
       <combatPower>80</combatPower>
-      <wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+       
       <lifeStages>
         <li>
           <label>kitten</label>

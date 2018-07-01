@@ -34,14 +34,14 @@
     </statBases>
     <verbs>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.65</defaultCooldownTime>
         <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
         <meleeDamageDef>ROM_MistAttack</meleeDamageDef>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
       </li>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.65</defaultCooldownTime>
         <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
         <meleeDamageDef>ROM_MistAttack</meleeDamageDef>
@@ -63,7 +63,7 @@
       <baseBodySize>1.0</baseBodySize>
       <baseHealthScale>1.0</baseHealthScale>
       <foodType>None</foodType>
-      <trainableIntelligence>None</trainableIntelligence>
+      <trainability>None</trainability>
       <wildness>1.0</wildness>
       <lifeExpectancy>0.1</lifeExpectancy>
       <lifeStageAges>

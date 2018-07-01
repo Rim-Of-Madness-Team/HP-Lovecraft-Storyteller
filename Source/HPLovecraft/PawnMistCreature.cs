@@ -117,7 +117,7 @@ namespace HPLovecraft
                                 {
                                     if (!this.Dead && this.MapHeld != null)
                                     {
-                                        if (this.StoringBuilding() == null && target.RaceProps.Humanlike)
+                                        if (this.StoringThing() == null && target.RaceProps.Humanlike)
                                         {
                                             if (target?.story?.traits?.GetTrait(HPLDefOf.PsychicSensitivity) is Trait psy && psy.Degree > -1)
                                             {

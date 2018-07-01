@@ -65,7 +65,7 @@ namespace HPLovecraft
         private FiringIncident GenerateQueuedThreatSmall(IIncidentTarget target)
         {
             IncidentDef incidentDef;
-            if (!this.UsableIncidentsInCategory(IncidentCategory.ThreatSmall, target).TryRandomElementByWeight(new Func<IncidentDef, float>(base.IncidentChanceFinal), out incidentDef))
+            if (!this.UsableIncidentsInCategory(IncidentCategoryDefOf.ThreatSmall, target).TryRandomElementByWeight(new Func<IncidentDef, float>(base.IncidentChanceFinal), out incidentDef))
             {
                 return null;
             }
@@ -77,14 +77,14 @@ namespace HPLovecraft
 
         private FiringIncident GenerateQueuedThreatBig(IIncidentTarget target, bool isCosmicHorrorEvent=false)
         {
-            IncidentParms parms = this.GenerateParms(IncidentCategory.ThreatBig, target);
+            IncidentParms parms = this.GenerateParms(IncidentCategoryDefOf.ThreatBig, target);
             IncidentDef omenIncident = IncidentDef.Named("HPLovecraft_OmenIncident");
             if (isCosmicHorrorEvent) omenIncident = IncidentDef.Named("HPLovecraft_OmenIncidentCosmicHorror");
 
             //Vanilla code
             if (GenDate.DaysPassed < 20)
             {
-                if (!IncidentDefOf.RaidEnemy.Worker.CanFireNow(target))
+                if (!IncidentDefOf.RaidEnemy.Worker.CanFireNow(parms))
                 {
                     return null;
                 }

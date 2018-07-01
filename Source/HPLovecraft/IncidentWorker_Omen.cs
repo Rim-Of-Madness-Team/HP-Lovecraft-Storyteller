@@ -16,8 +16,9 @@ namespace HPLovecraft
         {
             //Log.Message("IncidentWorker_Omen Called");
             IncidentDef bigThreat;
-            Map map = (Map)parms.target;
-            var omenThreatCycle = Find.Storyteller.storytellerComps.FirstOrDefault((comp) => comp.GetType() == typeof(StorytellerComp_OmenThreatCycle));
+            Map map = (Map) parms.target;
+            var omenThreatCycle = Find.Storyteller.storytellerComps.FirstOrDefault((comp) =>
+                comp.GetType() == typeof(StorytellerComp_OmenThreatCycle));
             if (omenThreatCycle == null)
             {
                 Log.ErrorOnce("OmenThreatCycle Doesn't Exist", 78265);
@@ -27,8 +28,11 @@ namespace HPLovecraft
             if (!Lovecraft.Data.NeedCosmicHorrorEvent)
             {
                 if (!(from def in DefDatabase<IncidentDef>.AllDefs
-                      where def.category == IncidentCategory.ThreatBig && parms.points >= def.minThreatPoints && def.Worker.CanFireNow(parms.target) && def != HPLDefOf.HPLovecraft_OmenIncident
-                      select def).TryRandomElementByWeight(new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle)omenThreatCycle).OmenIncidentChanceFinal), out bigThreat))
+                    where def.category == IncidentCategoryDefOf.ThreatBig && parms.points >= def.minThreatPoints &&
+                          def.Worker.CanFireNow(parms) && def != HPLDefOf.HPLovecraft_OmenIncident
+                    select def).TryRandomElementByWeight(
+                    new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle) omenThreatCycle)
+                        .OmenIncidentChanceFinal), out bigThreat))
                 {
                     Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
                     return false;
@@ -37,8 +41,11 @@ namespace HPLovecraft
             else
             {
                 if (!(from def in Cthulhu.Utility.CosmicHorrorIncidents()
-                      where def.category == IncidentCategory.ThreatBig && parms.points >= def.minThreatPoints && def.Worker.CanFireNow(parms.target) && def != HPLDefOf.HPLovecraft_OmenIncident
-                      select def).TryRandomElementByWeight(new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle)omenThreatCycle).OmenIncidentChanceFinal), out bigThreat))
+                    where def.category == IncidentCategoryDefOf.ThreatBig && parms.points >= def.minThreatPoints &&
+                          def.Worker.CanFireNow(parms) && def != HPLDefOf.HPLovecraft_OmenIncident
+                    select def).TryRandomElementByWeight(
+                    new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle) omenThreatCycle)
+                        .OmenIncidentChanceFinal), out bigThreat))
                 {
                     Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
                     return false;
@@ -54,7 +61,8 @@ namespace HPLovecraft
                     return false;
                 }
                 int newDelay = Find.TickManager.TicksGame + OMENDELAY.RandomInRange;
-                Cthulhu.Utility.DebugReport("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame + " DelayTick:" + (newDelay));
+                Cthulhu.Utility.DebugReport("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame +
+                                            " DelayTick:" + (newDelay));
                 omenTracker.AddDelayedIncident(new DelayedIncident(map, bigThreat, parms, newDelay));
             }
 
@@ -70,6 +78,5 @@ namespace HPLovecraft
             Lovecraft.Data.RecordIncident(bigThreat);
             return true;
         }
-
     }
 }
