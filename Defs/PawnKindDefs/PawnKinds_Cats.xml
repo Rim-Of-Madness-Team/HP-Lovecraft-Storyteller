@@ -12,6 +12,7 @@
     </statBases>
     <tools>
       <li>
+	    <id>ROM_CatLeftClawTool</id>
         <label>left claw</label>
         <capacities>
           <li>Scratch</li>
@@ -29,6 +30,7 @@
         </surpriseAttack>
       </li>
       <li>
+	    <id>ROM_CatRightClawTool</id>
         <label>right claw</label>
         <capacities>
           <li>Scratch</li>
@@ -46,6 +48,8 @@
         </surpriseAttack>
       </li>
       <li>
+	    <id>ROM_CatTeethTool</id>
+	    <label>teeth</label>
         <capacities>
           <li>Bite</li>
         </capacities>
@@ -62,6 +66,7 @@
         </surpriseAttack>
       </li>
       <li>
+	    <id>ROM_CatHeadTool</id>
         <label>head</label>
         <capacities>
           <li>Blunt</li>
