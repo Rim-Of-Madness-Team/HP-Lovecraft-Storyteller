@@ -29,7 +29,7 @@
         <power>3</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-		<commonality>0.05</commonality>
+		<chanceFactor>0.05</chanceFactor>
       </li>
 	</tools>
     <comps>
@@ -86,7 +86,7 @@
       <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
     </race>
     <tradeTags>
-      <li>StandardAnimal</li>
+      <li>AnimalPet</li>
     </tradeTags>
   </ThingDef>
 
