@@ -47,7 +47,7 @@ namespace HPLovecraft
                                 {
                                     StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.First(
                                         (StorytellerComp x) =>
-                                            x is StorytellerComp_ThreatCycle || x is StorytellerComp_RandomMain ||
+                                            x is StorytellerComp_OnOffCycle || x is StorytellerComp_RandomMain ||
                                             x is StorytellerComp_OmenThreatCycle);
                                     parms = storytellerComp.GenerateParms(localDef.category, parms.target);
                                 }

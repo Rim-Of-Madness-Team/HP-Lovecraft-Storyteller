@@ -8,16 +8,6 @@
     <portraitLarge>Lovecraft1.1</portraitLarge>
     <portraitTiny>Lovecraft1.2</portraitTiny>
     <listOrder>50</listOrder>
-		<populationIntentFromPopCurve>
-			<points>
-				<li>0, 8</li>
-				<li>1, 2</li>
-				<li>5, 1</li>
-				<li>9, 0.5</li>
-				<li>13, 0</li>
-				<li>18, -1</li>
-			</points>
-		</populationIntentFromPopCurve>
     <comps>
       <li Class="StorytellerCompProperties_ClassicIntro"/>
       <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
@@ -29,18 +19,18 @@
         <minDaysBetweenThreatBigs>1.9</minDaysBetweenThreatBigs>
       </li>
       <li Class="StorytellerCompProperties_CategoryMTB">
-		<allowedTargetTypes>
+		<allowedTargetTags>
 		  <li>Map_PlayerHome</li>
-		</allowedTargetTypes>
+		</allowedTargetTags>
 		<minDaysPassed>5</minDaysPassed>
         <category>Misc</category>
 		<mtbDays>3.0</mtbDays>
 	  </li>
 	  <li Class="StorytellerCompProperties_CategoryMTB">
         <category>WorldQuest</category>
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>World</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
         <minDaysPassed>6</minDaysPassed>
         <mtbDays>7</mtbDays>
         <mtbDaysFactorByDaysPassedCurve>
@@ -52,25 +42,25 @@
 	  </li>
       <li Class="StorytellerCompProperties_CategoryMTB">
         <category>Misc</category>
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>World</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
         <minDaysPassed>15</minDaysPassed>
         <mtbDays>15</mtbDays>
       </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>Caravan</li>
           <li>Map_TempIncident</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
         <category>Misc</category>
       </li>
       <li Class="StorytellerCompProperties_FactionInteraction">
         <minDaysPassed>5</minDaysPassed>
         <baseMtbDays>6</baseMtbDays>
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>Map_PlayerHome</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
       </li>
       <li Class="StorytellerCompProperties_AllyAssistance">
         <baseMtbDays>6</baseMtbDays>
@@ -90,33 +80,30 @@
       </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <category>ThreatSmall</category>
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>Caravan</li>
           <li>Map_TempIncident</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
         <applyCaravanVisibility>true</applyCaravanVisibility>
       </li>
       <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
         <category>ThreatBig</category>
-        <allowedTargetTypes>
+        <allowedTargetTags>
           <li>Caravan</li>
           <li>Map_TempIncident</li>
-        </allowedTargetTypes>
+        </allowedTargetTags>
         <applyCaravanVisibility>true</applyCaravanVisibility>
       </li>
       <li Class="StorytellerCompProperties_JourneyOffer"/>
-      <li Class="StorytellerCompProperties_ThreatCycle">
-        <allowedTargetTypes>
+      <li Class="StorytellerCompProperties_OnOffCycle">
+        <allowedTargetTags>
           <li>Map_RaidBeacon</li>
-        </allowedTargetTypes>
-        <threatOffDays>0.8</threatOffDays>
-        <threatOnDays>0.6</threatOnDays>
-        <minDaysBetweenThreatBigs>0.05</minDaysBetweenThreatBigs>
-        <minDaysBeforeNonRaidThreatBig>0</minDaysBeforeNonRaidThreatBig>
-        <mtbDaysThreatSmall>1000000</mtbDaysThreatSmall>  <!-- effectively disabled -->
-        <mtbDaysThreatBig>0.3</mtbDaysThreatBig>
-        <threatSmallCategory>RaidBeacon</threatSmallCategory>
-        <threatBigCategory>RaidBeacon</threatBigCategory>
+        </allowedTargetTags>
+        <offDays>0.5</offDays>
+        <onDays>1.0</onDays>
+        <applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
+        <numIncidentsRange>1~2</numIncidentsRange>
+        <incidentCategory>RaidBeacon</incidentCategory>
       </li>
     </comps>
   </StorytellerDef>
@@ -129,22 +116,16 @@
     <portraitLarge>LovecraftX21.1</portraitLarge>
     <portraitTiny>LovecraftX21.2</portraitTiny>
     <listOrder>51</listOrder>
-	<populationIntentFromPopCurve>
-		<points>
-			<li>0, 8</li>
-			<li>1, 6.54</li>
-			<li>5, 5.81</li>
-			<li>9, 5.09</li>
-			<li>13, 4.36</li>
-			<li>18, 3.63</li>
-			<li>22, 2.9</li>
-			<li>24, 2.18</li>
-			<li>26, 1.45</li>
-			<li>28, 0.72</li>
-			<li>26, 0</li>
-			<li>32, -1</li>
-		</points>
-	</populationIntentFromPopCurve>
+    <populationIntentFactorFromPopCurve>
+      <points>
+        <li>0,  8.0</li>
+        <li>2,  2.0</li>
+        <li>10,  1.0</li>
+        <li>18,  0.4</li>
+        <li>24, 0.0</li>
+        <li>40,-1.0</li>
+      </points>
+    </populationIntentFactorFromPopCurve>
   </StorytellerDef>
   
 </Defs>
