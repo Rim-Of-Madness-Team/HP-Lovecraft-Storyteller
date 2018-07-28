@@ -96,7 +96,7 @@ namespace HPLovecraft
         
         private FiringIncident GenerateIncident(IIncidentTarget target)
         {
-            IncidentParms parms = this.GenerateParms(this.Props.IncidentCategory, target);
+            IncidentParms parms = this.GenerateParms(this.Props.Category, target);
             return new FiringIncident(IncidentDef.Named("HPLovecraft_OmenIncident"), this, null)
             {
                 parms = parms

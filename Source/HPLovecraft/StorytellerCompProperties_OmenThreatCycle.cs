@@ -19,7 +19,7 @@ namespace HPLovecraft
         public bool applyRaidBeaconThreatMtbFactor = false;
 
 
-        private IncidentCategoryDef incidentCategory;
+        private IncidentCategoryDef category;
 
         public float forceRaidEnemyBeforeDaysPassed = 0f;
 
@@ -28,7 +28,7 @@ namespace HPLovecraft
             this.compClass = typeof(StorytellerComp_OmenThreatCycle);
         }
 
-        public IncidentCategoryDef IncidentCategory => this.incidentCategory;
+        public IncidentCategoryDef Category => this.category;
 
         public override IEnumerable<string> ConfigErrors(StorytellerDef parentDef)
         {

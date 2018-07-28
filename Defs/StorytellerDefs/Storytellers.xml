@@ -13,7 +13,7 @@
       <li Class="StorytellerCompProperties_ClassicIntro"/>
       <!-- Home threats -->
       <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
-        <incidentCategory>ThreatBig</incidentCategory>
+        <category>ThreatBig</category>
         <minDaysPassed>11.0</minDaysPassed>
         <onDays>4.6</onDays>
         <offDays>6.0</offDays>
@@ -33,10 +33,10 @@
         <minSpacingDays>0.04</minSpacingDays>
         <applyRaidBeaconThreatMtbFactor>true</applyRaidBeaconThreatMtbFactor>
         <numIncidentsRange>1~2</numIncidentsRange>
-        <incidentCategory>RaidBeacon</incidentCategory>
+        <category>RaidBeacon</category>
       </li>
       <li Class="StorytellerCompProperties_OnOffCycle">
-        <incidentCategory>ThreatSmall</incidentCategory>
+        <category>ThreatSmall</category>
         <minDaysPassed>11.0</minDaysPassed>
         <onDays>4.6</onDays>
         <offDays>6.0</offDays>
@@ -54,11 +54,11 @@
       <li Class="StorytellerCompProperties_ShipChunkDrop"/>
       <li Class="StorytellerCompProperties_Disease">
         <minDaysPassed>9</minDaysPassed>
-        <incidentCategory>DiseaseHuman</incidentCategory>
+        <category>DiseaseHuman</category>
       </li>
       <li Class="StorytellerCompProperties_Disease">
         <minDaysPassed>9</minDaysPassed>
-        <incidentCategory>DiseaseAnimal</incidentCategory>
+        <category>DiseaseAnimal</category>
       </li>
       <!-- Ally/neutral interaction -->
       <li Class="StorytellerCompProperties_FactionInteraction">
