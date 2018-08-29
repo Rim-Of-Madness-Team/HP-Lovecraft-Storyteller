@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<ROM_OmenCatDesc1>Бедное существо было убито и оставлено на обочине дороги. У этой таинственной смерти нет свидетелей.</ROM_OmenCatDesc1>
+<ROM_OmenCatDesc2>Истошные кошачьи вопли разорвали тишину. Стая с маленькими испуганными мордочками в панике и гневе мчится к границам вашей колонии.</ROM_OmenCatDesc2>
+<ROM_OmenCatDesc3>Бродячий кот приблудился на вашей территории.</ROM_OmenCatDesc3>
+<ROM_OmenCatDesc4>Бродячий кот приблудился на вашей территории. Этот странствующий кот долго размышлял и решился присоединиться к вашей колонии.</ROM_OmenCatDesc4>
+
+<ROM_OmenParanaoiaResult>паранойя</ROM_OmenParanaoiaResult>
+
+<ROM_OmenParanaoiaDesc1>Волна паранойи захватила умы ваших колонистов.</ROM_OmenParanaoiaDesc1>
+<ROM_OmenParanaoiaDesc2>Один из ваших колонистов переполнен подозрениями. {0} стал параноиком.</ROM_OmenParanaoiaDesc2>
+<ROM_OmenParanaoiaDesc2b>{0} почувствовал волну паранойи, но сохранил рассудок усилием воли.</ROM_OmenParanaoiaDesc2b>
+<ROM_OmenParanaoiaDesc3>{0} узрил видение о предстоящих ужасных событиях.</ROM_OmenParanaoiaDesc3>
+<ROM_OmenParanaoiaDesc4>Разум одного из ваших колонистов повредился. {0} дезориентировался.</ROM_OmenParanaoiaDesc4>
+
+<ROM_OmenCrowDesc1>Стая зловещих темных птиц находится возле вашей колонии. Одна из них мертва.</ROM_OmenCrowDesc1>
+<ROM_OmenCrowDesc2>Стая зловещих темных птиц находится возле вашей колонии.</ROM_OmenCrowDesc2>
+<ROM_OmenCrowDesc3>Одна ворона наблюдает за вашими колонистами.</ROM_OmenCrowDesc3>
+
+<ROM_OmenStrangeFogDesc>Огромная стена зловещего тумана приближается. Передвижение внутри него может дезориентировать слабых духом. Колонисты могут сбиться с пути, потеряв направление</ROM_OmenStrangeFogDesc>
+
+</LanguageData>

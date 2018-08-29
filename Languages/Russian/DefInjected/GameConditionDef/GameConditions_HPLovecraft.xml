@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<HPLovecraft_BloodMoon.label>Кровавая луна</HPLovecraft_BloodMoon.label>
+<HPLovecraft_BloodMoon.description>Одна из лун приняла таинственный оттенок, и тёмное, малиновое небо утопит ослепительные краски сверкающего дня.</HPLovecraft_BloodMoon.description>
+<HPLovecraft_BloodMoon.endMessage>Кровавое полнолуние завершено</HPLovecraft_BloodMoon.endMessage>
+
+<HPLovecraft_TheMist.label>Мистический туман</HPLovecraft_TheMist.label>
+<HPLovecraft_TheMist.description>Только что накатился густой туман. Зловещий, неизменный и таинственный. Несколько шагов внутри могут сбить с пути слабую душу, переместить в пространстве туда, где теперь возвышаются базальтовые колонны.</HPLovecraft_TheMist.description>
+<HPLovecraft_TheMist.endMessage>Туман рассеивается.</HPLovecraft_TheMist.endMessage>
+
+</LanguageData>

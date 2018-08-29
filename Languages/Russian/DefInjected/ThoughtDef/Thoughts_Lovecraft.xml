@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_ObservedMistCreaturePsychic.stages.0.label>туман ожил</ROM_ObservedMistCreaturePsychic.stages.0.label>
+<ROM_ObservedMistCreaturePsychic.stages.0.description>Я не могу быть здесь. Мне нужно вернуться внутрь. Туман жив. Я чувствую это.</ROM_ObservedMistCreaturePsychic.stages.0.description>
+
+<ROM_ObservedMistCreature.stages.0.label>нечто надвигается из тумана</ROM_ObservedMistCreature.stages.0.label>
+<ROM_ObservedMistCreature.stages.0.description>Я почувствовал что-то, наблюдающее за мной в тумане. Было ли это реально?</ROM_ObservedMistCreature.stages.0.description>
+
+<!-- Misc Thought Defs -->
+
+<HPLovecraft_SawBloodMoonSad.stages.0.label>видел кровавую луну</HPLovecraft_SawBloodMoonSad.stages.0.label>
+<HPLovecraft_SawBloodMoonSad.stages.0.description>Я чувствую, как за мною следит кровавая луна. Это бросает в дрожь!</HPLovecraft_SawBloodMoonSad.stages.0.description>
+
+<HPLovecraft_SawBloodMoonHappy.stages.0.label>славная кровавая луна</HPLovecraft_SawBloodMoonHappy.stages.0.label>
+<HPLovecraft_SawBloodMoonHappy.stages.0.description>Эта луна прекрасна. Я бы хотел, чтобы это продолжалось вечно!</HPLovecraft_SawBloodMoonHappy.stages.0.description>
+
+</LanguageData>
