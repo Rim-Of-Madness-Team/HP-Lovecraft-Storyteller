@@ -142,7 +142,7 @@
             <color>(45,45,45)</color>
           </bodyGraphicData>
           <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
             <drawSize>0.65</drawSize>
           </dessicatedBodyGraphicData>
         </li>
@@ -153,7 +153,7 @@
             <color>(45,45,45)</color>
           </bodyGraphicData>
           <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
             <drawSize>0.8</drawSize>
           </dessicatedBodyGraphicData>
         </li>
@@ -168,7 +168,7 @@
             </shadowData>
           </bodyGraphicData>
           <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
             <drawSize>1.0</drawSize>
           </dessicatedBodyGraphicData>
         </li>

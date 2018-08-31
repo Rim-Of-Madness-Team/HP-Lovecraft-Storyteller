@@ -44,41 +44,41 @@ namespace HPLovecraft
             base.End();
         }
 
+        int ticksInFog;
+
         public override void GameConditionTick()
         {
-            if (Find.TickManager.TicksGame % interval == 0)
+            //Keep it fogged!
+            ticksInFog++;
+            if (ticksInFog % 1000 != 0) return;
+            if (!(AffectedMaps?.Count > 0)) return;
+            foreach (var map in AffectedMaps)
             {
-                //Keep it fogged!
-                foreach (var map in AffectedMaps)
+                if (map.weatherManager.curWeather != HPLDefOf.Fog) map.weatherManager.TransitionTo(HPLDefOf.Fog);
+
+                int maxMistCreatureCount = (int) ((map.mapPawns.ColonistCount * 4) * (((float) map.Size.x) / 250f));
+                int curMistCreatureCount = map.mapPawns.AllPawnsSpawned.FindAll(x => x is PawnMistCreature).Count;
+
+                IntVec3 spawnLoc = map.Center.RandomAdjacentCell8Way();
+                int i = 100;
+                while ((curMistCreatureCount < maxMistCreatureCount) && i > 0)
                 {
-                   
-                    if (map.weatherManager.curWeather != HPLDefOf.Fog) map.weatherManager.TransitionTo(HPLDefOf.Fog);
-
-                    int maxMistCreatureCount = (int)((map.mapPawns.ColonistCount * 4) * (((float)map.Size.x) / 250f));
-                    int curMistCreatureCount = map.mapPawns.AllPawnsSpawned.FindAll(x => x is PawnMistCreature).Count;
-
-                    int i = 100;
-                    while ((curMistCreatureCount < maxMistCreatureCount) && i > 0)
-                    {
-                        var intVec = default(IntVec3);
-                        if (!Cthulhu.Utility.TryFindSpawnCell(HPLDefOf.HPLovecraft_MistCreature, map.Center, map, 60, out intVec))
-                        {
-                            continue;
-                        }
-                        PawnKindDef randomKind = (Rand.Value > 0.3f) ? HPLDefOf.HPLovecraft_MistStalker : HPLDefOf.HPLovecraft_MistStalkerTwo;
-                        Pawn newThing = PawnGenerator.GeneratePawn(randomKind, null);
-                        Thing stalker = GenSpawn.Spawn(newThing, intVec, map);
-                        i--;
-                    } 
+                    
+                    CellFinder.TryFindRandomCellNear(map.Center, map, 60,
+                        (IntVec3 c) => c.Standable(map) && !map.roofGrid.Roofed(c) && map.reachability.CanReachColony(c), out spawnLoc, 100);
+                    PawnKindDef randomKind = (Rand.Value > 0.3f)
+                        ? HPLDefOf.HPLovecraft_MistStalker
+                        : HPLDefOf.HPLovecraft_MistStalkerTwo;
+                    Pawn newThing = PawnGenerator.GeneratePawn(randomKind, null);
+                    Thing stalker = GenSpawn.Spawn(newThing, spawnLoc, map);
+                    i--;
                 }
             }
         }
 
         public override void DoCellSteadyEffects(IntVec3 c, Map map)
         {
-
         }
-
         //public override void GameConditionDraw()
         //{
         //    Map map = base.Map;
