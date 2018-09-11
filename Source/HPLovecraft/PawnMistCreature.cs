@@ -26,10 +26,23 @@ namespace HPLovecraft
         public void DissipateCheck()
         {
             if (!DestroyInProgress)
-            if ((Downed && !Dead) || this.MapHeld.weatherManager.curWeather != HPLDefOf.Fog || this.PositionHeld.Roofed(this.MapHeld)) {
-                DestroyMe();
-                return;
+            {
+                if (PawnUtility.EverBeenColonistOrTameAnimal(this))
+                {
+                    var cat = GenSpawn.Spawn(ThingDef.Named("HPLovecraft_CatRace"), this.PositionHeld, this.MapHeld);
+                    cat.SetFaction(Faction.OfPlayer);
+                    Messages.Message("ROM_ItWasACat".Translate(), cat, MessageTypeDefOf.PositiveEvent);
+
+                    DestroyMe();
+                    
+                    return;
+                }
+                if ((Downed && !Dead) || this.MapHeld.weatherManager.curWeather != HPLDefOf.Fog || this.PositionHeld.Roofed(this.MapHeld)) {
+                    DestroyMe();
+                    return;
+                }
             }
+
         }
 
         // Any damage dealt results in the mist creature's dissipation.
