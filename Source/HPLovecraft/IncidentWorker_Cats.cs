@@ -53,7 +53,7 @@ namespace HPLovecraft
             //Log.Message("Affectionate Cat");
             //Affectionate cat
             IntVec3 loc;
-            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
             Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
             InteractionWorker_RecruitAttempt.DoRecruit(cat.Map.mapPawns.FreeColonists.FirstOrDefault<Pawn>(), (Pawn)cat, 1f, true);
@@ -72,7 +72,7 @@ namespace HPLovecraft
             //Log.Message("Stray Cat");
             //Stray cat
             IntVec3 loc;
-            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
             Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
             flavorDesc = "ROM_OmenCatDesc3".Translate();
@@ -91,7 +91,7 @@ namespace HPLovecraft
             //Wild cats
             IntVec3 loc;
             GlobalTargetInfo? newTarget = null;
-            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             var numberOfCats = (GenDate.YearsPassed > 0) ? GenDate.YearsPassed : 1;
             List<Thing> cats = new List<Thing>();
             for (int i = 0; i < numberOfCats; i++)
@@ -114,7 +114,7 @@ namespace HPLovecraft
             //Log.Message("Dead Cat");
             //Dead cat
             IntVec3 loc;
-            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
             Thing cat = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
             ((Pawn)cat).Kill(null);

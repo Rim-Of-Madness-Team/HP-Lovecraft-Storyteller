@@ -26,7 +26,7 @@ namespace HPLovecraft
                  */
                 //Log.Message("Dead Crow");
                 IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
                 crow = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
                 ((Pawn)crow).Kill(null);
@@ -44,7 +44,7 @@ namespace HPLovecraft
                  */
                 //Log.Message("Murder of Crows");
                 IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 var newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
                 crow = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
                 List<Thing> crows = new List<Thing>();
@@ -68,7 +68,7 @@ namespace HPLovecraft
                  */
                 //Log.Message("Flock of Crows");
                 IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
                 crow = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
                 List<Thing> crows = new List<Thing>();
@@ -91,7 +91,7 @@ namespace HPLovecraft
                  */
                 //Log.Message("Solitary Crow");
                 IntVec3 loc;
-                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, null);
+                RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
                 crow = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
                 flavorDesc = "ROM_OmenCrowDesc3".Translate();
