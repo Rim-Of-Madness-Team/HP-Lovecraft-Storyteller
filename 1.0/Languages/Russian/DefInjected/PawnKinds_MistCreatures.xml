@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<HPLovecraft_FilthMistStalker.label>Мерзкие туманные сталкеры</HPLovecraft_FilthMistStalker.label>
+
+<HPLovecraft_MistCreature.label>Чудовище из тумана</HPLovecraft_MistCreature.label>
+<HPLovecraft_MistCreature.description>Что-то плавает в тумане.</HPLovecraft_MistCreature.description>
+
+<HPLovecraft_MistStalker.label>Туманный сталкер</HPLovecraft_MistStalker.label>
+<HPLovecraft_MistStalker.labelPlural>Туманные сталкеры</HPLovecraft_MistStalker.labelPlural>
+
+<HPLovecraft_MistStalkerTwo.label>Туманный сталкер-босс</HPLovecraft_MistStalkerTwo.label>
+<HPLovecraft_MistStalkerTwo.labelPlural>Туманные сталкеры-боссы</HPLovecraft_MistStalkerTwo.labelPlural>
+
+</LanguageData>

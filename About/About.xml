@@ -1,9 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>H.P. Lovecraft Storyteller - Remastered</name>
-  <author>Jecrell</author>
-  <targetVersion>1.0.2059</targetVersion>
-  <description>1.20.0.0 (10-19-2018)
+  <author>jecrell</author>
+  <packageId>rimofmadness.hplovecraft</packageId>
+  <url>https://discord.gg/AaVFA7V</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependenciesByVersion>
+    <v1.1>
+      <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+      </li>
+    </v1.1>
+  </modDependenciesByVersion>
+  <description>1.30.0.0 (03-07-2020)
 
   Adds a foreboding storyteller that adds tension to RimWorld stories.
 
@@ -26,11 +41,15 @@
 Thank you to my Patrons for supporting me in my efforts. Without you, none of this would be possible.
 
 These are the most excellent rim dwellers who support me: 
-Lumberjack, Shibby Says, TheJagermeister, Cory Bonifay, Kiya Nicoll, Matt Harris, Paul Fenwick, Grendalloffen, Martin K. Bonde, Bentley Alsup, Eric Idema, MasterScootie, GoSu, Josh McCabe, spook, Clifford Campbell, J, CrankyPeanut, E_T, Finwej, Jonathan, Audrin Navarro, Михаил Юрченко, John Kanady, Luis Figueroa, Midgeman, Nate Haug, Nemuri Hime, Richard Paul, SilentWeirdo, Calum, Calhoun Cattell, Keith Thoma, Tim Stillson, Dick Jones, Patrick, Nathan Getman, Populous25, Sharp Spook, Steven James, Marcus Sireanu, Mark, Emily Shaw, Drachken, Zalson, Baron Xot, Nicholas Bateman, Christopher, Justin Andres, Luis Salvatierra, TinyFloatingTurtle, George Chong Chuang Ming, John Boehr, Oliver White, roxxploxx, Robin Hager, Brachiaraidos, That Guy, Toc Anastar, Karol Rybak, Allic, Austin Harbert, Yewty, Evan Hwang, Ryan Brock, Jonathan Holzinger, MC, Alexander, Kevin Reagan, Alex Mederer, Toss Antilles, Chelsea Archambeau, Aron Glasser, Dan Winn, Fredric Sundberg, Sarah Banks, ted stevens
+Marcus Bell, RainerWingel, Dalton Johnson, Chris Seieroe, Robin Gleeson, Robert Alessi, Lea Stannard, Teres, David Silberstein, Sam, Kiya Nicoll, Matt Harris, Paul Fenwick, Grendalloffen, Don Homer, Josh McCabe, Elodie, Gothi, J, Michael Paugh, Audrin Navarro, Михаил Юрченко, Calum, Tim Stillson, Adam Bliss, Populous25, Marcus Sireanu, Maaxar, John Kanady, Midgeman, Dick Jones, Patrick, TinyFloatingTurtle, Nathan Getman, LionsFate, Sharp Spook, Cristina Shaver, Mark, George Chong Chuang Ming, Oliver White, roxxploxx, Emily Shaw, Karol Rybak, Justin Andres, Marcus Regan, Robin Hager, Allic, Austin Harbert, E_T, Alex Mederer, Alexander, Toss Antilles
 
 ========================
 Changelog
 ========================
+1.30.0.0 (03-07-2020)
+========================
+Added RimWorld 1.1 support. Also added a new omen: Lone Survivor. A lone survivor may walk upon your settlement as another omen of ill things to come.
+
 1.20.0.0 (10-19-2018)
 ========================
 Initial update for RimWorld 1.0.

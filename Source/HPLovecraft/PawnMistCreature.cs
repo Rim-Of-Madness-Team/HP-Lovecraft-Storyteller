@@ -148,7 +148,7 @@ namespace HPLovecraft
                                             }
                                         }
 
-                                        Cthulhu.Utility.ApplySanityLoss(target, 0.008f, 0.8f);
+                                        Cthulhu.Utility.ApplySanityLoss(target, 0.003f, 0.8f);
                                     }
                                 }
                             }

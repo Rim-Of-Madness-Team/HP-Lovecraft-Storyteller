@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Harmony;
+using HarmonyLib;
 using Verse;
 using RimWorld;
 
@@ -13,9 +13,9 @@ namespace HPLovecraft
     {
         static LovecraftHarmony()
         {
-            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.jecrell.lovecraftstoryteller");
-            harmony.Patch(AccessTools.Method(typeof(Dialog_DebugActionsMenu), "DoIncidentDebugAction"),
-                new HarmonyMethod(typeof(LovecraftHarmony), nameof(DoIncidentDebugAction_Prefix)), null);
+            //var harmony = new Harmony("rimworld.jecrell.lovecraftstoryteller");
+            //harmony.Patch(AccessTools.Method(typeof(Dialog_DebugActionsMenu), "DoIncidentDebugAction"),
+                //new HarmonyMethod(typeof(LovecraftHarmony), nameof(DoIncidentDebugAction_Prefix)), null);
         }
 
         public static bool DoIncidentDebugAction_Prefix(Dialog_DebugActionsMenu __instance, IIncidentTarget target)

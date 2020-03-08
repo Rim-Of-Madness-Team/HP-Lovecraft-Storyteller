@@ -13,13 +13,17 @@ namespace HPLovecraft
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             float rand = Rand.Value;
-            if (rand < 0.4f)
+            if (rand < 0.3f)
             {
                 BloodMoon(parms);
             }
-            else
+            else if (rand < 0.6f)
             {
                 StrangeFog(parms);
+            }
+            else
+            {
+                LoneSurvivor(parms);
             }
             return true;
         }
@@ -32,6 +36,16 @@ namespace HPLovecraft
         public void StrangeFog(IncidentParms parms)
         {
             HPLDefOf.HPLovecraft_TheMist.Worker.TryExecute(parms);
+        }
+
+        public void LoneSurvivor(IncidentParms parms)
+        {
+            HPLDefOf.HPLovecraft_LoneSurvivor.Worker.TryExecute(parms);
+        }
+
+        public void TheStranger(IncidentParms parms)
+        {
+            //HPLDefOf.HPLovecraft_TheStranger.Worker.TryExecute(parms);
         }
 
         public void SpiderRain(IncidentParms parms)

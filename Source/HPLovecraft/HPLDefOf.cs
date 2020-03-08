@@ -19,7 +19,8 @@ namespace HPLovecraft
 
         public static IncidentDef HPLovecraft_BloodMoon;
         public static IncidentDef HPLovecraft_TheMist;
-
+        public static IncidentDef HPLovecraft_LoneSurvivor;
+        
         public static ThingDef HPLovecraft_CatRace;
         public static ThingDef HPLovecraft_CrowRace;
         public static ThingDef HPLovecraft_MistCreature;

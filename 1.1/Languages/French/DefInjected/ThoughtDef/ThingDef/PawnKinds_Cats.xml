@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_CatRace.label>chat alpha</HPLovecraft_CatRace.label>
+  <HPLovecraft_CatRace.description>Un des premiers animal de compagnie de l'hummanité, le chat est un petit mamifère qui chasse généralement la vermine. Connu pour leur comportement, les chats sont néanmoins appréciés comme animal de compagnons pour leur calme, leur indépendance et leur fourure soigneuse et douce. Ce spécimen particulier affiche une grâce inébranlable ainsi que une supériorité d'autosuffisance si bien qu'il semble défier le comportement neutre de l'univers.</HPLovecraft_CatRace.description>
+  <!-- Use Leather From: Cat -->
+  <!-- Use Meat From: Cat -->
+  <HPLovecraft_CatRace_Corpse.label>corps de chat alpha</HPLovecraft_CatRace_Corpse.label>
+  <HPLovecraft_CatRace_Corpse.description>corps de chats alpha</HPLovecraft_CatRace_Corpse.description>
+
+
+</LanguageData>

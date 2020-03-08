@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_BloodMoon.label>lua sangrenta</HPLovecraft_BloodMoon.label>
+  <HPLovecraft_BloodMoon.description>Uma das luas assumiu um tom misterioso, e um céu recém-carmesim afoga as cores suaves de dias mais vivos.</HPLovecraft_BloodMoon.description>
+  <HPLovecraft_BloodMoon.endMessage>A lua sangrenta está passando.</HPLovecraft_BloodMoon.endMessage>
+
+  <HPLovecraft_TheMist.label>névoa do além</HPLovecraft_TheMist.label>
+  <HPLovecraft_TheMist.description>Uma névoa entrou. Grossa, firme e sinistra em sua aproximação. Pisar nela pode deslizar mentes fracas para espaços entre espaços onde os colunas de basalto aumentam.</HPLovecraft_TheMist.description>
+  <HPLovecraft_TheMist.endMessage>A névoa está passando.</HPLovecraft_TheMist.endMessage>
+
+
+</LanguageData>

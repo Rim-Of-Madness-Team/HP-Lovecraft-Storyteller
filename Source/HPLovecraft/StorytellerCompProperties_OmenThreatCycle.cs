@@ -7,45 +7,60 @@ namespace HPLovecraft
 {
     public class StorytellerCompProperties_OmenThreatCycle : StorytellerCompProperties
     {
-        
-        public float onDays = 0f;
 
-        public float offDays = 0f;
+		public float onDays;
 
-        public float minSpacingDays = 0f;
+		public float offDays;
 
-        public FloatRange numIncidentsRange = FloatRange.Zero;
+		public float minSpacingDays;
 
-        public bool applyRaidBeaconThreatMtbFactor = false;
+		public FloatRange numIncidentsRange = FloatRange.Zero;
 
+		public SimpleCurve acceptFractionByDaysPassedCurve;
 
-        private IncidentCategoryDef category;
+		public SimpleCurve acceptPercentFactorPerThreatPointsCurve;
 
-        public float forceRaidEnemyBeforeDaysPassed = 0f;
+		public IncidentDef incident;
 
-        public StorytellerCompProperties_OmenThreatCycle()
-        {
-            this.compClass = typeof(StorytellerComp_OmenThreatCycle);
-        }
+		private IncidentCategoryDef category;
 
-        public IncidentCategoryDef Category => this.category;
+		public float forceRaidEnemyBeforeDaysPassed;
 
-        public override IEnumerable<string> ConfigErrors(StorytellerDef parentDef)
-        {
-            if (this.onDays <= 0f)
-            {
-                yield return "onDays must be above zero";
-            }
-            if (this.numIncidentsRange.TrueMax <= 0f)
-            {
-                yield return "numIncidentRange not configured";
-            }
-            if (this.minSpacingDays * this.numIncidentsRange.TrueMax > this.onDays * 0.9f)
-            {
-                yield return "minSpacingDays too high compared to max number of incidents.";
-            }
-            yield break;
-        }
-        
-    }
+		public IncidentCategoryDef IncidentCategory
+		{
+			get
+			{
+				if (incident != null)
+				{
+					return incident.category;
+				}
+				return category;
+			}
+		}
+
+		public StorytellerCompProperties_OmenThreatCycle()
+		{
+			compClass = typeof(StorytellerComp_OmenThreatCycle);
+		}
+
+		public override IEnumerable<string> ConfigErrors(StorytellerDef parentDef)
+		{
+			if (incident != null && category != null)
+			{
+				yield return "incident and category should not both be defined";
+			}
+			if (onDays <= 0f)
+			{
+				yield return "onDays must be above zero";
+			}
+			if (numIncidentsRange.TrueMax <= 0f)
+			{
+				yield return "numIncidentRange not configured";
+			}
+			if (minSpacingDays * numIncidentsRange.TrueMax > onDays * 0.9f)
+			{
+				yield return "minSpacingDays too high compared to max number of incidents.";
+			}
+		}
+	}
 }

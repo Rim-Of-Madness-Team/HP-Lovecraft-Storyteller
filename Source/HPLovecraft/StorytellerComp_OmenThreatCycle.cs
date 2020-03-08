@@ -23,7 +23,7 @@ namespace HPLovecraft
 
         public float OmenIncidentChanceFinal(IncidentDef def)
         {
-            float num = def.Worker.AdjustedChance;
+            float num = def.Worker.BaseChanceThisGame;
             num *= base.IncidentChanceFactor_CurrentPopulation(def);
             num *= base.IncidentChanceFactor_PopulationIntent(def);
             return Mathf.Max(0f, num);
@@ -32,9 +32,30 @@ namespace HPLovecraft
         [DebuggerHidden]
         public override IEnumerable<FiringIncident> MakeIntervalIncidents(IIncidentTarget target)
         {
+            float num = 1f;
+            if (Props.acceptFractionByDaysPassedCurve != null)
+            {
+                num *= Props.acceptFractionByDaysPassedCurve.Evaluate(GenDate.DaysPassedFloat);
+            }
+            if (Props.acceptPercentFactorPerThreatPointsCurve != null)
+            {
+                num *= Props.acceptPercentFactorPerThreatPointsCurve.Evaluate(StorytellerUtility.DefaultThreatPointsNow(target));
+            }
+            int incCount = IncidentCycleUtility.IncidentCountThisInterval(target, Find.Storyteller.storytellerComps.IndexOf(this), Props.minDaysPassed, Props.onDays, Props.offDays, Props.minSpacingDays, Props.numIncidentsRange.min, Props.numIncidentsRange.max, num);
+            for (int i = 0; i < incCount; i++)
+            {
+                FiringIncident firingIncident = GenerateIncident(target);
+                if (firingIncident != null)
+                {
+                    yield return firingIncident;
+                }
+            }
+/*
+ * 
+ *  ((1.0))
             float difficultyFactor = (!this.Props.applyRaidBeaconThreatMtbFactor)
                 ? 1f
-                : Find.Storyteller.difficulty.raidBeaconThreatCountFactor;
+                : Find.Storyteller.difficulty. raidBeaconThreatCountFactor;
             int incCount = IncidentCycleUtility.IncidentCountThisInterval(target,
                 Find.Storyteller.storytellerComps.IndexOf(this), this.Props.minDaysPassed, this.Props.onDays,
                 this.Props.offDays, this.Props.minSpacingDays, this.Props.numIncidentsRange.min * difficultyFactor,
@@ -47,7 +68,7 @@ namespace HPLovecraft
                     yield return fi;
                 }
             }
-            yield break;
+            yield break;*/
 
 //        (( B18 ))
 //            float curCycleDays = (GenDate.DaysPassedFloat - this.Props.minDaysPassed) % this.Props.ThreatCycleTotalDays;
@@ -96,7 +117,7 @@ namespace HPLovecraft
         
         private FiringIncident GenerateIncident(IIncidentTarget target)
         {
-            IncidentParms parms = this.GenerateParms(this.Props.Category, target);
+            IncidentParms parms = this.GenerateParms(Props.IncidentCategory, target);
             return new FiringIncident(IncidentDef.Named("HPLovecraft_OmenIncident"), this, null)
             {
                 parms = parms

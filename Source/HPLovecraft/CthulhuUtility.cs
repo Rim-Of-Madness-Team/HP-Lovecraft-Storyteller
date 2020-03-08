@@ -48,7 +48,7 @@ namespace Cthulhu
     {
         public enum SanLossSev { None = 0, Hidden, Initial, Minor, Major, Extreme };
         public const string SanityLossDef = "ROM_SanityLoss";
-        public const string AltSanityLossDef = "Cults_SanityLoss";
+        public const string AltSanityLossDef = "ROM_SanityLoss";
 
         public static bool modCheck = false;
         public static bool loadedCosmicHorrors = false;
@@ -116,14 +116,6 @@ namespace Cthulhu
         //    return sanityLossRate;
         //}
 
-        public static bool CapableOfViolence(Pawn pawn, bool allowDowned = false)
-        {
-            if (pawn == null) return false;
-            if (pawn.Dead) return false;
-            if (pawn.Downed && !allowDowned) return false;
-            if (pawn.story.WorkTagIsDisabled(WorkTags.Violent)) return false;
-            return true;
-        }
 
         public static bool IsActorAvailable(Pawn preacher, bool downedAllowed = false)
         {
@@ -594,6 +586,9 @@ namespace Cthulhu
                 else if (sanityLoss > 0)
                 {
                     //Log.Message("3b");
+
+                    //HediffGiverUtility.TryApply(pawn, HediffDef.Named(sanityLossDef), new List<BodyPartDef>() { BodyPartDefOf.Brain });
+                    //ApplySanityLoss(pawn, sanityLoss);
 
                     var sanityLossHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamedSilentFail(sanityLossDef), pawn, null);
                     if (sanityLossHediff != null)
