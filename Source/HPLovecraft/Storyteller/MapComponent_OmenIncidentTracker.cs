@@ -37,21 +37,21 @@ namespace HPLovecraft
 
         public void TriggerIncident(DelayedIncident delayedIncident)
         {
-            Cthulhu.Utility.DebugReport("Trigger Incident Called");
+            Settings.DebugString("Trigger Incident Called");
             var omenCycle = Find.Storyteller.storytellerComps.FirstOrDefault((comp) => comp.GetType() == typeof(StorytellerComp_OmenThreatCycle));
             if (omenCycle != null)
             {
                 try
                 {
 
-                    Cthulhu.Utility.DebugReport("Fire event: " + delayedIncident.incident.label);
+                    Settings.DebugString("Fire event: " + delayedIncident.incident.label);
                     delayedIncident.incident.Worker.TryExecute(delayedIncident.incidentParms);
                     delayedIncident.incidentParms.target.StoryState.Notify_IncidentFired(new FiringIncident(delayedIncident.incident, omenCycle, delayedIncident.incidentParms));
                 }
                 catch (Exception) { }
             }
             delayedIncident.didIt = true;
-            Cthulhu.Utility.DebugReport("Trigger Incident Complete");
+            Settings.DebugString("Trigger Incident Complete");
         }
 
         public override void MapComponentTick()

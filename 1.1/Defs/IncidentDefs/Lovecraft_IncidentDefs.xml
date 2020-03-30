@@ -15,7 +15,7 @@
     <minRefireDays>0</minRefireDays>
     <category>Misc</category>
     <pointsScaleable>true</pointsScaleable>
-    <minThreatPoints>400</minThreatPoints>
+    <minThreatPoints>0</minThreatPoints>
   </IncidentDef>
 
   <IncidentDef>
@@ -29,10 +29,10 @@
     <letterText>Something stands indifferent to the turns and swells of the universe.</letterText>
     <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
-    <minRefireDays>0</minRefireDays>
-    <category>Misc</category>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
     <pointsScaleable>true</pointsScaleable>
-    <minThreatPoints>400</minThreatPoints>
+    <minThreatPoints>0</minThreatPoints>
   </IncidentDef>
 
   <IncidentDef>
@@ -46,10 +46,10 @@
     <letterText>A wave of paranoia has brushed against the minds of your colonists.</letterText>
     <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
-    <minRefireDays>0</minRefireDays>
-    <category>Misc</category>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
     <pointsScaleable>true</pointsScaleable>
-    <minThreatPoints>400</minThreatPoints>
+    <minThreatPoints>0</minThreatPoints>
   </IncidentDef>
 
   <IncidentDef>
@@ -63,10 +63,10 @@
     <letterText>Ominous crows have taken roost in the area.</letterText>
     <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
-    <minRefireDays>0</minRefireDays>
-    <category>Misc</category>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
     <pointsScaleable>true</pointsScaleable>
-    <minThreatPoints>400</minThreatPoints>
+    <minThreatPoints>0</minThreatPoints>
   </IncidentDef>
 
   <IncidentDef>
@@ -80,16 +80,16 @@
     <letterText>Something mysterious has occured nearby.</letterText>
     <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
-    <minRefireDays>0</minRefireDays>
-    <category>Misc</category>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
     <pointsScaleable>true</pointsScaleable>
-    <minThreatPoints>400</minThreatPoints>
+    <minThreatPoints>0</minThreatPoints>
   </IncidentDef>
 
 	<IncidentDef>
     <defName>HPLovecraft_BloodMoon</defName>
     <label>blood moon</label>
-		<category>Misc</category>
+		<category>Special</category>
     <targetTags>
 	  <li>World</li>
 	</targetTags>
@@ -99,7 +99,8 @@
     <letterText>One of the moons of this planet has orbited in front of the sun. It is a blood moon.</letterText>
     <letterDef>ThreatSmall</letterDef>
     <baseChance>0</baseChance>
-    <minRefireDays>0</minRefireDays>
+    <minThreatPoints>0</minThreatPoints>
+    <minRefireDays>5</minRefireDays>
     <durationDays>
       <min>0.75</min>
       <max>1.25</max>
@@ -128,7 +129,7 @@
 	<IncidentDef>
     <defName>HPLovecraft_LoneSurvivor</defName>
     <label>a lone survivor</label>
-		<category>Misc</category>
+		<category>Special</category>
     <targetTags>
 	  <li>Map_PlayerHome</li>
 	</targetTags>
@@ -145,7 +146,7 @@
 	<IncidentDef>
     <defName>HPLovecraft_TheMist</defName>
     <label>mist from beyond</label>
-		<category>Misc</category>
+		<category>Special</category>
     <targetTags>
 	  <li>Map_PlayerHome</li>
 	</targetTags>

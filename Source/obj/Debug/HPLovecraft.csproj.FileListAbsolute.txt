@@ -12,4 +12,3 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\HP-Lovecraf
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\HP-Lovecraft-Storyteller\Source\obj\Debug\HPLovecraft.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\HP-Lovecraft-Storyteller\Source\obj\Debug\HPLovecraft.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\HP-Lovecraft-Storyteller\1.1\Assemblies\HPLovecraft.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\HP-Lovecraft-Storyteller\Source\obj\Debug\HPLovecraft.csproj.CoreCompileInputs.cache

@@ -16,6 +16,7 @@ namespace HPLovecraft
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            Settings.DebugString("== Enter IncidentWorker_Paranoia ==");
             float rand = Rand.Value;
             if (rand < 0.25f)
             {
@@ -27,7 +28,7 @@ namespace HPLovecraft
                  * 10% chance that two colonists will trigger a social fight.
                  *
                  */
-                //Log.Message("Mass Paranoia");
+                Settings.DebugString("Mass Paranoia");
                 if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count<Pawn>() > 0)
                 {
                     var difficultyCalc = DIFFICULTYMODIFIER * Find.Storyteller.difficulty.difficulty;
@@ -65,7 +66,7 @@ namespace HPLovecraft
                  *
                  */
 
-                //Log.Message("Single paranoia");
+                Settings.DebugString("Single Paranoia");
                 if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count<Pawn>() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn)
                 {
@@ -97,7 +98,7 @@ namespace HPLovecraft
                  * 90% chance of the character wandering in their own room.
                  *
                  */
-                //Log.Message("Visions");
+                Settings.DebugString("Visions");
                 if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn)
                 {
@@ -117,8 +118,8 @@ namespace HPLovecraft
                  * A single colonist's eye, ear, nose, or mouth becomes "disoriented."
                  *
                  */
-                //Log.Message("Plagued senses");
-                if (parms.target is Map map && map.mapPawns.FreeColonistsAndPrisoners is IEnumerable<Pawn> pawns && pawns.Count() > 0 &&
+                Settings.DebugString("Plagued Senses");
+                if (parms.target is Map map && map.mapPawns.FreeColonists is IEnumerable<Pawn> pawns && pawns.Count() > 0 &&
                     pawns.RandomElement<Pawn>() is Pawn pawn && pawn?.health?.hediffSet is HediffSet parts)
                 {
                     Cthulhu.Utility.ApplySanityLoss(pawn, Rand.Range(0.3f, 0.5f), 1);

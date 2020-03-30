@@ -34,7 +34,7 @@ namespace HPLovecraft
                     new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle) omenThreatCycle)
                         .OmenIncidentChanceFinal), out bigThreat))
                 {
-                    Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
+                    Settings.DebugString("BigThreat Result - No Event");
                     return false;
                 }
             }
@@ -47,7 +47,7 @@ namespace HPLovecraft
                     new Func<IncidentDef, float>(((StorytellerComp_OmenThreatCycle) omenThreatCycle)
                         .OmenIncidentChanceFinal), out bigThreat))
                 {
-                    Cthulhu.Utility.DebugReport("BigThreat Result - No Event");
+                    Settings.DebugString("BigThreat Result - No Event");
                     return false;
                 }
             }
@@ -57,11 +57,11 @@ namespace HPLovecraft
             {
                 if (omenTracker.DelayedIncidents.Count > 0)
                 {
-                    Cthulhu.Utility.DebugReport("Tried to do multiple omens");
+                    Settings.DebugString("Tried to do multiple omens");
                     return false;
                 }
                 int newDelay = Find.TickManager.TicksGame + OMENDELAY.RandomInRange;
-                Cthulhu.Utility.DebugReport("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame +
+                Settings.DebugString("New Delayed Incident :: GameTick:" + Find.TickManager.TicksGame +
                                             " DelayTick:" + (newDelay));
                 omenTracker.AddDelayedIncident(new DelayedIncident(map, bigThreat, parms, newDelay));
             }

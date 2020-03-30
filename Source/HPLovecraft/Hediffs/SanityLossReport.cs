@@ -51,13 +51,13 @@ namespace HPLovecraft
                     }
                     else
                     {
-                        Cthulhu.Utility.ErrorReport("Can't choose sanity loss prefix. This should never happen.");
+                        Log.Message("Can't choose sanity loss prefix. This should never happen.");
                     }
 
                     ///
                     /// Flavor Text
                     /// 
-                    string flavorKey = "HPLovecraft_SanityLossFlavorText" + new IntRange(1, 10).RandomInRange.ToString();
+                    string flavorKey = "HPLovecraft_SanityLossFlavorText" + new IntRange(1, 13).RandomInRange.ToString();
                     s.AppendLine(flavorKey.Translate());
 
                     /// Seperator

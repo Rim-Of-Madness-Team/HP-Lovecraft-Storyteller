@@ -20,6 +20,7 @@ using Verse.Noise;       // Needed when you do something with Noises
 using RimWorld;            // RimWorld specific functions are found here (like 'Building_Battery')
 using RimWorld.Planet;   // RimWorld specific functions for world creation
 using System.Reflection;
+using HPLovecraft;
 //using RimWorld.SquadAI;  // RimWorld specific functions for squad brains 
 
 /// <summary>
@@ -151,28 +152,28 @@ namespace Cthulhu
             s.Append("ActorAvailble: Passed InMentalState check");
             s.AppendLine();
             s.Append("ActorAvailble Checks Passed");
-            Cthulhu.Utility.DebugReport(s.ToString());
+            Settings.DebugString(s.ToString());
             return true;
         }
 
         public static bool ResultFalseWithReport(StringBuilder s)
         {
             s.Append("ActorAvailble: Result = Unavailable");
-            Cthulhu.Utility.DebugReport(s.ToString());
+            Settings.DebugString(s.ToString());
             return false;
         }
 
         static public Pawn GenerateNewPawnFromSource(ThingDef newDef, Pawn sourcePawn)
         {
             Pawn pawn = (Pawn)ThingMaker.MakeThing(newDef);
-            //Cthulhu.Utility.DebugReport("Declare a new thing");
+            //Settings.DebugString("Declare a new thing");
             pawn.Name = sourcePawn.Name;
-            //Cthulhu.Utility.DebugReport("The name!");
+            //Settings.DebugString("The name!");
             pawn.SetFactionDirect(Faction.OfPlayer);
             pawn.kindDef = sourcePawn.kindDef;
-            //Cthulhu.Utility.DebugReport("The def!");
+            //Settings.DebugString("The def!");
             pawn.pather = new Pawn_PathFollower(pawn);
-            //Cthulhu.Utility.DebugReport("The pather!");
+            //Settings.DebugString("The pather!");
             pawn.ageTracker = new Pawn_AgeTracker(pawn);
             pawn.health = new Pawn_HealthTracker(pawn);
             pawn.jobs = new Pawn_JobTracker(pawn);
@@ -199,7 +200,7 @@ namespace Cthulhu
             pawn.needs.SetInitialLevels();
             GenerateRandomAge(pawn, sourcePawn.Map);
             CopyPawnRecords(sourcePawn, pawn);
-            //Cthulhu.Utility.DebugReport("We got so far.");
+            //Settings.DebugString("We got so far.");
             return pawn;
         }
 
@@ -581,7 +582,7 @@ namespace Cthulhu
                     pawnSanityHediff.Severity = result;
                     pawn.health.Notify_HediffChanged(pawnSanityHediff);
                     appliedSuccessfully = true;
-                    Cthulhu.Utility.DebugReport("Applied Sanity loss to: " + pawn.LabelShort);
+                    Settings.DebugString("Applied Sanity loss to: " + pawn.LabelShort);
                 }
                 else if (sanityLoss > 0)
                 {
@@ -597,7 +598,7 @@ namespace Cthulhu
                         pawn.health.AddHediff(sanityLossHediff, null, null);
                         pawn.health.Notify_HediffChanged(pawnSanityHediff);
                         appliedSuccessfully = true;
-                        Cthulhu.Utility.DebugReport("Made and applied Sanity loss to: " + pawn.LabelShort);
+                        Settings.DebugString("Made and applied Sanity loss to: " + pawn.LabelShort);
                         //Log.Message("4");
 
                     }
@@ -685,22 +686,22 @@ namespace Cthulhu
                 if (loadedCosmicHorrors && loadedIndustrialAge && loadedCults) break; //Save some loading
                 if (ResolvedMod.Name.Contains("Call of Cthulhu - Cosmic Horrors"))
                 {
-                    DebugReport("Loaded - Call of Cthulhu - Cosmic Horrors");
+                    Settings.DebugString("Loaded - Call of Cthulhu - Cosmic Horrors");
                     loadedCosmicHorrors = true;
                 }
                 if (ResolvedMod.Name.Contains("Call of Cthulhu - Industrial Age"))
                 {
-                    DebugReport("Loaded - Call of Cthulhu - Industrial Age");
+                    Settings.DebugString("Loaded - Call of Cthulhu - Industrial Age");
                     loadedIndustrialAge = true;
                 }
                 if (ResolvedMod.Name.Contains("Call of Cthulhu - Cults"))
                 {
-                    DebugReport("Loaded - Call of Cthulhu - Cults");
+                    Settings.DebugString("Loaded - Call of Cthulhu - Cults");
                     loadedCults = true;
                 }
                 if (ResolvedMod.Name.Contains("Call of Cthulhu - Factions"))
                 {
-                    DebugReport("Loaded - Call of Cthulhu - Factions");
+                    Settings.DebugString("Loaded - Call of Cthulhu - Factions");
                     loadedFactions = true;
                 }
             }
@@ -709,16 +710,6 @@ namespace Cthulhu
         }
 
         public static string Prefix => ModProps.main + " :: " + ModProps.mod + " " + ModProps.version + " :: ";
-
-        public static void DebugReport(string x)
-        {
-            if (Prefs.DevMode && DebugSettings.godMode)
-            {
-                Log.Message(Prefix + x);
-            }
-        }
-
-        public static void ErrorReport(string x) => Log.Error(Prefix + x);
 
 
     }

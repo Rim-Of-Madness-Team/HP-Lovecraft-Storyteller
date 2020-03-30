@@ -13,6 +13,7 @@ namespace HPLovecraft
     {
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            Settings.DebugString("== Enter IncidentWorker_LoneSurvivor ==");
             string flavorDesc = "";
             float rand = Rand.Value;
             GlobalTargetInfo target = new GlobalTargetInfo();
@@ -49,6 +50,27 @@ namespace HPLovecraft
             return true;
         }
 
+
+        /*
+         * Dying Survivor
+         *
+         * 
+         * 
+         */
+        public void DyingSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
+        {
+            Settings.DebugString("Dying Survivor");
+            IntVec3 loc;
+            Map map = (Map)parms.target;
+            RCellFinder.TryFindRandomPawnEntryCell(out loc, map, CellFinder.EdgeRoadChance_Animal, false, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, Find.FactionManager.FirstFactionOfDef(FactionDef.Named("HPL_StrangersNeutral")));
+            Pawn survivor = (Pawn)GenSpawn.Spawn(newThing, loc, map);
+            Cthulhu.Utility.ApplySanityLoss(survivor, 0.3f);
+            HealthUtility.DamageUntilDowned(survivor);
+            flavorDesc = "ROM_OmenSurvivorDesc6".Translate();
+            target = new RimWorld.Planet.GlobalTargetInfo(survivor);
+        }
+
         /*
          * Plagued Survivor
          *
@@ -57,10 +79,11 @@ namespace HPLovecraft
          */
         public void PlaguedSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
+            Settings.DebugString("Plagued Survivor");
             IntVec3 loc;
             Map map = (Map)parms.target;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, map, CellFinder.EdgeRoadChance_Animal, false, null);
-            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, Find.FactionManager.FirstFactionOfDef(FactionDef.Named("HPL_StrangersNeutral")));
             Pawn survivor = (Pawn)GenSpawn.Spawn(newThing, loc, map);
             survivor.health.AddHediff(HediffDefOf.Plague);
             for (int i = 0; i < Rand.Range(1, 2); i++)
@@ -82,10 +105,11 @@ namespace HPLovecraft
          */
         public void MadSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
+            Settings.DebugString("Mad Survivor");
             IntVec3 loc;
             Map map = (Map)parms.target;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, map, CellFinder.EdgeRoadChance_Animal, false, null);
-            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, Find.FactionManager.FirstFactionOfDef(FactionDef.Named("HPL_StrangersNeutral")));
             Pawn survivor = (Pawn)GenSpawn.Spawn(newThing, loc, (Map)parms.target);
             DamageDef damageType = (Rand.Range(0, 100) > 50) ? DamageDefOf.Crush : DamageDefOf.Stab;
             var damageNum = (Rand.Range(0, 100) > 50) ? 3f : 5f;
@@ -106,6 +130,7 @@ namespace HPLovecraft
         */
         public void WildSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
+            Settings.DebugString("Wild Survivor");
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.WildMan, null);
@@ -124,10 +149,11 @@ namespace HPLovecraft
          */
         public void PsychopathSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
+            Settings.DebugString("Psychopath Survivor");
             IntVec3 loc;
             Map map = (Map)parms.target;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, map, CellFinder.EdgeRoadChance_Animal, false, null);
-            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, Find.FactionManager.FirstFactionOfDef(FactionDef.Named("HPL_StrangersHostile")));
             newThing.story.traits.allTraits = new List<Trait>();
             newThing.story.traits.GainTrait(new Trait(TraitDefOf.Psychopath, 0, true));
             if (Rand.Range(0, 100) > 60) newThing.story.traits.GainTrait(new Trait(TraitDefOf.Cannibal));
@@ -137,11 +163,10 @@ namespace HPLovecraft
             Pawn survivor = (Pawn)GenSpawn.Spawn(newThing, loc, map);
             DamageDef damageType = (Rand.Range(0, 100) > 50) ? DamageDefOf.Cut : DamageDefOf.Burn;
             //survivor.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("MurderousRage"), otherPawn: ((Map)parms.target).mapPawns.FreeColonists.FirstOrDefault());
-            survivor.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
+            //survivor.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk);
 
             RCellFinder.TryFindRandomSpotJustOutsideColony(survivor, out IntVec3 result);
-            var lordJob = new LordJob_AssaultColony();
-            LordMaker.MakeNewLord(survivor.Faction, lordJob, map, new List<Pawn>() { survivor });
+            LordMaker.MakeNewLord(survivor.Faction, new LordJob_DefendPoint(map.Center), map, new List<Pawn>() { survivor });
 
             flavorDesc = "ROM_OmenSurvivorDesc2".Translate();
             target = new RimWorld.Planet.GlobalTargetInfo(survivor);
@@ -149,10 +174,10 @@ namespace HPLovecraft
 
         public void DeadSurvivor(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-
+            Settings.DebugString("Dead Survivor");
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
-            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, null);
+            Pawn newThing = PawnGenerator.GeneratePawn(PawnKindDefOf.Drifter, Find.FactionManager.FirstFactionOfDef(FactionDef.Named("HPL_StrangersNeutral")));
             Thing survivor = GenSpawn.Spawn(newThing, loc, (Map)parms.target);
             ((Pawn)survivor).Kill(null);
             flavorDesc = "ROM_OmenSurvivorDesc1".Translate();

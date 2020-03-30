@@ -37,27 +37,29 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="HPLovecraft\CthulhuUtility.cs" />
-    <Compile Include="HPLovecraft\DeathActionWorker_VanishMist.cs" />
-    <Compile Include="HPLovecraft\DelayedIncident.cs" />
-    <Compile Include="HPLovecraft\GameCondition_BloodMoon.cs" />
-    <Compile Include="HPLovecraft\GameCondition_TheMist.cs" />
-    <Compile Include="HPLovecraft\HediffComp_SanityLoss.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_LoneSurvivor.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_Cats.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_Crows.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_Mystery.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_Omen.cs" />
-    <Compile Include="HPLovecraft\IncidentWorker_Paranoia.cs" />
-    <Compile Include="HPLovecraft\HPLDefOf.cs" />
-    <Compile Include="HPLovecraft\JobGiver_StalkCharacters.cs" />
-    <Compile Include="HPLovecraft\LovecraftHarmony.cs" />
-    <Compile Include="HPLovecraft\MapComponent_OmenIncidentTracker.cs" />
-    <Compile Include="HPLovecraft\PawnMistCreature.cs" />
-    <Compile Include="HPLovecraft\SanityLossReport.cs" />
-    <Compile Include="HPLovecraft\StorytellerCompData_OmenThreatCycle.cs" />
-    <Compile Include="HPLovecraft\StorytellerCompProperties_OmenThreatCycle.cs" />
-    <Compile Include="HPLovecraft\StorytellerComp_OmenThreatCycle.cs" />
+    <Compile Include="HPLovecraft\Storyteller\StorytellerCompProperties_OmenOnOffCycle.cs" />
+    <Compile Include="HPLovecraft\Utilities\Settings.cs" />
+    <Compile Include="HPLovecraft\Storyteller\StorytellerComp_OmenOnOffCycle.cs" />
+    <Compile Include="HPLovecraft\Utilities\CthulhuUtility.cs" />
+    <Compile Include="HPLovecraft\Creatures\DeathActionWorker_VanishMist.cs" />
+    <Compile Include="HPLovecraft\Storyteller\DelayedIncident.cs" />
+    <Compile Include="HPLovecraft\GameConditions\GameCondition_BloodMoon.cs" />
+    <Compile Include="HPLovecraft\GameConditions\GameCondition_TheMist.cs" />
+    <Compile Include="HPLovecraft\Hediffs\HediffComp_SanityLoss.cs" />
+    <Compile Include="HPLovecraft\Incidents\IncidentWorker_LoneSurvivor.cs" />
+    <Compile Include="HPLovecraft\Incidents\IncidentWorker_Cats.cs" />
+    <Compile Include="HPLovecraft\Incidents\IncidentWorker_Crows.cs" />
+    <Compile Include="HPLovecraft\Incidents\IncidentWorker_Mystery.cs" />
+    <Compile Include="HPLovecraft\Storyteller\IncidentWorker_Omen.cs" />
+    <Compile Include="HPLovecraft\Incidents\IncidentWorker_Paranoia.cs" />
+    <Compile Include="HPLovecraft\Utilities\HPLDefOf.cs" />
+    <Compile Include="HPLovecraft\Creatures\JobGiver_StalkCharacters.cs" />
+    <Compile Include="HPLovecraft\Storyteller\MapComponent_OmenIncidentTracker.cs" />
+    <Compile Include="HPLovecraft\Creatures\PawnMistCreature.cs" />
+    <Compile Include="HPLovecraft\Hediffs\SanityLossReport.cs" />
+    <Compile Include="HPLovecraft\Storyteller\StorytellerCompData_OmenThreatCycle.cs" />
+    <Compile Include="HPLovecraft\Storyteller\Obsolete\StorytellerCompProperties_OmenThreatCycle.cs" />
+    <Compile Include="HPLovecraft\Storyteller\Obsolete\StorytellerComp_OmenThreatCycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

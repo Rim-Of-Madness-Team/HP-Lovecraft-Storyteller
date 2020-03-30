@@ -12,6 +12,7 @@ namespace HPLovecraft
     {
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            Settings.DebugString("== Enter IncidentWorker_Mystery ==");
             float rand = Rand.Value;
             if (rand < 0.3f)
             {
@@ -30,16 +31,19 @@ namespace HPLovecraft
 
         public void BloodMoon(IncidentParms parms)
         {
+            Settings.DebugString("Blood Moon");
             HPLDefOf.HPLovecraft_BloodMoon.Worker.TryExecute(parms);
         }
 
         public void StrangeFog(IncidentParms parms)
         {
+            Settings.DebugString("Strange Fog");
             HPLDefOf.HPLovecraft_TheMist.Worker.TryExecute(parms);
         }
 
         public void LoneSurvivor(IncidentParms parms)
         {
+            Settings.DebugString("Lone Survivor");
             HPLDefOf.HPLovecraft_LoneSurvivor.Worker.TryExecute(parms);
         }
 

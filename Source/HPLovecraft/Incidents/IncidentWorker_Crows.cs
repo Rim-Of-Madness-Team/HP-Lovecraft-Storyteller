@@ -12,6 +12,8 @@ namespace HPLovecraft
     {
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+
+            Settings.DebugString("== Enter IncidentWorker_Crows ==");
             string flavorDesc = "";
             Thing crow = null;
             float rand = Rand.Value;
@@ -24,7 +26,7 @@ namespace HPLovecraft
                  * One dead crow appears.
                  * 
                  */
-                //Log.Message("Dead Crow");
+                Settings.DebugString("Dead Crow");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -42,7 +44,7 @@ namespace HPLovecraft
                  * One crow is dead in the center.
                  * 
                  */
-                //Log.Message("Murder of Crows");
+                Settings.DebugString("Murder of Crows");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 var newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -66,7 +68,7 @@ namespace HPLovecraft
                  * A group of crows spawn outside the colony.
                  * 
                  */
-                //Log.Message("Flock of Crows");
+                Settings.DebugString("Flock of Crows");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);
@@ -89,7 +91,7 @@ namespace HPLovecraft
                  * A single crow watches the colony.
                  *
                  */
-                //Log.Message("Solitary Crow");
+                Settings.DebugString("Solitary Crow");
                 IntVec3 loc;
                 RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
                 Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CrowKind, null);

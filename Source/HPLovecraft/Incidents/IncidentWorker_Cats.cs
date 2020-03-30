@@ -10,8 +10,10 @@ namespace HPLovecraft
 {
     public class IncidentWorker_Cats : IncidentWorker
     {
+
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
+            Settings.DebugString("== Enter IncidentWorker_Cats == ");
             string flavorDesc = "";
             float rand = Rand.Value;
             GlobalTargetInfo target = new GlobalTargetInfo();
@@ -50,8 +52,7 @@ namespace HPLovecraft
          */
         public void AffectionateCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            //Log.Message("Affectionate Cat");
-            //Affectionate cat
+            Settings.DebugString("Affectionate Cat");
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
@@ -69,8 +70,7 @@ namespace HPLovecraft
         */
         public void StrayCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            //Log.Message("Stray Cat");
-            //Stray cat
+            Settings.DebugString("Stray Cat");
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
             Pawn newThing = PawnGenerator.GeneratePawn(HPLDefOf.HPLovecraft_CatKind_Black, null);
@@ -87,8 +87,7 @@ namespace HPLovecraft
          */
         public void WildCats(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            //Log.Message("Wild Cats");
-            //Wild cats
+            Settings.DebugString("Wild Cats");
             IntVec3 loc;
             GlobalTargetInfo? newTarget = null;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);
@@ -111,7 +110,8 @@ namespace HPLovecraft
 
         public void DeadCat(IncidentParms parms, out string flavorDesc, out GlobalTargetInfo target)
         {
-            //Log.Message("Dead Cat");
+
+            Settings.DebugString("Dead Cat");
             //Dead cat
             IntVec3 loc;
             RCellFinder.TryFindRandomPawnEntryCell(out loc, (Map)parms.target, CellFinder.EdgeRoadChance_Animal, false, null);

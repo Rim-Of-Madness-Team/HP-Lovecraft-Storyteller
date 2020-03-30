@@ -12,14 +12,16 @@
       <!-- Intro -->
       <li Class="StorytellerCompProperties_ClassicIntro"/>
       <!-- Home threats -->
-      <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
+      <li Class="HPLovecraft.StorytellerCompProperties_OmenOnOffCycle">
         <category>ThreatBig</category>
-        <minDaysPassed>11.0</minDaysPassed>
-        <onDays>4.6</onDays>
-        <offDays>6.0</offDays>
-        <minSpacingDays>1.9</minSpacingDays>
+        <minDaysPassed>5.0</minDaysPassed>
+        <onDays>3.1</onDays>
+        <offDays>4.9</offDays>
+        <minSpacingDays>1.3</minSpacingDays>
         <numIncidentsRange>1~2</numIncidentsRange>
-        <forceRaidEnemyBeforeDaysPassed>20</forceRaidEnemyBeforeDaysPassed>
+        <cosmicHorrorRaidPercentage>33</cosmicHorrorRaidPercentage>
+        <forceRaidEnemyBeforeDaysPassed>10</forceRaidEnemyBeforeDaysPassed>
+        <forceCosmicHorrorRaidBeforeDaysPassed>20</forceCosmicHorrorRaidBeforeDaysPassed>
         <disallowedTargetTags>
           <li>Map_RaidBeacon</li>
         </disallowedTargetTags>
