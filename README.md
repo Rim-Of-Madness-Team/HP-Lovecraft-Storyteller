@@ -1,28 +1,4 @@
 # HPLovecraftStoryteller
-
-![Image](https://i.imgur.com/WAEzk68.png)
-
-Update of jecrells mod
-https://steamcommunity.com/sharedfiles/filedetails/?id=944669553
-
-- This is an unofficial port
-- This will be removed when/if Jecrell comes back
-- Keep comments about the mods function and bugs. Opinions on the subject-matter can be expressed elsewhere.
-
-![Image](https://i.imgur.com/7Gzt3Rg.png)
-
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/HPLovecraftStoryteller]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
-	
-![Image](https://i.imgur.com/NOW7jU1.png)
-
 
 # Adds a foreboding storyteller that adds omens to RimWorld stories.
 
@@ -60,23 +36,5 @@ In this mod, Lovecraft will be added to your list of storytellers. In Lovecraft&
   *Remember to spay and nueter your pets! https://steamcommunity.com/sharedfiles/filedetails/?id=902186027
 
 ...
-
-# Special thanks to all those that support me on Patreon:
-
-ShotgunFace, Fredric Sundberg, Dan Winn, Toss Antilles, Sarah Banks, Undead Jackel, Michin, Chelsea, Caine Detueur, Yewty Oxman, Jerod Clayton, Arty Kubin, Ashleigh Miller, infinity421, TheDayDude, Jacob Duga, Ryan Brock, Evan Hwang, Moshat, Christopher, Don Butterblume, John Boehr, George Chong Chuang Ming, Oliver White, Helpful Bot, vincent de keijzer, roxxploxx, Legless, Christopher Abel, Karol Rybak, Mathias Broxvall, Mark, Tim Stillson, Lachlan Easton, Nemuri Hime, Sera, Christian Hermansen, NiNe Bottles of Rum, Populous25, Steven James, Marcus Siraenu, Michael Lauder, meatface.
-
-
-![Image](https://i.imgur.com/Rs6T6cr.png)
-
-
-
--  See if the the error persists if you just have this mod and its requirements active.
--  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib and command Ctrl+F12
--  For best support, please use the Discord-channel for error-reporting.
--  Do not report errors by making a discussion-thread, I get no notification of that.
--  If you have the solution for a problem, please post it to the GitHub repository.
-
-
 
 
