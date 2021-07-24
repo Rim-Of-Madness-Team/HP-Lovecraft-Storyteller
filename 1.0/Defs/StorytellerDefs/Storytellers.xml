@@ -1,16 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<StorytellerDef ParentName="BaseStoryteller" Name="LovecraftStoryteller">
-		<defName>Lovecraft</defName>
+  <StorytellerDef ParentName="BaseStoryteller" Name="LovecraftStoryteller">
+    <defName>Lovecraft</defName>
     <label>H.P. Lovecraft</label>
-		<description>In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?</description>
+    <description>In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?</description>
     <portraitLarge>Lovecraft1.1</portraitLarge>
     <portraitTiny>Lovecraft1.2</portraitTiny>
     <listOrder>50</listOrder>
     <comps>
       <!-- Intro -->
-      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ClassicIntro" />
       <!-- Home threats -->
       <li Class="HPLovecraft.StorytellerCompProperties_OmenThreatCycle">
         <category>ThreatBig</category>
@@ -51,7 +50,7 @@
         <minDaysPassed>5</minDaysPassed>
         <mtbDays>3</mtbDays>
       </li>
-      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_ShipChunkDrop" />
       <li Class="StorytellerCompProperties_Disease">
         <minDaysPassed>9</minDaysPassed>
         <category>DiseaseHuman</category>
@@ -120,7 +119,7 @@
         </allowedTargetTags>
       </li>
       <!-- World -->
-      <li Class="StorytellerCompProperties_JourneyOffer"/>
+      <li Class="StorytellerCompProperties_JourneyOffer" />
       <li Class="StorytellerCompProperties_CategoryMTB">
         <category>WorldQuest</category>
         <allowedTargetTags>
@@ -152,12 +151,10 @@
       </li>
     </comps>
   </StorytellerDef>
-
-  
-	<StorytellerDef ParentName="LovecraftStoryteller">
-		<defName>Lovecraft_DoublePop</defName>
+  <StorytellerDef ParentName="LovecraftStoryteller">
+    <defName>Lovecraft_DoublePop</defName>
     <label>H.P. Lovecraft (Population x2)</label>
-		<description>In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?\n\nDoubles normal population caps during gameplay.</description>
+    <description>In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?\n\nDoubles normal population caps during gameplay.</description>
     <portraitLarge>LovecraftX21.1</portraitLarge>
     <portraitTiny>LovecraftX21.2</portraitTiny>
     <listOrder>51</listOrder>
@@ -172,5 +169,4 @@
       </points>
     </populationIntentFactorFromPopCurve>
   </StorytellerDef>
-  
 </Defs>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ROM_ItWasACat>A creature from the mist burst forth from the fog exhuding an unearthly aura. In a moment, just as quickly as it came, it was gone. In its place, a solitary cat remained.</ROM_ItWasACat>
+  <ROM_OmenSurvivorDesc6>A lone survivor has arrived at the border to your colony. They are near death.</ROM_OmenSurvivorDesc6>
+  <ROM_OmenSurvivorDesc5>A lone survivor has arrived. They are not well. A victim of the plague in a nearby colony, riddled with disease, they wander at the edge of your colony.</ROM_OmenSurvivorDesc5>
+  <ROM_OmenSurvivorDesc4>A lone survivor has arrived. Suffering from a trauma that they cannot communicate to our colonists, they appear to have been lost to madness.</ROM_OmenSurvivorDesc4>
+  <ROM_OmenSurvivorDesc3>A lone survivor has arrived. It has been so long since they have had contact with other humans, it appears they have lost their humanity in the wild.</ROM_OmenSurvivorDesc3>
+  <ROM_OmenSurvivorDesc2>A lone survivor has arrived. Piercing eyes and an overstretched smile strain their features. Blood is on them, and it is not their own.</ROM_OmenSurvivorDesc2>
+  <ROM_OmenSurvivorDesc1>A lone survivor crawled to the edge of your colony and expired.</ROM_OmenSurvivorDesc1>
+  <ROM_OmenCatDesc1>A poor creature has been slain and left by the wayside. The mysterious death offers no witnesses.</ROM_OmenCatDesc1>
+  <ROM_OmenCatDesc2>Mewling sounds pierce the silence. A clowder with small frightened faces fused with panic and rage bound towards your colony.</ROM_OmenCatDesc2>
+  <ROM_OmenCatDesc3>A stray cat has wandered onto your territory.</ROM_OmenCatDesc3>
+  <ROM_OmenCatDesc4>A stray cat has wandered onto your territory. This particular feline has decided to join you.</ROM_OmenCatDesc4>
+  <ROM_OmenParanaoiaResult>paranoia</ROM_OmenParanaoiaResult>
+  <ROM_OmenParanaoiaDesc1>A wave of paranoia has washed over the minds of your colonists.</ROM_OmenParanaoiaDesc1>
+  <ROM_OmenParanaoiaDesc2>One of your colonists has become overwhelmed with uncertainty. {0} has become paranoid.</ROM_OmenParanaoiaDesc2>
+  <ROM_OmenParanaoiaDesc2b>{0} sensed a wave of paranoia, but shrugged it off through sheer will.</ROM_OmenParanaoiaDesc2b>
+  <ROM_OmenParanaoiaDesc3>{0} has seen a vision of terrible things to come.</ROM_OmenParanaoiaDesc3>
+  <ROM_OmenParanaoiaDesc4>One of your colonists senses have been plagued. {0} has become disoriented.</ROM_OmenParanaoiaDesc4>
+  <ROM_OmenCrowDesc1>A flock of ominous dark birds stand outside your colony. One of their kind lays dead among them.</ROM_OmenCrowDesc1>
+  <ROM_OmenCrowDesc2>A flock of ominous dark birds stand outside your colony.</ROM_OmenCrowDesc2>
+  <ROM_OmenCrowDesc3>A single crow watches your colonists.</ROM_OmenCrowDesc3>
+  <ROM_OmenStrangeFogDesc>An opressive fog has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces.</ROM_OmenStrangeFogDesc>
+</LanguageData>

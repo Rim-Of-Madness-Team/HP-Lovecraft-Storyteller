@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="AnimalThingBase">
     <defName>HPLovecraft_CatRace</defName>
     <label>alpha cat</label>
@@ -46,7 +45,7 @@
         </surpriseAttack>
       </li>
       <li>
-	    <label>teeth</label>
+        <label>teeth</label>
         <capacities>
           <li>Bite</li>
         </capacities>
@@ -126,53 +125,51 @@
     <tradeTags>
       <li>AnimalPet</li>
     </tradeTags>
-    </ThingDef>
-
-    <PawnKindDef ParentName="AnimalKindBase">
-      <defName>HPLovecraft_CatKind_Black</defName>
-      <label>black cat</label>
-      <race>HPLovecraft_CatRace</race>
-      <combatPower>80</combatPower>
-      <lifeStages>
-        <li>
-          <label>kitten</label>
-          <bodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
-            <drawSize>0.65</drawSize>
-            <color>(45,45,45)</color>
-          </bodyGraphicData>
-          <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
-            <drawSize>0.65</drawSize>
-          </dessicatedBodyGraphicData>
-        </li>
-        <li>
-          <bodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
-            <drawSize>0.85</drawSize>
-            <color>(45,45,45)</color>
-          </bodyGraphicData>
-          <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
-            <drawSize>0.8</drawSize>
-          </dessicatedBodyGraphicData>
-        </li>
-        <li>
-          <bodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
-            <drawSize>1.1</drawSize>
-            <color>(45,45,45)</color>
-            <shadowData>
-              <volume>(0.25, 0.3, 0.25)</volume>
-              <offset>(0,0,-0.15)</offset>
-            </shadowData>
-          </bodyGraphicData>
-          <dessicatedBodyGraphicData>
-            <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
-            <drawSize>1.0</drawSize>
-          </dessicatedBodyGraphicData>
-        </li>
-      </lifeStages>
-    </PawnKindDef>
-
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>HPLovecraft_CatKind_Black</defName>
+    <label>black cat</label>
+    <race>HPLovecraft_CatRace</race>
+    <combatPower>80</combatPower>
+    <lifeStages>
+      <li>
+        <label>kitten</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+          <drawSize>0.65</drawSize>
+          <color>(45,45,45)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>0.65</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+          <drawSize>0.85</drawSize>
+          <color>(45,45,45)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+          <drawSize>1.1</drawSize>
+          <color>(45,45,45)</color>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
 </Defs>

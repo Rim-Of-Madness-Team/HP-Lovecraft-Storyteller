@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <HPLovecraft_SanityLossPrefix>{0} has experienced a fevered {1}.</HPLovecraft_SanityLossPrefix>
+  <HPLovecraft_SanityLossPrefixPlural>Some colonists have experienced a fevered {0}</HPLovecraft_SanityLossPrefixPlural>
+
+  <HPLovecraft_SanityLossReport>Sanity Loss</HPLovecraft_SanityLossReport>
+
+  <HPLovecraft_Vision>vision</HPLovecraft_Vision>
+  <HPLovecraft_Daydream>daydream</HPLovecraft_Daydream>
+  <HPLovecraft_Nightmare>nightmare</HPLovecraft_Nightmare>
+  <HPLovecraft_AfflictedColonists>Afflicted Colonists</HPLovecraft_AfflictedColonists>
+  <HPLovecraft_DifficultyModifier>+{0}% difficulty modifier</HPLovecraft_DifficultyModifier>
+  <HPLovecraft_ExperiencedSanityLoss>{0} experienced +{1}% sanity loss.</HPLovecraft_ExperiencedSanityLoss>
+  <HPLovecraft_SanityLossResistedWithIronWill>{0} resisted with iron-will.</HPLovecraft_SanityLossResistedWithIronWill>
+
+
+  <HPLovecraft_SanityLossFlavorText1>In it they saw visions of a blackened creature whose monstrous forehead shone in moonlight and whose vile hooves surely pawed hellish oozes miles below the surface with eyes hidden, leering, and waiting.</HPLovecraft_SanityLossFlavorText1>
+  <HPLovecraft_SanityLossFlavorText2>In it there were huge
+winged daemons carven of basalt and onyx vomited from wide grinning mouths weird green
+and orange light, and hidden pneumatic pipes ruffled into kaleidoscopic dances of death the
+lines of red charnel things hand in hand woven in voluminous black hangings.</HPLovecraft_SanityLossFlavorText2>
+  <HPLovecraft_SanityLossFlavorText3>In it there were nameless things that may at this very moment be crawling and floundering, worshipping their ancient stone idols and carving their own detestable likenesses on submarine obelisks of water-soaked granite.</HPLovecraft_SanityLossFlavorText3>
+  <HPLovecraft_SanityLossFlavorText4>In it there were things that were trailing over the shoulders of diminutive humanoid creatures, and after a short time they would painlessly devour their prey through disintigration.</HPLovecraft_SanityLossFlavorText4>
+  <HPLovecraft_SanityLossFlavorText5>In it kindly folk transform into indescribable green voiceless things with bulging eyes, pouting, flabby lips, and curious ears during a king's feast. The grinning heads of colonists lay freshly cut and served on silver plates.</HPLovecraft_SanityLossFlavorText5>
+  <HPLovecraft_SanityLossFlavorText6>In it your colonists discovered a long lost capsule from antiquity and decided to investigate the contents. Within it, they discovered their own names scribed upon a hand-held pyramid formed of leathery materials. Several days later, a colonist disappeared during a supply run, and so did their name from the artifact's list.</HPLovecraft_SanityLossFlavorText6>
+  <HPLovecraft_SanityLossFlavorText7>In it they are a lone survivor in a submarine trapped in the depths. As their oxygen begins to deplete, they hear laughter as they are called to put on their diving suit one last time before opening the hatch to plunge into the abyss.</HPLovecraft_SanityLossFlavorText7>
+  <HPLovecraft_SanityLossFlavorText8>All the terror they had dimly felt before rushed upon them actively and vividly. Some -thing- sat next to them. They knew that they loathed the ancient and abhorrent creature so near them with an infinite intensity. It was whispering now, with a huskiness more terrible than a scream, and they trembled as they listened to things they will never unhear.</HPLovecraft_SanityLossFlavorText8>
+  <HPLovecraft_SanityLossFlavorText9>Raucous little bells pealed out to greet the insane titter of a naked phosphorescent thing which swam into sight, scrambled ashore, and climbed up to squat leeringly on a carved onyx pedestal, smaller creatures cowered for fear of being chosen as its meal.</HPLovecraft_SanityLossFlavorText9>
+  <HPLovecraft_SanityLossFlavorText10>They watched from the distance while a hooded stranger dug up a grave to reclaim a strange jade object from a bleached cavern-eyed owner. When returning to the surface, they snatched the artifact from the stranger's hands and promptly pushed them to down into the grave and readied a shovel of their own.</HPLovecraft_SanityLossFlavorText10>
+  <HPLovecraft_SanityLossFlavorText11>The colonists stop at a lonely log motel at the edge of an old forest. The owners become ill during their stay. Each remedy your colonists attempted only worsened their conditions until the end -- they died screaming.</HPLovecraft_SanityLossFlavorText11>
+  <HPLovecraft_SanityLossFlavorText12>A colossal being stumbles. Its great weight and enormous size are greater than all the land. The crowds beneath with great joy extend their arms, close their eyes, and smile. There is no escape, and they make no attempt.</HPLovecraft_SanityLossFlavorText12>
+  <HPLovecraft_SanityLossFlavorText13>People in the city stir. Called by the air of the night. Pulled inescapibly, they stumble out of their homes. The creature summons them -- its features human. Following the creature, the people are guided to a tomb. Unable to pull away, in the depths they hear the stone door sealing above.</HPLovecraft_SanityLossFlavorText13>
+  </LanguageData>

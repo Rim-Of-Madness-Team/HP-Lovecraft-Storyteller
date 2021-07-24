@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <DamageDef>
     <defName>ROM_MistAttack</defName>
     <label>unearthly chill</label>
@@ -14,5 +13,4 @@
     <impactSoundType>Electric</impactSoundType>
     <armorCategory>Heat</armorCategory>
   </DamageDef>
-
 </Defs>

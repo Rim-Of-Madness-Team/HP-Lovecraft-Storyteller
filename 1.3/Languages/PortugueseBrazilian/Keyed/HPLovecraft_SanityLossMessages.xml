@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_SanityLossPrefix>{0} experienciou um febril {1}.</HPLovecraft_SanityLossPrefix>
+  <HPLovecraft_SanityLossPrefixPlural>Alguns colonos experienciaram uma febril {0}</HPLovecraft_SanityLossPrefixPlural>
+
+  <HPLovecraft_SanityLossReport>Perda de sanidade</HPLovecraft_SanityLossReport>
+
+  <HPLovecraft_Vision>visão</HPLovecraft_Vision>
+  <HPLovecraft_Daydream>sonhar acordado</HPLovecraft_Daydream>
+  <HPLovecraft_Nightmare>pesadelo</HPLovecraft_Nightmare>
+  <HPLovecraft_AfflictedColonists>Colônos Aflitos</HPLovecraft_AfflictedColonists>
+  <HPLovecraft_DifficultyModifier>+{0}% modificador de dificuldade</HPLovecraft_DifficultyModifier>
+  <HPLovecraft_ExperiencedSanityLoss>{0} experienciou +{1}% de perda de sanidade.</HPLovecraft_ExperiencedSanityLoss>
+  <HPLovecraft_SanityLossResistedWithIronWill>{0} resistiu com força de vontade</HPLovecraft_SanityLossResistedWithIronWill>
+
+
+  <HPLovecraft_SanityLossFlavorText1>Nele, viram visões de uma criatura enegrecida, cuja monstruosa testa brilhava à luz da lua e cujos cascos com certeza andaram milhas abaixo da superfície, com os olhos escondidos, olhando e esperando.</HPLovecraft_SanityLossFlavorText1>
+  <HPLovecraft_SanityLossFlavorText2>Nele havia enormes
+demônios alados cravados de basalto e ônix vomitado de uma boca estranha, larga, sorridente com luz laranja e verde, e tubulações neumáticas escondidas, irritantes, em danças caleidoscópicas da morte, e
+linhas de coisas de charnel vermelho de mãos dadas, tecidas em volumosas cortinas pretas.</HPLovecraft_SanityLossFlavorText2>
+  <HPLovecraft_SanityLossFlavorText3>Nele havia coisas sem nome que, neste momento, podiam rastejar e flutuar, adorando seus antigos ídolos de pedra a esculpir suas próprias semelhanças detestáveis em obeliscos submarinos de granito encharcado de água.</HPLovecraft_SanityLossFlavorText3>
+  <HPLovecraft_SanityLossFlavorText4>Nele havia coisas sem nome que, nesse preciso momento, poderiam rastejar e nele haviam coisas que estavam por trás dos ombros de pequenas criaturas humanóides, e depois de um curto período de tempo, eles devorariam sua vítima indolentemente por meio da desintigração.</HPLovecraft_SanityLossFlavorText4>
+  <HPLovecraft_SanityLossFlavorText5>Nele, pessoas gentis se transformam em indescritíveis coisas verdes sem voz com olhos abaulentos, lábios flácidos e orelhas curiosas durante a festa do rei. As cabeças sorridentes de colonos estavam recém-cortadas e servidas em pratos de prata.</HPLovecraft_SanityLossFlavorText5>
+  <HPLovecraft_SanityLossFlavorText6>Nele, seus colonos descobriram uma cápsula perdida há muito tempo da antiguidade e decidiram investigar o conteúdo. Dentro dela, eles descobriram seus próprios nomes escritos sobre uma pirâmide formada a partir de materiais coriáceos. Vários dias depois, um colonizador desapareceu durante uma corrida de abastecimento, assim como seu nome na lista do artefato.</HPLovecraft_SanityLossFlavorText6>
+  <HPLovecraft_SanityLossFlavorText7>Nele, eles são um sobrevivente solitário em um submarino preso nas profundezas. À medida que seu oxigênio começa a esgotar, eles ouvem risos demoníacos e eles são chamados para vestir seu terno de mergulho uma última vez antes de abrir a escotilha para mergulhar no abismo.</HPLovecraft_SanityLossFlavorText7>
+  <HPLovecraft_SanityLossFlavorText8>Todo o terror que sentiram vagamente antes de se precipitaram sobre eles ativamente e vividamente. Algo - sentou-se ao lado deles. Eles sabiam que detestavam a criatura antiga e abominável tão próxima deles com uma intensidade infinita. Agora estava sussurrando, com um rouquidão mais terrível do que um grito, e eles tremiam enquanto ouviam coisas que nunca deixariam de ouvir.</HPLovecraft_SanityLossFlavorText8>
+  <HPLovecraft_SanityLossFlavorText9>Os pequenos sinos roncos salientaram para cumprimentar o título insano de um elemento fosforescente nu que nadou à vista, encalhando em terra, subiu para agachar-se com atenção em um pedestal esculpido em ônix, pequenas criaturas encolhiam com medo de serem escolhidas como sua refeição.</HPLovecraft_SanityLossFlavorText9>
+  <HPLovecraft_SanityLossFlavorText10>Eles observaram à distância, enquanto um estranho com capuz escavava um túmulo para recuperar um objeto de jade estranho de um dono de olhos cavernosos. Ao retornar à superfície, arrancaram o artefato das mãos do estranho e imediatamente os empurraram até o túmulo e prepararam uma pá.</HPLovecraft_SanityLossFlavorText10>
+
+</LanguageData>

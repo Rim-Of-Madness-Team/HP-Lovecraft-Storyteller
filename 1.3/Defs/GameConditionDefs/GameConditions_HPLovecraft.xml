@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GameConditionDef>
+    <defName>HPLovecraft_BloodMoon</defName>
+    <conditionClass>HPLovecraft.GameCondition_BloodMoon</conditionClass>
+    <label>blood moon</label>
+    <description>One of the moons has taken on a mysterious hue, and a newly crimson sky drowns out the soothing colors of livelier days.</description>
+    <endMessage>The blood moon is passing.</endMessage>
+    <letterText>One of the moons of this planet has orbited in front of the sun. It is a blood moon.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+  <GameConditionDef>
+    <defName>HPLovecraft_TheMist</defName>
+    <conditionClass>HPLovecraft.GameCondition_TheMist</conditionClass>
+    <label>mist from beyond</label>
+    <description>A mist has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces where basalt pillars rise.</description>
+    <endMessage>The mist is passing.</endMessage>
+    <letterText>An opressive fog has rolled in. Thick, steady, and sinister in its approach. Stepping foot within may dislodge lesser minds into spaces between spaces.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+  </GameConditionDef>
+</Defs>

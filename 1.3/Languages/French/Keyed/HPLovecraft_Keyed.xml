@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ROM_OmenCatDesc1>Une pauvre créature à été tuée and laissée sur le bas-côté. Il n'y a aucun témoin de cette mystérieuse mort.</ROM_OmenCatDesc1>
+  <ROM_OmenCatDesc2>Des geingnement étrange perce le silence.Un "clowder" avec un petit visage exprimant haine et frayeur fonce sur votre colonie.</ROM_OmenCatDesc2>
+  <ROM_OmenCatDesc3>Un chat érrant est arrivé sur votre térritoire.</ROM_OmenCatDesc3>
+  <ROM_OmenCatDesc4>Un chat érrant est arrivé sur votre térritoire. Ce chat particulier à décider de se joindre à votre colonie.</ROM_OmenCatDesc4>
+
+  <ROM_OmenParanaoiaResult>Paranoïa</ROM_OmenParanaoiaResult>
+
+  <ROM_OmenParanaoiaDesc1>Une vague de paranoia s'empare de l'esprit de vos colons.</ROM_OmenParanaoiaDesc1>
+  <ROM_OmenParanaoiaDesc2>Un de vos colons est devenu angoissé et incertain. {0} has become paranoid.</ROM_OmenParanaoiaDesc2>
+  <ROM_OmenParanaoiaDesc2b>{0} a ressenti une vague de paranoia mais l'a repoussé avec une grande volonté.</ROM_OmenParanaoiaDesc2b>
+  <ROM_OmenParanaoiaDesc3>{0} a eu une vision de choses térribles qui approches.</ROM_OmenParanaoiaDesc3>
+  <ROM_OmenParanaoiaDesc4>Les sens d'un de vos colon ont étés affectés par une épidémie. {0} est devenu désortienté.</ROM_OmenParanaoiaDesc4>
+
+  <ROM_OmenCrowDesc1>Une nuée d'oiseaux sombres et sinistres arborent l'extérieur votre colonie. Un oiseau de leur espèce est étendu mort parmi eux.</ROM_OmenCrowDesc1>
+  <ROM_OmenCrowDesc2>Une nuée d'oiseaux sombres et sinistres arborent l'extérieur votre colonie.</ROM_OmenCrowDesc2>
+  <ROM_OmenCrowDesc3>Un sombre corbeau observe votre colonie.</ROM_OmenCrowDesc3>
+
+  <ROM_OmenStrangeFogDesc>Une brume épaisse vient d'apparaitre. Sinistre, immuable, et mystérieuse dans son apparition. Mettre pied dedans pourrait perturber les faibles esprits, là oû les pilliers de pierre s'élévent à présent.</ROM_OmenStrangeFogDesc>
+
+</LanguageData>

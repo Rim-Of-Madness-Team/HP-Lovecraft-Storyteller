@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ROM_OmenCatDesc1>Uma pobre criatura foi assassinada e deixada pelo caminho. A misteriosa morte não oferece nenhuma testemunha.</ROM_OmenCatDesc1>
+  <ROM_OmenCatDesc2>Choros perfuram o silêncio. Um pó com pequenos rostos assustados fundidos com pânico e raiva ligam-se à sua colônia.</ROM_OmenCatDesc2>
+  <ROM_OmenCatDesc3>Um gato vadio perambulou em seu território.</ROM_OmenCatDesc3>
+  <ROM_OmenCatDesc4>Um gato vadio perambulou em seu território. Este felino em particular decidiu se juntar a você.</ROM_OmenCatDesc4>
+
+  <ROM_OmenParanaoiaResult>paranóia</ROM_OmenParanaoiaResult>
+
+  <ROM_OmenParanaoiaDesc1>Uma onda de paranóia apagou as mentes de seus colonos.</ROM_OmenParanaoiaDesc1>
+  <ROM_OmenParanaoiaDesc2>Um dos seus colonos ficou sobrecarregado com incerteza. {0} tornou-se paranóico.</ROM_OmenParanaoiaDesc2>
+  <ROM_OmenParanaoiaDesc2b>{0} sentiu uma onda de paranóia, mas ignorou isso através de vontade absoluta.</ROM_OmenParanaoiaDesc2b>
+  <ROM_OmenParanaoiaDesc3>{0} teve uma visão sobre coisas terríficas por vir.</ROM_OmenParanaoiaDesc3>
+  <ROM_OmenParanaoiaDesc4>Um dos sentidos dos seus colonos foi atormentado. {0} ficou desorientado.</ROM_OmenParanaoiaDesc4>
+
+  <ROM_OmenCrowDesc1>Um bando de pássaros sombrios ameaçadores fica fora de sua colônia. Um deles permanece morto entre eles.</ROM_OmenCrowDesc1>
+  <ROM_OmenCrowDesc2>Um bando de pássaros sombrios ameaçadores fica fora de sua colônia.</ROM_OmenCrowDesc2>
+  <ROM_OmenCrowDesc3>Um único corvo observa seus colonos.</ROM_OmenCrowDesc3>
+
+  <ROM_OmenStrangeFogDesc>Uma névoa opressora entrou. Grossa, firme e sinistra em sua aproximação. Pisar nela pode deslizar mentes fracas para espaços entre espaços.</ROM_OmenStrangeFogDesc>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+1.31.0.0 (03-29-2020)
+========================
+The HP Lovecraft storyteller will be far more aggressive now. Lone Survivor added to Omen incidents. Added three more flavor texts for sanity loss events.
+
+1.30.0.0 (03-07-2020)
+========================
+Added RimWorld 1.1 support. Also added a new omen: Lone Survivor. A lone survivor may walk upon your settlement as another omen of ill things to come.
+
+1.20.0.0 (10-19-2018)
+========================
+Initial update for RimWorld 1.0.
+

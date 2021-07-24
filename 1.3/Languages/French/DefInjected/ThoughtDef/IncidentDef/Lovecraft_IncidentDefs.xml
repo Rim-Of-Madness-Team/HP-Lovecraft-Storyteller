@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_OmenIncident.label>présage</HPLovecraft_OmenIncident.label>
+  <HPLovecraft_OmenIncident.letterText>Quelque chose de mauvais arrive...</HPLovecraft_OmenIncident.letterText>
+  <HPLovecraft_OmenIncident.letterLabel>Présage</HPLovecraft_OmenIncident.letterLabel>
+
+  <HPLovecraft_CatsIncident.label>présence féline</HPLovecraft_CatsIncident.label>
+  <HPLovecraft_CatsIncident.letterText>Quelque chose reste indiférent à l'aspect et la grandeur de l'univers.</HPLovecraft_CatsIncident.letterText>
+  <HPLovecraft_CatsIncident.letterLabel>présence féline</HPLovecraft_CatsIncident.letterLabel>
+
+  <HPLovecraft_ParanoiaIncident.label>paranoïa</HPLovecraft_ParanoiaIncident.label>
+  <HPLovecraft_ParanoiaIncident.letterText>Une vague de paranoïa surgie et emprisonne vos colons dans la folie.</HPLovecraft_ParanoiaIncident.letterText>
+  <HPLovecraft_ParanoiaIncident.letterLabel>paranoïa</HPLovecraft_ParanoiaIncident.letterLabel>
+
+  <HPLovecraft_CrowsIncident.label>corbeaux</HPLovecraft_CrowsIncident.label>
+  <HPLovecraft_CrowsIncident.letterText>Des corbeaux inquiétant viennent de s'installer dans la zone.</HPLovecraft_CrowsIncident.letterText>
+  <HPLovecraft_CrowsIncident.letterLabel>corbeaux</HPLovecraft_CrowsIncident.letterLabel>
+
+  <HPLovecraft_MysteryIncident.label>présage</HPLovecraft_MysteryIncident.label>
+  <HPLovecraft_MysteryIncident.letterText>Quelque chose de mystérieux vient d'arriver à proximité.</HPLovecraft_MysteryIncident.letterText>
+  <HPLovecraft_MysteryIncident.letterLabel>mystère</HPLovecraft_MysteryIncident.letterLabel>
+
+  <HPLovecraft_BloodMoon.label>lune de sang</HPLovecraft_BloodMoon.label>
+  <HPLovecraft_BloodMoon.letterText>Une des lunes de cette planete vient de se placer en orbite en face su soleil. C'est une lune de sang.</HPLovecraft_BloodMoon.letterText>
+  <HPLovecraft_BloodMoon.letterLabel>Lune De Sang</HPLovecraft_BloodMoon.letterLabel>
+
+  <HPLovecraft_TheMist.label>brume épaisse</HPLovecraft_TheMist.label>
+  <HPLovecraft_TheMist.letterText>Une brume épaisse vient d'apparaitre. Sinistre, immuable, et mystérieuse dans son apparition. Mettre pied dedans pourrait perturber les faibles esprits, là oû les pilliers de pierre s'élévent à présent.</HPLovecraft_TheMist.letterText>
+  <HPLovecraft_TheMist.letterLabel>Brume Epaisse</HPLovecraft_TheMist.letterLabel>
+
+
+</LanguageData>

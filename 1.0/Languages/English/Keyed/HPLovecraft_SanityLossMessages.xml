@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <HPLovecraft_SanityLossPrefix>{0} has experienced a fevered {1}.</HPLovecraft_SanityLossPrefix>
   <HPLovecraft_SanityLossPrefixPlural>Some colonists have experienced a fevered {0}</HPLovecraft_SanityLossPrefixPlural>
-
   <HPLovecraft_SanityLossReport>Sanity Loss</HPLovecraft_SanityLossReport>
-
   <HPLovecraft_Vision>vision</HPLovecraft_Vision>
   <HPLovecraft_Daydream>daydream</HPLovecraft_Daydream>
   <HPLovecraft_Nightmare>nightmare</HPLovecraft_Nightmare>
@@ -13,8 +10,6 @@
   <HPLovecraft_DifficultyModifier>+{0}% difficulty modifier</HPLovecraft_DifficultyModifier>
   <HPLovecraft_ExperiencedSanityLoss>{0} experienced +{1}% sanity loss.</HPLovecraft_ExperiencedSanityLoss>
   <HPLovecraft_SanityLossResistedWithIronWill>{0} resisted with iron-will.</HPLovecraft_SanityLossResistedWithIronWill>
-
-
   <HPLovecraft_SanityLossFlavorText1>In it they saw visions of a blackened creature whose monstrous forehead shone in moonlight and whose vile hooves surely pawed hellish oozes miles below the surface with eyes hidden, leering, and waiting.</HPLovecraft_SanityLossFlavorText1>
   <HPLovecraft_SanityLossFlavorText2>In it there were huge
 winged daemons carven of basalt and onyx vomited from wide grinning mouths weird green
@@ -28,4 +23,4 @@ lines of red charnel things hand in hand woven in voluminous black hangings.</HP
   <HPLovecraft_SanityLossFlavorText8>All the terror they had dimly felt before rushed upon them actively and vividly. Some -thing- sat next to them. They knew that they loathed the ancient and abhorrent creature so near them with an infinite intensity. It was whispering now, with a huskiness more terrible than a scream, and they trembled as they listened to things they will never unhear.</HPLovecraft_SanityLossFlavorText8>
   <HPLovecraft_SanityLossFlavorText9>Raucous little bells pealed out to greet the insane titter of a naked phosphorescent thing which swam into sight, scrambled ashore, and climbed up to squat leeringly on a carved onyx pedestal, smaller creatures cowered for fear of being chosen as its meal.</HPLovecraft_SanityLossFlavorText9>
   <HPLovecraft_SanityLossFlavorText10>They watched from the distance while a hooded stranger dug up a grave to reclaim a strange jade object from a bleached cavern-eyed owner. When returning to the surface, they snatched the artifact from the stranger's hands and promptly pushed them to down into the grave and readied a shovel of their own.</HPLovecraft_SanityLossFlavorText10>
-  </LanguageData>
+</LanguageData>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <HPLovecraft_CatKind_Black.label>chat noir</HPLovecraft_CatKind_Black.label>
   <HPLovecraft_CatKind_Black.labelPlural>chats noirs</HPLovecraft_CatKind_Black.labelPlural>
   <HPLovecraft_CatKind_Black.lifeStages.0.label>chaton</HPLovecraft_CatKind_Black.lifeStages.0.label>
@@ -25,6 +24,4 @@
   <HPLovecraft_CatKind_Black.labelMalePlural>chats noirs mâles</HPLovecraft_CatKind_Black.labelMalePlural>
   <HPLovecraft_CatKind_Black.labelFemale>chat noir femele</HPLovecraft_CatKind_Black.labelFemale>
   <HPLovecraft_CatKind_Black.labelFemalePlural>chats noirs femeles</HPLovecraft_CatKind_Black.labelFemalePlural>
-
-
 </LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<HPL_CrowEgg.label>Яйцо чёрного вóрона (неопл.)</HPL_CrowEgg.label>
+<HPL_CrowEgg.description>Неоплодотворённое яйцо чёрного вóрона. Его можно съесть сырым, но лучше приготовить.</HPL_CrowEgg.description>
+
+<HPL_CrowEggFertilized.label>Яйцо чёрного вóрона (опл.)</HPL_CrowEggFertilized.label>
+<HPL_CrowEggFertilized.description>Оплодотворённое яйцо чёрного вóрона. Если всё пойдет хорошо, из него вылупится чёрный вóрон. Его можно съесть сырым, но лучше приготовить.</HPL_CrowEggFertilized.description>
+
+<HPL_PenguinEgg.label>Яйцо пингвина-альбиноса (неопл.)</HPL_PenguinEgg.label>
+<HPL_PenguinEgg.description>Неоплодотворённое яйцо пингвина-альбиноса. Его можно съесть сырым, но лучше приготовить.</HPL_PenguinEgg.description>
+
+<HPL_PenguinEggFertilized.label>Яйцо пингвина-альбиноса (опл.)</HPL_PenguinEggFertilized.label>
+<HPL_PenguinEggFertilized.description>Оплодотворённое яйцо пингвина-альбиноса. Если всё пойдет хорошо, из него вылупится цыплёнок пингвина. Его можно съесть сырым, но лучше приготовить.</HPL_PenguinEggFertilized.description>
+
+</LanguageData>

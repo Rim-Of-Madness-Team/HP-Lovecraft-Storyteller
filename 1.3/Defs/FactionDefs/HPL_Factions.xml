@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase" Abstract="True" Name="HPL_StrangersBase">
+    <pawnSingular>stranger</pawnSingular>
+    <pawnsPlural>strangers</pawnsPlural>
+    <categoryTag>Stranger</categoryTag>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>Strangers</fixedName>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <geneticVariance>1</geneticVariance>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  <FactionDef ParentName="HPL_StrangersBase">
+    <defName>HPL_StrangersNeutral</defName>
+    <label>neutral strangers</label>
+  </FactionDef>
+  <FactionDef ParentName="HPL_StrangersBase">
+    <defName>HPL_StrangersHostile</defName>
+    <label>hostile strangers</label>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+</Defs>

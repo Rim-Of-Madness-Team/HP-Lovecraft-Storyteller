@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <HPLovecraft_SanityLossPrefix>{0} experienciou um febril {1}.</HPLovecraft_SanityLossPrefix>
   <HPLovecraft_SanityLossPrefixPlural>Alguns colonos experienciaram uma febril {0}</HPLovecraft_SanityLossPrefixPlural>
-
   <HPLovecraft_SanityLossReport>Perda de sanidade</HPLovecraft_SanityLossReport>
-
   <HPLovecraft_Vision>visão</HPLovecraft_Vision>
   <HPLovecraft_Daydream>sonhar acordado</HPLovecraft_Daydream>
   <HPLovecraft_Nightmare>pesadelo</HPLovecraft_Nightmare>
@@ -13,8 +10,6 @@
   <HPLovecraft_DifficultyModifier>+{0}% modificador de dificuldade</HPLovecraft_DifficultyModifier>
   <HPLovecraft_ExperiencedSanityLoss>{0} experienciou +{1}% de perda de sanidade.</HPLovecraft_ExperiencedSanityLoss>
   <HPLovecraft_SanityLossResistedWithIronWill>{0} resistiu com força de vontade</HPLovecraft_SanityLossResistedWithIronWill>
-
-
   <HPLovecraft_SanityLossFlavorText1>Nele, viram visões de uma criatura enegrecida, cuja monstruosa testa brilhava à luz da lua e cujos cascos com certeza andaram milhas abaixo da superfície, com os olhos escondidos, olhando e esperando.</HPLovecraft_SanityLossFlavorText1>
   <HPLovecraft_SanityLossFlavorText2>Nele havia enormes
 demônios alados cravados de basalto e ônix vomitado de uma boca estranha, larga, sorridente com luz laranja e verde, e tubulações neumáticas escondidas, irritantes, em danças caleidoscópicas da morte, e
@@ -27,5 +22,4 @@ linhas de coisas de charnel vermelho de mãos dadas, tecidas em volumosas cortin
   <HPLovecraft_SanityLossFlavorText8>Todo o terror que sentiram vagamente antes de se precipitaram sobre eles ativamente e vividamente. Algo - sentou-se ao lado deles. Eles sabiam que detestavam a criatura antiga e abominável tão próxima deles com uma intensidade infinita. Agora estava sussurrando, com um rouquidão mais terrível do que um grito, e eles tremiam enquanto ouviam coisas que nunca deixariam de ouvir.</HPLovecraft_SanityLossFlavorText8>
   <HPLovecraft_SanityLossFlavorText9>Os pequenos sinos roncos salientaram para cumprimentar o título insano de um elemento fosforescente nu que nadou à vista, encalhando em terra, subiu para agachar-se com atenção em um pedestal esculpido em ônix, pequenas criaturas encolhiam com medo de serem escolhidas como sua refeição.</HPLovecraft_SanityLossFlavorText9>
   <HPLovecraft_SanityLossFlavorText10>Eles observaram à distância, enquanto um estranho com capuz escavava um túmulo para recuperar um objeto de jade estranho de um dono de olhos cavernosos. Ao retornar à superfície, arrancaram o artefato das mãos do estranho e imediatamente os empurraram até o túmulo e prepararam uma pá.</HPLovecraft_SanityLossFlavorText10>
-
 </LanguageData>

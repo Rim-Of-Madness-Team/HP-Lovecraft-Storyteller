@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <HPLovecraft_corvoKind.label>corvo</HPLovecraft_corvoKind.label>
   <HPLovecraft_corvoKind.labelPlural>corvos</HPLovecraft_corvoKind.labelPlural>
   <HPLovecraft_corvoKind.labelmasculino>corvo masculino</HPLovecraft_corvoKind.labelmasculino>
@@ -25,6 +24,4 @@
   <HPLovecraft_corvoKind.lifeStages.2.labelmasculinoPlural>corvos masculinos</HPLovecraft_corvoKind.lifeStages.2.labelmasculinoPlural>
   <HPLovecraft_corvoKind.lifeStages.2.labelFemasculino>corvo feminino</HPLovecraft_corvoKind.lifeStages.2.labelFemasculino>
   <HPLovecraft_corvoKind.lifeStages.2.labelFemasculinoPlural>corvos femininos</HPLovecraft_corvoKind.lifeStages.2.labelFemasculinoPlural>
-
-
 </LanguageData>

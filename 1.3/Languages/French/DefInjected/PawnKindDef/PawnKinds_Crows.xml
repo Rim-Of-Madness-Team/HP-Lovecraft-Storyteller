@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_CrowKind.label>corbeau</HPLovecraft_CrowKind.label>
+  <HPLovecraft_CrowKind.labelPlural>corbeaux</HPLovecraft_CrowKind.labelPlural>
+  <HPLovecraft_CrowKind.lifeStages.0.label>crow chick</HPLovecraft_CrowKind.lifeStages.0.label>
+  <HPLovecraft_CrowKind.lifeStages.0.labelPlural>crow chicks</HPLovecraft_CrowKind.lifeStages.0.labelPlural>
+  <HPLovecraft_CrowKind.lifeStages.0.labelMale>male crow chick</HPLovecraft_CrowKind.lifeStages.0.labelMale>
+  <HPLovecraft_CrowKind.lifeStages.0.labelMalePlural>male crow chicks</HPLovecraft_CrowKind.lifeStages.0.labelMalePlural>
+  <HPLovecraft_CrowKind.lifeStages.0.labelFemale>female crow chick</HPLovecraft_CrowKind.lifeStages.0.labelFemale>
+  <HPLovecraft_CrowKind.lifeStages.0.labelFemalePlural>female crow chicks</HPLovecraft_CrowKind.lifeStages.0.labelFemalePlural>
+  <HPLovecraft_CrowKind.lifeStages.1.label>crow fledgling</HPLovecraft_CrowKind.lifeStages.1.label>
+  <HPLovecraft_CrowKind.lifeStages.1.labelPlural>crow fledglings</HPLovecraft_CrowKind.lifeStages.1.labelPlural>
+  <HPLovecraft_CrowKind.lifeStages.1.labelMale>male crow fledgling</HPLovecraft_CrowKind.lifeStages.1.labelMale>
+  <HPLovecraft_CrowKind.lifeStages.1.labelMalePlural>male crow fledglings</HPLovecraft_CrowKind.lifeStages.1.labelMalePlural>
+  <HPLovecraft_CrowKind.lifeStages.1.labelFemale>female crow fledgling</HPLovecraft_CrowKind.lifeStages.1.labelFemale>
+  <HPLovecraft_CrowKind.lifeStages.1.labelFemalePlural>female crow fledglings</HPLovecraft_CrowKind.lifeStages.1.labelFemalePlural>
+  <HPLovecraft_CrowKind.lifeStages.2.label>crow</HPLovecraft_CrowKind.lifeStages.2.label>
+  <HPLovecraft_CrowKind.lifeStages.2.labelPlural>crow</HPLovecraft_CrowKind.lifeStages.2.labelPlural>
+  <HPLovecraft_CrowKind.lifeStages.2.labelMale>male crow</HPLovecraft_CrowKind.lifeStages.2.labelMale>
+  <HPLovecraft_CrowKind.lifeStages.2.labelMalePlural>male crows</HPLovecraft_CrowKind.lifeStages.2.labelMalePlural>
+  <HPLovecraft_CrowKind.lifeStages.2.labelFemale>female crow</HPLovecraft_CrowKind.lifeStages.2.labelFemale>
+  <HPLovecraft_CrowKind.lifeStages.2.labelFemalePlural>female crows</HPLovecraft_CrowKind.lifeStages.2.labelFemalePlural>
+  <HPLovecraft_CrowKind.labelMale>male crow</HPLovecraft_CrowKind.labelMale>
+  <HPLovecraft_CrowKind.labelMalePlural>male crows</HPLovecraft_CrowKind.labelMalePlural>
+  <HPLovecraft_CrowKind.labelFemale>female crow</HPLovecraft_CrowKind.labelFemale>
+  <HPLovecraft_CrowKind.labelFemalePlural>female crows</HPLovecraft_CrowKind.labelFemalePlural>
+
+
+</LanguageData>
