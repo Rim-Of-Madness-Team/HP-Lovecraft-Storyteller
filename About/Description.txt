@@ -1,17 +1,21 @@
-  Adds a foreboding storyteller that adds tension to RimWorld stories.
+[h1]Adds a foreboding storyteller that adds omens to RimWorld stories.[/h1]
 
-  In this mod, Lovecraft will be added to your list of storytellers. In Lovecraft's tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?
+In this mod, Lovecraft will be added to your list of storytellers. In Lovecraft&apos;s tales, protagonists often face their own mortality and insignificance in the universe. Threats to your colony and its sanity will be constant. Can your colony survive a cosmic horror tale?
 
-  * Features *
-  ------------
-  Rewrites the threat cycle of RimWorld to include "omens."
-  Omens are events that precede larger and more horrible events.
-  Currently, the mod contains 13 simple omen events, 2 bigger omen events, and 1 more planned.
+[b]A Dog Said Patch : Now Included with this mod. No seperate download required.[/b]
 
-  * An example omen, a blood moon, will cause unease among all that see it.
-  https://cdn.discordapp.com/attachments/231073994248290304/323488975765504000/unknown.png
+[h1]* Features *
+------------  [/h1]
+[list]
+[*]Rewrites the threat cycle of RimWorld to include &quot;omens.&quot;
+[*]Omens are events that precede larger and more horrible events.
+[*]Currently, the mod contains 13 simple omen events with 3 more planned.
+[*]Adds intelligent crows and black cats.
+[img]https://images.discordapp.net/attachments/234622469816844288/323407600798531585/Crow_side.png[/img][img]https://images.discordapp.net/attachments/234622469816844288/323407600853057538/Crow_front.png[/img][img]https://images.discordapp.net/attachments/234622469816844288/323410527613091840/Crow_back.png[/img]
+[/list]
 
-  * Black cats can be found as part of the omens, and they are randomly named after famous Weird Fiction authors should they take a liking to your colony.
-  https://images.discordapp.net/attachments/231073994248290304/323480523559272458/unknown.png
+* An example omen, a blood moon, will cause unease among all that see it.
+[img]https://i.imgur.com/a0ThejJ.png[/img]
 
-  *Note: Storytellers in Rimworld affect your colony's population. This mod uses the default number of colonists. For double population, please refer to the double population edition.
+* Black cats can be found as part of the omens, and they are randomly named after famous Weird Fiction authors should they take a liking to your colony.
+[img]https://images.discordapp.net/attachments/231073994248290304/323480523559272458/unknown.png[/img]
