@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!-- 7/24/21 -->
+  <HPLovecraft_SanityLossBegun>{0} has begun losing their sanity.</HPLovecraft_SanityLossBegun>
   <HPLovecraft_SanityLossPrefix>{0} has experienced a fevered {1}.</HPLovecraft_SanityLossPrefix>
   <HPLovecraft_SanityLossPrefixPlural>Some colonists have experienced a fevered {0}</HPLovecraft_SanityLossPrefixPlural>
   <HPLovecraft_SanityLossReport>Sanity Loss</HPLovecraft_SanityLossReport>
