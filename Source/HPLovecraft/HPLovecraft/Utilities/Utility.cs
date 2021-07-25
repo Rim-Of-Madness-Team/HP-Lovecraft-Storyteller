@@ -682,6 +682,8 @@ namespace Cthulhu
                 pawn.health.AddHediff(sanityLossHediff);
                 pawn.health.Notify_HediffChanged(null);
                 Settings.DebugString("Made and applied Sanity loss to: " + pawn.LabelShort);
+
+                Messages.Message(new Message("HPLovecraft_SanityLossBegun".Translate(pawn.Name.ToStringShort), MessageTypeDefOf.NegativeEvent, pawn));
                 //Log.Message("4");
             }
         }
