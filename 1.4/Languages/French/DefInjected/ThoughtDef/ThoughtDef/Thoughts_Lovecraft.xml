@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ROM_ObservedMistCreaturePsychic.stages.0.label>le brouillard est vivant</ROM_ObservedMistCreaturePsychic.stages.0.label>
+  <ROM_ObservedMistCreaturePsychic.stages.0.description>Je ne peux pas rester en dehors du brouillard. Je dois revenir à l'intérieur. Le brouillard est vivant. Je peux le sentir.</ROM_ObservedMistCreaturePsychic.stages.0.description>
+
+  <ROM_ObservedMistCreature.stages.0.label>quelque chose est dans le brouillard</ROM_ObservedMistCreature.stages.0.label>
+  <ROM_ObservedMistCreature.stages.0.description>j'ai senti quelque chose m'observé dans la brume. Etait-il réel?</ROM_ObservedMistCreature.stages.0.description>
+
+
+  <!-- Misc Thought Defs -->
+
+  <HPLovecraft_SawBloodMoonSad.stages.0.label>a vu une lune de Sang</HPLovecraft_SawBloodMoonSad.stages.0.label>
+  <HPLovecraft_SawBloodMoonSad.stages.0.description>Je peux sentir la lune de sang m'observer lourdement. Ce ne peut étre normal!</HPLovecraft_SawBloodMoonSad.stages.0.description>
+
+  <HPLovecraft_SawBloodMoonHappy.stages.0.label>Lune de Sang Majestueuse</HPLovecraft_SawBloodMoonHappy.stages.0.label>
+  <HPLovecraft_SawBloodMoonHappy.stages.0.description>Cette lune est simplement parfaite. J'aimerais qu'elle reste ainsi pour toujours!</HPLovecraft_SawBloodMoonHappy.stages.0.description>
+
+
+</LanguageData>

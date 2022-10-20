@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseFilth">
+    <defName>HPLovecraft_FilthMistStalker</defName>
+    <label>water</label>
+    <statBases>
+      <Beauty>0</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(220, 220, 220, 60)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>5</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>HPLovecraft_MistCreature</defName>
+    <thingClass>HPLovecraft.PawnMistCreature</thingClass>
+    <label>???</label>
+    <description>Something floating in the mist.</description>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <ComfyTemperatureMin>-999</ComfyTemperatureMin>
+      <ComfyTemperatureMax>999</ComfyTemperatureMax>
+      <MarketValue>0</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <MeatAmount>0</MeatAmount>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
+        <meleeDamageDef>ROM_MistAttack</meleeDamageDef>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
+        <meleeDamageDef>ROM_MistAttack</meleeDamageDef>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <canBePredatorPrey>false</canBePredatorPrey>
+      <thinkTreeMain>ROM_MistStalker</thinkTreeMain>
+      <thinkTreeConstant>ROM_MistStalkerConstant</thinkTreeConstant>
+      <useMeatFrom>Pig</useMeatFrom>
+      <useLeatherFrom>Pig</useLeatherFrom>
+      <deathActionWorkerClass>HPLovecraft.DeathActionWorker_VanishMist</deathActionWorkerClass>
+      <body>Bird</body>
+      <bloodDef>HPLovecraft_FilthMistStalker</bloodDef>
+      <hasGenders>false</hasGenders>
+      <baseHungerRate>0.0</baseHungerRate>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.0</baseHealthScale>
+      <foodType>None</foodType>
+      <trainability>None</trainability>
+      <wildness>1.0</wildness>
+      <lifeExpectancy>0.1</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>ROM_MistCreature_Injured</soundWounded>
+          <soundDeath>ROM_MistCreature_Death</soundDeath>
+          <soundCall>ROM_MistCreature_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>HPLovecraft_MistStalker</defName>
+    <label>mist stalker</label>
+    <race>HPLovecraft_MistCreature</race>
+    <combatPower>22</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/MistCreatureOne/MistCreatureOne</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>TransparentPostLight</shaderType>
+          <color>RGBA(1.0, 1.0, 1.0, 0.07)</color>
+          <drawSize>3.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>HPLovecraft_MistStalkerTwo</defName>
+    <label>mist stalker</label>
+    <race>HPLovecraft_MistCreature</race>
+    <combatPower>22</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/MistCreatureTwo/MistCreatureTwo</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>TransparentPostLight</shaderType>
+          <color>RGBA(1.0, 1.0, 1.0, 0.07)</color>
+          <drawSize>3.5</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

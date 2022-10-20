@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ROM_MistCreature_Call</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/MistCreature/Call</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>16</min>
+          <max>25</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9082353</min>
+          <max>1.114706</max>
+        </pitchRange>
+        <distRange>
+          <min>0</min>
+          <max>50</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ROM_MistCreature_Injured</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/MistCreature/Injured</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>22</min>
+          <max>22</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1.206471</min>
+          <max>1</max>
+        </pitchRange>
+        <distRange>
+          <min>0</min>
+          <max>70</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ROM_MistCreature_Death</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Pawn/MistCreature/Death</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>32</min>
+          <max>32</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1.504706</min>
+          <max>1.596471</max>
+        </pitchRange>
+        <distRange>
+          <min>0</min>
+          <max>70</max>
+        </distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

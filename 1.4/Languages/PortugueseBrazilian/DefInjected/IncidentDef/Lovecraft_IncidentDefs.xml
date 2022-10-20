@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_OmenIncident.label>presságio</HPLovecraft_OmenIncident.label>
+  <HPLovecraft_OmenIncident.letterLabel>Presságio</HPLovecraft_OmenIncident.letterLabel>
+  <HPLovecraft_OmenIncident.letterText>Algo mau está chegando...</HPLovecraft_OmenIncident.letterText>
+
+  <HPLovecraft_CatsIncident.label>presença felina</HPLovecraft_CatsIncident.label>
+  <HPLovecraft_CatsIncident.letterLabel>presença felina</HPLovecraft_CatsIncident.letterLabel>
+  <HPLovecraft_CatsIncident.letterText>Algo permanece indiferente para as voltas e aumento do universo.</HPLovecraft_CatsIncident.letterText>
+
+  <HPLovecraft_ParanoiaIncident.label>paranóia</HPLovecraft_ParanoiaIncident.label>
+  <HPLovecraft_ParanoiaIncident.letterLabel>paranóia</HPLovecraft_ParanoiaIncident.letterLabel>
+  <HPLovecraft_ParanoiaIncident.letterText>Uma onda de paranóia tem perturbado as mentes de seus colonizadores.</HPLovecraft_ParanoiaIncident.letterText>
+
+  <HPLovecraft_CrowsIncident.label>corvos</HPLovecraft_CrowsIncident.label>
+  <HPLovecraft_CrowsIncident.letterLabel>corvos</HPLovecraft_CrowsIncident.letterLabel>
+  <HPLovecraft_CrowsIncident.letterText>Corvos sinistros tomaram o poleiro da área.</HPLovecraft_CrowsIncident.letterText>
+
+  <HPLovecraft_MysteryIncident.label>presságio</HPLovecraft_MysteryIncident.label>
+  <HPLovecraft_MysteryIncident.letterLabel>mistério</HPLovecraft_MysteryIncident.letterLabel>
+  <HPLovecraft_MysteryIncident.letterText>Algo misterioso ocorreu nas proximidades.</HPLovecraft_MysteryIncident.letterText>
+
+  <HPLovecraft_BloodMoon.label>lua sangrenta</HPLovecraft_BloodMoon.label>
+  <HPLovecraft_BloodMoon.letterLabel>Lua Sangrenta</HPLovecraft_BloodMoon.letterLabel>
+  <HPLovecraft_BloodMoon.letterText>Uma das luas do planeta orbitou na frente do sol. É uma lua sangrenta.</HPLovecraft_BloodMoon.letterText>
+
+  <HPLovecraft_TheMist.label>névoa do além</HPLovecraft_TheMist.label>
+  <HPLovecraft_TheMist.letterLabel>Névoa</HPLovecraft_TheMist.letterLabel>
+  <HPLovecraft_TheMist.letterText>Uma névoa opressora entrou. Grossa, firme e sinistra em sua aproximação. Pisar nela pode deslizar mentes fracas para espaços entre espaços.</HPLovecraft_TheMist.letterText>
+
+
+</LanguageData>

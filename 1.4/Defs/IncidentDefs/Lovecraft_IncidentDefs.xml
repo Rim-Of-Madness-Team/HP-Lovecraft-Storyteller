@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IncidentDef>
+    <defName>HPLovecraft_OmenIncident</defName>
+    <label>omen</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_Omen</workerClass>
+    <letterLabel>Omen</letterLabel>
+    <letterText>Something bad is coming...</letterText>
+    <letterDef>ThreatBig</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <category>Misc</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_CatsIncident</defName>
+    <label>feline presence</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_Cats</workerClass>
+    <letterLabel>feline presence</letterLabel>
+    <letterText>Something stands indifferent to the turns and swells of the universe.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_ParanoiaIncident</defName>
+    <label>paranoia</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_Paranoia</workerClass>
+    <letterLabel>paranoia</letterLabel>
+    <letterText>A wave of paranoia has brushed against the minds of your colonists.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_CrowsIncident</defName>
+    <label>crows</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_Crows</workerClass>
+    <letterLabel>crows</letterLabel>
+    <letterText>Ominous crows have taken roost in the area.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_MysteryIncident</defName>
+    <label>omen</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_Mystery</workerClass>
+    <letterLabel>mystery</letterLabel>
+    <letterText>Something mysterious has occured nearby.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>5</minRefireDays>
+    <category>Special</category>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>0</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_BloodMoon</defName>
+    <label>blood moon</label>
+    <category>Special</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>HPLovecraft_BloodMoon</gameCondition>
+    <letterLabel>Blood Moon</letterLabel>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minThreatPoints>0</minThreatPoints>
+    <minRefireDays>5</minRefireDays>
+    <durationDays>
+      <min>0.75</min>
+      <max>1.25</max>
+    </durationDays>
+  </IncidentDef>
+  <!--
+	<IncidentDef>
+    <defName>HPLovecraft_TheStranger</defName>
+    <label>the stranger</label>
+		<category>Misc</category>
+    <targetTags>
+	  <li>Map_PlayerHome</li>
+	</targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_TheStranger</workerClass>
+    <letterLabel>the stranger</letterLabel>
+    <letterText>A fear, something old, deep, almost animal, raises the hairs on the neck of those that encounter the stranger.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+  </IncidentDef>
+  -->
+  <IncidentDef>
+    <defName>HPLovecraft_LoneSurvivor</defName>
+    <label>a lone survivor</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>HPLovecraft.IncidentWorker_LoneSurvivor</workerClass>
+    <letterLabel>a lone survivor</letterLabel>
+    <letterText>A deluge, epidemic, or unknown horror has penned the end to all they hold dear, yet somehow they manage to arrive in your colony, desperate and stalked by nightmares.</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+    <minThreatPoints>400</minThreatPoints>
+  </IncidentDef>
+  <IncidentDef>
+    <defName>HPLovecraft_TheMist</defName>
+    <label>mist from beyond</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+    <gameCondition>HPLovecraft_TheMist</gameCondition>
+    <letterLabel>Mist</letterLabel>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0</baseChance>
+    <minRefireDays>0</minRefireDays>
+    <durationDays>
+      <min>0.75</min>
+      <max>1.25</max>
+    </durationDays>
+  </IncidentDef>
+</Defs>

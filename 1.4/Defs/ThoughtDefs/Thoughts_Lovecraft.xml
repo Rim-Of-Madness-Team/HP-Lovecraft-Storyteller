@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>ROM_ObservedMistCreaturePsychic</defName>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>1.0</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>the mist is alive</label>
+        <description>I can't be out here. I need to get back inside. The mist is alive. I can feel it.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>ROM_ObservedMistCreature</defName>
+    <thoughtClass>Thought_MemoryObservation</thoughtClass>
+    <durationDays>0.1</durationDays>
+    <stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>something in the mist</label>
+        <description>I felt something watching me in the mist. Was it real?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!-- Misc Thought Defs -->
+  <ThoughtDef>
+    <defName>HPLovecraft_SawBloodMoonSad</defName>
+    <durationDays>1.5</durationDays>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>saw blood moon</label>
+        <description>I can still feel the blood moon leering at me. That can't be normal!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>HPLovecraft_SawBloodMoonHappy</defName>
+    <durationDays>1.5</durationDays>
+    <requiredTraits>
+      <li>Bloodlust</li>
+    </requiredTraits>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>glorious blood moon</label>
+        <description>This moon is perfect. I wish it would last forever!</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_corvoKind.label>corvo</HPLovecraft_corvoKind.label>
+  <HPLovecraft_corvoKind.labelPlural>corvos</HPLovecraft_corvoKind.labelPlural>
+  <HPLovecraft_corvoKind.labelmasculino>corvo masculino</HPLovecraft_corvoKind.labelmasculino>
+  <HPLovecraft_corvoKind.labelmasculinoPlural>corvos masculinos</HPLovecraft_corvoKind.labelmasculinoPlural>
+  <HPLovecraft_corvoKind.labelFemasculino>corvo feminino</HPLovecraft_corvoKind.labelFemasculino>
+  <HPLovecraft_corvoKind.labelFemasculinoPlural>corvos femininos</HPLovecraft_corvoKind.labelFemasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.0.label>filhote de corvo</HPLovecraft_corvoKind.lifeStages.0.label>
+  <HPLovecraft_corvoKind.lifeStages.0.labelPlural>filhotes de corvo</HPLovecraft_corvoKind.lifeStages.0.labelPlural>
+  <HPLovecraft_corvoKind.lifeStages.0.labelmasculino>filhote de corvo masculino</HPLovecraft_corvoKind.lifeStages.0.labelmasculino>
+  <HPLovecraft_corvoKind.lifeStages.0.labelmasculinoPlural>filhotes de corvo masculino</HPLovecraft_corvoKind.lifeStages.0.labelmasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.0.labelFemasculino>filhote de corvo feminino</HPLovecraft_corvoKind.lifeStages.0.labelFemasculino>
+  <HPLovecraft_corvoKind.lifeStages.0.labelFemasculinoPlural>filhotes de corvo feminino</HPLovecraft_corvoKind.lifeStages.0.labelFemasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.1.label>corvo incipiente</HPLovecraft_corvoKind.lifeStages.1.label>
+  <HPLovecraft_corvoKind.lifeStages.1.labelPlural>corvos incipientes</HPLovecraft_corvoKind.lifeStages.1.labelPlural>
+  <HPLovecraft_corvoKind.lifeStages.1.labelmasculino>corvo incipiente masculino</HPLovecraft_corvoKind.lifeStages.1.labelmasculino>
+  <HPLovecraft_corvoKind.lifeStages.1.labelmasculinoPlural>corvos incipientes masculinos</HPLovecraft_corvoKind.lifeStages.1.labelmasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.1.labelFemasculino>corvo incipiente feminino</HPLovecraft_corvoKind.lifeStages.1.labelFemasculino>
+  <HPLovecraft_corvoKind.lifeStages.1.labelFemasculinoPlural>corvos incipientes femininos</HPLovecraft_corvoKind.lifeStages.1.labelFemasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.2.label>corvo</HPLovecraft_corvoKind.lifeStages.2.label>
+  <HPLovecraft_corvoKind.lifeStages.2.labelPlural>corvo</HPLovecraft_corvoKind.lifeStages.2.labelPlural>
+  <HPLovecraft_corvoKind.lifeStages.2.labelmasculino>corvo masculino</HPLovecraft_corvoKind.lifeStages.2.labelmasculino>
+  <HPLovecraft_corvoKind.lifeStages.2.labelmasculinoPlural>corvos masculinos</HPLovecraft_corvoKind.lifeStages.2.labelmasculinoPlural>
+  <HPLovecraft_corvoKind.lifeStages.2.labelFemasculino>corvo feminino</HPLovecraft_corvoKind.lifeStages.2.labelFemasculino>
+  <HPLovecraft_corvoKind.lifeStages.2.labelFemasculinoPlural>corvos femininos</HPLovecraft_corvoKind.lifeStages.2.labelFemasculinoPlural>
+
+
+</LanguageData>

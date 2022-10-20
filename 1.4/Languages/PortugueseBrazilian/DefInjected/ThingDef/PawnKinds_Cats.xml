@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_CatRace.label>gato alfa</HPLovecraft_CatRace.label>
+  <HPLovecraft_CatRace.description>Um dos primeiros animais de estimação da humanidade, o gato é um pequeno mamífero que caça vermes. Conhecidos pelo seu distanciamento, os gatos são, no entanto, companheiros populares por causa de sua calma, independência e pele fina e petável. Este espécime particular exibe graça impecável e auto-suficiência superior, bem como uma impessoalidade sem graça do próprio universo.</HPLovecraft_CatRace.description>
+  <!-- Use Leather From: Cat -->
+  <!-- Use Meat From: Cat -->
+  <HPLovecraft_CatRace_Corpse.label>cadáver de gato alfa</HPLovecraft_CatRace_Corpse.label>
+  <HPLovecraft_CatRace_Corpse.description>cadáver de gato alfa</HPLovecraft_CatRace_Corpse.description>
+
+
+</LanguageData>

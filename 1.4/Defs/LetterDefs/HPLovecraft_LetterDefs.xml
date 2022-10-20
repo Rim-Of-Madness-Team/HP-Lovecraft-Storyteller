@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <LetterDef>
+    <defName>ROM_Omen</defName>
+    <color>(204, 196, 135)</color>
+    <flashColor>(210, 198, 106)</flashColor>
+    <flashInterval>40</flashInterval>
+  </LetterDef>
+</Defs>

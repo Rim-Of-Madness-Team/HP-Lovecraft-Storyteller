@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPLovecraft_BloodMoon.label>lune de sang</HPLovecraft_BloodMoon.label>
+  <HPLovecraft_BloodMoon.description>Une des lunes a pris une nuance mystérieuse, et un ciel sombre et cramoisie va noyer les couleurs éclatantes d'un jour étincelant.</HPLovecraft_BloodMoon.description>
+  <HPLovecraft_BloodMoon.endMessage>La lune de sang est à présent terminée.</HPLovecraft_BloodMoon.endMessage>
+
+  <HPLovecraft_TheMist.label>brume épaisse</HPLovecraft_TheMist.label>
+  <HPLovecraft_TheMist.description>Une brume épaisse vient d'apparaitre. Sinistre, immuable, et mystérieuse dans son apparition. Mettre pied dedans pourrait perturber les faibles esprits, là oû les pilliers de pierre s'élévent à présent.</HPLovecraft_TheMist.description>
+  <HPLovecraft_TheMist.endMessage>Le brouillard se dissipe.</HPLovecraft_TheMist.endMessage>
+
+
+</LanguageData>

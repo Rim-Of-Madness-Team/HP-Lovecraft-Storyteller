@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>ROM_MistAttack</defName>
+    <label>unearthly chill</label>
+    <externalViolence>false</externalViolence>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>
+    <hediff>Scratch</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <deathMessage>{0} has died from unexplained circumstances.</deathMessage>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+  </DamageDef>
+</Defs>
